@@ -68,6 +68,10 @@ public class MemberEntity {
     public Set<MemberCategoryEntity> getMemberCategoryEntity() {
         return memberCategoryEntitySet;
     }
+    public void setMemberCategoryEntity(Set<MemberCategoryEntity> memberCategoryEntitySet) {
+        this.memberCategoryEntitySet= memberCategoryEntitySet;
+    }
+
     public Long getId() {
         return id;
     }
