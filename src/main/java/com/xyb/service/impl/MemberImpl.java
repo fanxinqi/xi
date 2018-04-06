@@ -16,11 +16,12 @@ import java.util.Optional;
  * @Date 2018/3/20
  */
 @Service
-public class MemberImpl implements  MemberService {
+public class MemberImpl implements MemberService {
     @Autowired
     private MemberRepository memberRepository;
+
     @Override
-    public List<MemberEntity>findAll() {
+    public List<MemberEntity> findAll() {
         return memberRepository.findAll();
     }
 
@@ -31,16 +32,21 @@ public class MemberImpl implements  MemberService {
 
     @Override
     public void delete(MemberEntity entity) {
-
+        memberRepository.delete(entity);
     }
 
     @Override
     public void deleteById(Long id) {
-
+        memberRepository.deleteById(id);
     }
 
     @Override
     public Optional<MemberEntity> findById(Long id) {
-        return null;
+        return memberRepository.findById(id);
+    }
+
+    @Override
+    public Optional<MemberEntity> findByName(String name) {
+        return memberRepository.findByName(name);
     }
 }

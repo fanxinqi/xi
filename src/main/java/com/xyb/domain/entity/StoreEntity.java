@@ -15,12 +15,10 @@ public class StoreEntity {
     @Column(name = "id")
     @ApiModelProperty("id")
     private Long id;
-
     @Column(name = "name")
     @ApiModelProperty(required = true)
     @NotNull(message = "请输入门店名称")
     private String name;
-
     @Column(name = "address")
     @NotNull(message = "请输入门店地址")
     @ApiModelProperty(required = true)

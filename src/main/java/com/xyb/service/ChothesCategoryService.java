@@ -4,6 +4,7 @@ import com.xyb.domain.entity.ClothesCategoryEntity;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.concurrent.CopyOnWriteArrayList;
 
 /**
  * @Author fanxinqi
@@ -20,4 +21,5 @@ public interface ChothesCategoryService {
     void deleteById(Long id);
 
     Optional<ClothesCategoryEntity> findById(Long id);
+    Optional<ClothesCategoryEntity> findByName(String name);
 }

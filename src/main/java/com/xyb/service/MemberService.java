@@ -21,4 +21,5 @@ public interface MemberService {
     void deleteById(Long id);
 
     Optional<MemberEntity> findById(Long id);
+    Optional<MemberEntity> findByName(String name);
 }

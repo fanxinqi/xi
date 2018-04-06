@@ -61,7 +61,7 @@ public class MemberEntity {
     @Column(name = "remain_fee")
     private String remainFee;
 
-    @ManyToMany(cascade = {CascadeType.MERGE, CascadeType.REFRESH}, fetch = FetchType.EAGER)
+    @ManyToMany(cascade = {CascadeType.REFRESH}, fetch = FetchType.EAGER)
     @JoinTable(name = "member_categorys", joinColumns = {@JoinColumn(name = "m_id")}, inverseJoinColumns = {@JoinColumn(name = "c_id")})
     private Set<MemberCategoryEntity> memberCategoryEntitySet;
 

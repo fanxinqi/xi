@@ -10,10 +10,12 @@ import javax.validation.Valid;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import java.util.Optional;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * 演示user在内存中的操作
+ *
  * @Author fanxinqi
  * @Date 2018/3/20
  */
@@ -22,24 +24,25 @@ import java.util.concurrent.ConcurrentHashMap;
 public class MemberController {
     @Autowired
     private MemberService memberService;
+
     @GetMapping("/list")
     public List<MemberEntity> getUserList() {
         return memberService.findAll();
     }
-    @PostMapping(value="/save")
+
+    @PostMapping(value = "/save_or_update")
     public MemberEntity addMember(@RequestBody MemberEntity member) {
-        Log.debug("xxxxx");
-        //@RequestBody 会自动把前端传的json转换成user对象
-//        MemberEntity m = new MemberEntity();
-//        m.setName(member.getName());
-//        m.setBirthday(member.getBirthday());
-//        m.setAddress(member.getAddress());
-//        m.setStoreId(member.getStoreId());
-//        m.setHeadUrl(member.getHeadUrl());
-//        m.setCreateTime(System.currentTimeMillis());
-//        Log.debug(m.toString());
         return memberService.save(member);
-       // return "success";
+    }
+
+    @PostMapping(value = "/search_by_name")
+    public Optional<MemberEntity> searchMemberByName(@RequestParam(value = "name", required = true) String name) {
+        return memberService.findByName(name);
+    }
+
+    @PostMapping(value = "/delete_by_id")
+    public void deleteMemberById(@RequestParam(value = "id", required = true) long id) {
+        memberService.deleteById(id);
     }
 
 }

@@ -11,7 +11,7 @@ public class RestInfo<T> {
     public static final Integer INPUT_ERROR = 101;
 
 
-    private Integer code;
+    private Integer code =this.OK;
     private String message;
     private String url;
     private T data;

@@ -4,37 +4,48 @@ import io.swagger.annotations.ApiModelProperty;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
+import java.util.Set;
 
 @Entity
 @Table(name = "clothes_category")
 public class ClothesCategoryEntity {
-
     @Id
     @GeneratedValue
     @Column(name = "id")
     @ApiModelProperty("id")
     private Long id;
-
+    @Column(name = "parent_id")
+    @ApiModelProperty(required = true)
+    @NotNull(message = "父类id不能为空")
+    private long parentId;
     @Column(name = "name")
     @ApiModelProperty(required = true)
     @NotNull(message = "名称不能为空")
     private String name;
-
     @Column(name = "price")
     @ApiModelProperty(required = true)
     @NotNull(message = "价格不能为空")
     private float price;
-
     @Column(name = "des")
-    private float des;
-
+    private String des;
     @Column(name = "create_time")
     @ApiModelProperty(required = true)
     @NotNull(message = "请添加建立的时间")
     private long createTime;
-
     @Column(name = "previewUrls")
     private String previewUrls;
+    @ManyToMany(cascade = {CascadeType.REFRESH}, fetch = FetchType.EAGER)
+    @JoinTable(name = "category_parent_children", joinColumns = {@JoinColumn(name = "c_id")}, inverseJoinColumns = {@JoinColumn(name = "p_id")})
+    private Set<ClothesCategoryEntity> childrenClothesCategoryEntitySet;
+
+    public Set<ClothesCategoryEntity> getChildrenClothesCategoryEntitySet() {
+        return childrenClothesCategoryEntitySet;
+    }
+
+    public void setChildrenClothesCategoryEntitySet(Set<ClothesCategoryEntity> childrenClothesCategoryEntitySet) {
+        this.childrenClothesCategoryEntitySet = childrenClothesCategoryEntitySet;
+    }
+
 
     public String getPreviewUrls() {
         return previewUrls;
@@ -68,11 +79,11 @@ public class ClothesCategoryEntity {
         this.price = price;
     }
 
-    public float getDes() {
+    public String getDes() {
         return des;
     }
 
-    public void setDes(float des) {
+    public void setDes(String des) {
         this.des = des;
     }
 
@@ -82,5 +93,12 @@ public class ClothesCategoryEntity {
 
     public void setCreateTime(long createTime) {
         this.createTime = createTime;
+    }
+    public long getParentId() {
+        return parentId;
+    }
+
+    public void setParentId(long parentId) {
+        this.parentId = parentId;
     }
 }

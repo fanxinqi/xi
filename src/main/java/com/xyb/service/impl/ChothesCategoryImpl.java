@@ -1,7 +1,7 @@
 package com.xyb.service.impl;
 
 import com.xyb.domain.entity.ClothesCategoryEntity;
-import com.xyb.domain.repository.ChlothesCategoryRepository;
+import com.xyb.domain.repository.ClothesCategoryRepository;
 import com.xyb.service.ChothesCategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -16,7 +16,7 @@ import java.util.Optional;
 @Service
 public class ChothesCategoryImpl implements ChothesCategoryService {
     @Autowired
-    private ChlothesCategoryRepository chlothesCategoryRepository;
+    private ClothesCategoryRepository chlothesCategoryRepository;
     @Override
     public List<ClothesCategoryEntity> findAll() {
         return chlothesCategoryRepository.findAll();
@@ -40,5 +40,10 @@ public class ChothesCategoryImpl implements ChothesCategoryService {
     @Override
     public Optional<ClothesCategoryEntity> findById(Long id) {
         return chlothesCategoryRepository.findById(id);
+    }
+
+    @Override
+    public Optional<ClothesCategoryEntity> findByName(String name) {
+        return chlothesCategoryRepository.findByName(name);
     }
 }
