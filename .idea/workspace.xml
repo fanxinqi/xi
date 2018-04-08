@@ -2,81 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="68022376-e0f6-425b-ad99-3e4f2eabe2b7" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/annotation/CurrentUser.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/annotation/LoginRequired.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/AccountInfoEntity.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/domain/repository/AccountInfoRepository.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/domain/repository/StoreRepository.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/exception/AuthorityException.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/interceptor/AuthenticationInterceptor.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/interceptor/CurrentUserMethodArgumentResolver.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/interceptor/WebMvcConfigurer.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/service/AccountInfoService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/service/StoreService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/service/impl/AccountInfoImpl.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/service/impl/StoreImpl.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/utils/StringUtils.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/utils/TokenUtils.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/web/AccountInfoController.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/web/StoreController.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/xyb/annotation/CurrentUser.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/xyb/annotation/LoginRequired.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/xyb/domain/entity/AccountInfoEntity.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/xyb/domain/repository/AccountInfoRepository.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/xyb/domain/repository/StoreRepository.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/xyb/interceptor/AuthenticationInterceptor.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/xyb/interceptor/CurrentUserMethodArgumentResolver.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/xyb/interceptor/WebMvcConfigurer.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/xyb/service/AccountInfoService.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/xyb/service/StoreService.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/xyb/service/impl/AccountInfoImpl.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/xyb/service/impl/StoreImpl.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/xyb/utils/StringUtils.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/xyb/utils/TokenUtils.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/xyb/web/AccountInfoController.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/xyb/web/StoreController.class" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_4.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/xyb-master.iml" afterPath="$PROJECT_DIR$/.idea/xyb-master.iml" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xyb/AppApplication.java" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/AppApplication.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/ClothesCategoryEntity.java" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/ClothesCategoryEntity.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/ClothesOrderEntity.java" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/ClothesOrderEntity.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/DictionaryEntity.java" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/DictionaryEntity.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/LaundryExpert.java" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/LaundryExpert.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/MemberEntity.java" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/MemberEntity.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/SpecificationsEntity.java" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/SpecificationsEntity.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/StoreEntity.java" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/StoreEntity.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xyb/domain/repository/ClothesOrderRepository.java" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/domain/repository/ClothesOrderRepository.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xyb/exception/GlobalExceptionHandler.java" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/exception/GlobalExceptionHandler.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xyb/exception/RestInfo.java" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/exception/RestInfo.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xyb/service/ClothesOrderService.java" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/service/ClothesOrderService.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xyb/service/impl/ClothesOrderImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/service/impl/ClothesOrderImpl.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xyb/web/ClothesOrderController.java" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/web/ClothesOrderController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xyb/web/MemberController.java" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/web/MemberController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" afterPath="$PROJECT_DIR$/target/classes/application.properties" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/AppApplication.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/AppApplication.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/domain/entity/ClothesCategoryEntity.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/domain/entity/ClothesCategoryEntity.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/domain/entity/ClothesOrderEntity.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/domain/entity/ClothesOrderEntity.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/domain/entity/DictionaryEntity.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/domain/entity/DictionaryEntity.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/domain/entity/LaundryExpert.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/domain/entity/LaundryExpert.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/domain/entity/MemberEntity.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/domain/entity/MemberEntity.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/domain/entity/SpecificationsEntity.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/domain/entity/SpecificationsEntity.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/domain/entity/StoreEntity.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/domain/entity/StoreEntity.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/domain/repository/ClothesOrderRepository.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/domain/repository/ClothesOrderRepository.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/exception/GlobalExceptionHandler.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/exception/GlobalExceptionHandler.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/exception/RestInfo.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/exception/RestInfo.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/service/ClothesOrderService.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/service/ClothesOrderService.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/service/impl/ClothesOrderImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/service/impl/ClothesOrderImpl.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/web/ClothesOrderController.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/web/ClothesOrderController.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/web/MemberController.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/web/MemberController.class" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/xyb-0.0.1-SNAPSHOT.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/xyb-0.0.1-SNAPSHOT.jar.original" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -864,12 +790,12 @@
       <workItem from="1523019684313" duration="675000" />
       <workItem from="1523020734762" duration="4310000" />
       <workItem from="1523027185857" duration="23615000" />
-      <workItem from="1523156359884" duration="1174000" />
+      <workItem from="1523156359884" duration="1671000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="124283000" />
+    <option name="totallyTimeSpent" value="124780000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -902,10 +828,10 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31311476" sideWeight="0.6357027" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.49353796" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32786885" sideWeight="0.49353796" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.4555735" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42245558" sideWeight="0.79836065" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3295082" sideWeight="0.4555735" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42245558" sideWeight="0.79462105" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42245558" sideWeight="0.20163934" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42245558" sideWeight="0.20537898" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
