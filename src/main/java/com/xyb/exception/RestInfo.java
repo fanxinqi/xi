@@ -7,8 +7,9 @@ package com.xyb.exception;
 public class RestInfo<T> {
     public static final Integer OK = 0;
     public static final Integer ERROR = 100;
-    public static final Integer PARAM_ERROR = 101;
-    public static final Integer INPUT_ERROR = 101;
+    public static final Integer AUTHORITY_ERROR = 101;
+    public static final Integer PARAM_ERROR = 102;
+    public static final Integer INPUT_ERROR = 103;
 
 
     private Integer code =this.OK;

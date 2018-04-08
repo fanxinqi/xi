@@ -1,6 +1,4 @@
 package com.xyb.web;
-
-import com.oracle.tools.packager.Log;
 import com.xyb.domain.entity.MemberEntity;
 import com.xyb.service.MemberService;
 import org.springframework.beans.factory.annotation.Autowired;

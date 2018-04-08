@@ -33,8 +33,6 @@ public class LaundryExpert {
     @ApiModelProperty("birthday")
     private long birthday;
     @Column(name = "create_time")
-    @ApiModelProperty(required = true)
-    @NotNull(message = "请添加建立的时间")
     private long createTime;
     @Column(name = "address")
     private String address;
@@ -113,7 +111,7 @@ public class LaundryExpert {
     }
 
     public void setCreateTime(long createTime) {
-        this.createTime = createTime;
+        this.createTime = System.currentTimeMillis();
     }
 
     public String getAddress() {

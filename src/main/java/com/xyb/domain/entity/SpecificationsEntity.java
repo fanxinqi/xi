@@ -27,8 +27,6 @@ public class SpecificationsEntity {
     private float des;
 
     @Column(name = "create_time")
-    @ApiModelProperty(required = true)
-    @NotNull(message = "请添加建立的时间")
     private long createTime;
 
     public Long getId() {
@@ -68,7 +66,7 @@ public class SpecificationsEntity {
     }
 
     public void setCreateTime(long createTime) {
-        this.createTime = createTime;
+        this.createTime = System.currentTimeMillis();
     }
 
 

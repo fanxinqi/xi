@@ -5,6 +5,7 @@ import io.swagger.annotations.ApiModelProperty;
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.util.ArrayList;
+import java.util.Set;
 
 @Entity
 @Table(name = "store")
@@ -23,16 +24,41 @@ public class StoreEntity {
     @NotNull(message = "请输入门店地址")
     @ApiModelProperty(required = true)
     private String address;
-
-    @Column(name = "laundry_expert_list")
-    @NotNull(message = "请选择管理人员")
-    @ApiModelProperty(required = true)
-    private ArrayList<Long> laundryExpertId;
-
     @Column(name = "create_time")
-    @NotNull(message = "请选择开店时间")
-    @ApiModelProperty(required = true)
-    private ArrayList<Long> createTime;
+    private Long createTime;
+    @ManyToMany(cascade = {CascadeType.REFRESH}, fetch = FetchType.EAGER)
+    @JoinTable(name = "store_member", joinColumns = {@JoinColumn(name = "store_id")}, inverseJoinColumns = {@JoinColumn(name = "member_id")})
+    private Set<MemberEntity> storeMemberSet;
+    @ManyToMany(cascade = {CascadeType.REFRESH}, fetch = FetchType.EAGER)
+    @JoinTable(name = "store_order", joinColumns = {@JoinColumn(name = "store_id")}, inverseJoinColumns = {@JoinColumn(name = "order_id")})
+    private Set<ClothesOrderEntity> storeOrderSet;
+    @ManyToMany(cascade = {CascadeType.REFRESH}, fetch = FetchType.EAGER)
+    @JoinTable(name = "store_laundry_expert", joinColumns = {@JoinColumn(name = "store_id")}, inverseJoinColumns = {@JoinColumn(name = "laundry_expert_id")})
+    private Set<ClothesOrderEntity> storeLaundryExpertSet;
+
+    public Set<MemberEntity> getStoreMemberSet() {
+        return storeMemberSet;
+    }
+
+    public void setStoreMemberSet(Set<MemberEntity> storeMemberSet) {
+        this.storeMemberSet = storeMemberSet;
+    }
+
+    public Set<ClothesOrderEntity> getStoreOrderSet() {
+        return storeOrderSet;
+    }
+
+    public void setStoreOrderSet(Set<ClothesOrderEntity> storeOrderSet) {
+        this.storeOrderSet = storeOrderSet;
+    }
+
+    public Set<ClothesOrderEntity> getStoreLaundryExpertSet() {
+        return storeLaundryExpertSet;
+    }
+
+    public void setStoreLaundryExpertSet(Set<ClothesOrderEntity> storeLaundryExpertSet) {
+        this.storeLaundryExpertSet = storeLaundryExpertSet;
+    }
 
     public Long getId() {
         return id;
@@ -58,20 +84,13 @@ public class StoreEntity {
         this.address = address;
     }
 
-    public ArrayList<Long> getLaundryExpertId() {
-        return laundryExpertId;
-    }
 
-    public void setLaundryExpertId(ArrayList<Long> laundryExpertId) {
-        this.laundryExpertId = laundryExpertId;
-    }
-
-    public ArrayList<Long> getCreateTime() {
+    public Long getCreateTime() {
         return createTime;
     }
 
-    public void setCreateTime(ArrayList<Long> createTime) {
-        this.createTime = createTime;
+    public void setCreateTime(Long createTime) {
+        this.createTime = System.currentTimeMillis();
     }
 
 }

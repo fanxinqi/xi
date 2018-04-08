@@ -2,51 +2,81 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="68022376-e0f6-425b-ad99-3e4f2eabe2b7" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/ClothesOrderEntity.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/domain/repository/ClothesOrderRepository.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/service/ClothesOrderService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/service/impl/ClothesOrderImpl.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/web/ClothesOrderController.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/annotation/CurrentUser.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/annotation/LoginRequired.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/AccountInfoEntity.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/domain/repository/AccountInfoRepository.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/domain/repository/StoreRepository.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/exception/AuthorityException.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/interceptor/AuthenticationInterceptor.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/interceptor/CurrentUserMethodArgumentResolver.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/interceptor/WebMvcConfigurer.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/service/AccountInfoService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/service/StoreService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/service/impl/AccountInfoImpl.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/service/impl/StoreImpl.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/utils/StringUtils.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/utils/TokenUtils.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/web/AccountInfoController.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/web/StoreController.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/xyb/annotation/CurrentUser.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/xyb/annotation/LoginRequired.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/xyb/domain/entity/AccountInfoEntity.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/xyb/domain/repository/AccountInfoRepository.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/xyb/domain/repository/StoreRepository.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/xyb/interceptor/AuthenticationInterceptor.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/xyb/interceptor/CurrentUserMethodArgumentResolver.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/xyb/interceptor/WebMvcConfigurer.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/xyb/service/AccountInfoService.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/xyb/service/StoreService.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/xyb/service/impl/AccountInfoImpl.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/xyb/service/impl/StoreImpl.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/xyb/utils/StringUtils.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/xyb/utils/TokenUtils.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/xyb/web/AccountInfoController.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/xyb/web/StoreController.class" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_4.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/xyb-master.iml" afterPath="$PROJECT_DIR$/.idea/xyb-master.iml" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xyb/AppApplication.java" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/AppApplication.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/ClothesCategoryEntity.java" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/ClothesCategoryEntity.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/ClothesOrderEntity.java" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/ClothesOrderEntity.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/DictionaryEntity.java" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/DictionaryEntity.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/LaundryExpert.java" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/LaundryExpert.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/MemberEntity.java" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/MemberEntity.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/SpecificationsEntity.java" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/SpecificationsEntity.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/StoreEntity.java" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/StoreEntity.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xyb/domain/repository/ChlothesCategoryRepository.java" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/domain/repository/ClothesCategoryRepository.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xyb/domain/repository/MemberRepository.java" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/domain/repository/MemberRepository.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xyb/domain/repository/ClothesOrderRepository.java" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/domain/repository/ClothesOrderRepository.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xyb/exception/GlobalExceptionHandler.java" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/exception/GlobalExceptionHandler.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/xyb/exception/RestInfo.java" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/exception/RestInfo.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xyb/service/ChothesCategoryService.java" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/service/ChothesCategoryService.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xyb/service/MemberService.java" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/service/MemberService.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xyb/service/impl/ChothesCategoryImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/service/impl/ChothesCategoryImpl.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xyb/service/impl/MemberImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/service/impl/MemberImpl.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xyb/web/ClothesCategoryController.java" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/web/ClothesCategoryController.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xyb/service/ClothesOrderService.java" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/service/ClothesOrderService.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xyb/service/impl/ClothesOrderImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/service/impl/ClothesOrderImpl.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xyb/web/ClothesOrderController.java" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/web/ClothesOrderController.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/xyb/web/MemberController.java" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/web/MemberController.java" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.properties" afterPath="$PROJECT_DIR$/target/classes/application.properties" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/AppApplication.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/AppApplication.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/conf/SwaggerConf.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/conf/SwaggerConf.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/domain/entity/ClothesCategoryEntity.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/domain/entity/ClothesCategoryEntity.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/domain/entity/ClothesOrderEntity.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/domain/entity/ClothesOrderEntity.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/domain/entity/DictionaryEntity.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/domain/entity/DictionaryEntity.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/domain/entity/LaundryExpert.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/domain/entity/LaundryExpert.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/domain/entity/MemberEntity.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/domain/entity/MemberEntity.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/domain/entity/PaymentEntity.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/domain/entity/PaymentEntity.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/domain/entity/SpecificationsEntity.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/domain/entity/SpecificationsEntity.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/domain/entity/StoreEntity.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/domain/entity/StoreEntity.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/domain/entity/UserEntity.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/domain/entity/UserEntity.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/domain/repository/ChlothesCategoryRepository.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/domain/repository/MemberRepository.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/domain/repository/MemberRepository.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/domain/repository/UserRepository.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/domain/repository/UserRepository.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/domain/repository/ClothesOrderRepository.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/domain/repository/ClothesOrderRepository.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/exception/GlobalExceptionHandler.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/exception/GlobalExceptionHandler.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/exception/MyException.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/exception/MyException.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/exception/RestInfo.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/exception/RestInfo.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/service/ChothesCategoryService.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/service/ChothesCategoryService.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/service/MemberService.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/service/MemberService.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/service/UserService.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/service/UserService.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/service/impl/ChothesCategoryImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/service/impl/ChothesCategoryImpl.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/service/impl/MemberImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/service/impl/MemberImpl.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/service/impl/UserServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/service/impl/UserServiceImpl.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/web/ClothesCategoryController.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/web/ClothesCategoryController.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/web/DemoController.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/web/DemoController.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/service/ClothesOrderService.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/service/ClothesOrderService.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/service/impl/ClothesOrderImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/service/impl/ClothesOrderImpl.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/web/ClothesOrderController.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/web/ClothesOrderController.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/web/MemberController.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/web/MemberController.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/web/UserController.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/web/UserController.class" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/xyb-0.0.1-SNAPSHOT.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/xyb-0.0.1-SNAPSHOT.jar.original" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -63,54 +93,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ClothesOrderController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/web/ClothesOrderController.java">
+      <file leaf-file-name="GlobalExceptionHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/exception/GlobalExceptionHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
-              <caret line="46" column="26" lean-forward="false" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="42" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DAOController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/web/DAOController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="26" column="15" lean-forward="false" selection-start-line="26" selection-start-column="15" selection-end-line="26" selection-end-column="36" />
+            <state relative-caret-position="390">
+              <caret line="34" column="42" lean-forward="false" selection-start-line="34" selection-start-column="42" selection-end-line="34" selection-end-column="42" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserRepository.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/domain/repository/UserRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="18" column="23" lean-forward="false" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/service/UserService.java">
+      <file leaf-file-name="RestInfo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/exception/RestInfo.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
-              <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ClothesCategoryController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/web/ClothesCategoryController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-              <folding />
+              <caret line="9" column="47" lean-forward="false" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="47" />
+              <folding>
+                <element signature="e#509#510#0" expanded="true" />
+                <element signature="e#541#542#0" expanded="true" />
+                <element signature="e#913#914#0" expanded="true" />
+                <element signature="e#951#952#0" expanded="true" />
+                <element signature="e#1045#1046#0" expanded="true" />
+                <element signature="e#1075#1076#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -118,48 +123,89 @@
       <file leaf-file-name="MemberController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/web/MemberController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="33" column="24" lean-forward="false" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
+            <state relative-caret-position="150">
+              <caret line="20" column="17" lean-forward="false" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DemoController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/web/DemoController.java">
+      <file leaf-file-name="MyException.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/exception/MyException.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="57" column="0" lean-forward="true" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+            <state relative-caret-position="120">
+              <caret line="8" column="1" lean-forward="false" selection-start-line="8" selection-start-column="1" selection-end-line="10" selection-end-column="5" />
+              <folding>
+                <element signature="e#162#163#0" expanded="true" />
+                <element signature="e#192#193#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AuthorityException.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/exception/AuthorityException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="56" lean-forward="false" selection-start-line="2" selection-start-column="56" selection-end-line="2" selection-end-column="56" />
+              <folding>
+                <element signature="e#132#133#0" expanded="true" />
+                <element signature="e#162#163#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Exception.java" pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/src.zip!/java/lang/Exception.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="585">
+              <caret line="64" column="11" lean-forward="false" selection-start-line="64" selection-start-column="11" selection-end-line="64" selection-end-column="11" />
+              <folding>
+                <element signature="e#1663#1664#0" expanded="true" />
+                <element signature="e#1693#1694#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StoreController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/web/StoreController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="453">
+              <caret line="117" column="16" lean-forward="true" selection-start-line="117" selection-start-column="16" selection-end-line="117" selection-end-column="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/web/UserController.java">
+      <file leaf-file-name="MemberService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/service/MemberService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-206">
-              <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+            <state relative-caret-position="150">
+              <caret line="14" column="3" lean-forward="false" selection-start-line="14" selection-start-column="3" selection-end-line="23" selection-end-column="51" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ClothesOrderEntity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/ClothesOrderEntity.java">
+      <file leaf-file-name="StoreService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/service/StoreService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="30" column="32" lean-forward="false" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ClothesOrderService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/service/ClothesOrderService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="15" column="9" lean-forward="false" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+            <state relative-caret-position="105">
+              <caret line="11" column="16" lean-forward="false" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -170,6 +216,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Kotlin Interface" />
         <option value="Interface" />
         <option value="Class" />
       </list>
@@ -180,6 +227,13 @@
       <find>users</find>
       <find>chothesCategoryService</find>
       <find>MemberEntity</find>
+      <find>code</find>
+      <find>swagger2</find>
+      <find>springfox-swagger-ui</find>
+      <find>xyb@smtp.com</find>
+      <find>springframework</find>
+      <find>configuration-processor</find>
+      <find>createTime</find>
     </findStrings>
     <replaceStrings>
       <replace>clotheCategory</replace>
@@ -196,48 +250,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/MemberType.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/BasicInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/domain/base/BasicInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/MemberCategory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/domain/base/BasicGoodsInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/ClothesCategory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/domain/base/BaseGoodsInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/PaymentEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/StatusEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/domain/base/BasePersonalInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/DictoryEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/UserEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/WashingGoodsEntity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/MaterialEntity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xyb/web/UserController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/SpecificationsEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/LaundryExpert.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xyb/domain/repository/UserRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xyb/service/impl/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/MemberCategoryEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/MemberEntity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xyb/service/impl/ChothesCategoryImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xyb/web/ClothesCategoryController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/service/MemberService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xyb/service/impl/MemberImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xyb/domain/repository/MemberRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/web/MemberController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/ClothesCategoryEntity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xyb/domain/repository/ChlothesCategoryRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xyb/domain/repository/ClothesCategoryRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/StoreEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/domain/repository/ClothesOrderRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xyb/service/ClothesOrderService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/service/impl/ClothesOrderImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xyb/service/ChothesCategoryService.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/idea.vmoptions" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyb/service/impl/ClothesOrderImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyb/domain/repository/ClothesOrderRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyb/utils/TokenUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyb/interface/LoginRequired.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyb/common_interface/LoginRequired.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyb/common_interface/LoginRequired.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyb/domain/repository/AccountInfoRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyb/service/MemberService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyb/web/MemberController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyb/service/AccountInfoService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyb/service/impl/AccountInfoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyb/AppApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/AccountInfoEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyb/web/ClothesOrderController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyb/interceptor/WebMvcConfigurer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyb/utils/StringUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyb/annotation/CurrentUser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyb/interceptor/CurrentUserMethodArgumentResolver.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyb/interceptor/AuthenticationInterceptor.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyb/web/AccountInfoController.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyb/conf/SwaggerConf.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyb/domain/repository/StoreRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyb/service/StoreService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyb/service/impl/StoreImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/StoreEntity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/DictionaryEntity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/ClothesOrderEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/ClothesCategoryEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/LaundryExpert.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/MemberEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/SpecificationsEntity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xyb/exception/RestInfo.java" />
-        <option value="$APPLICATION_CONFIG_DIR$/idea.vmoptions" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/web/ClothesOrderController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyb/exception/GlobalExceptionHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyb/exception/AuthorityException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyb/web/StoreController.java" />
       </list>
     </option>
   </component>
@@ -247,9 +310,35 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
     <option name="width" value="1280" />
-    <option name="height" value="800" />
+    <option name="height" value="728" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>CodeSpring CoreSpring</id>
+          </State>
+          <State>
+            <id>Spring</id>
+          </State>
+          <State>
+            <id>Spring CoreSpring</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>SpringJavaInjectionPointsAutowiringInspection</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -266,6 +355,78 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="xyb_server" type="58d84e3e:PackageViewProjectNode" />
+              <item name="xyb-master" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="xyb_server" type="58d84e3e:PackageViewProjectNode" />
+              <item name="xyb-master" type="616d4139:PackageViewModuleNode" />
+              <item name="com.xyb" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="xyb_server" type="58d84e3e:PackageViewProjectNode" />
+              <item name="xyb-master" type="616d4139:PackageViewModuleNode" />
+              <item name="com.xyb" type="1f31426a:PackageElementNode" />
+              <item name="annotation" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="xyb_server" type="58d84e3e:PackageViewProjectNode" />
+              <item name="xyb-master" type="616d4139:PackageViewModuleNode" />
+              <item name="com.xyb" type="1f31426a:PackageElementNode" />
+              <item name="domain" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="xyb_server" type="58d84e3e:PackageViewProjectNode" />
+              <item name="xyb-master" type="616d4139:PackageViewModuleNode" />
+              <item name="com.xyb" type="1f31426a:PackageElementNode" />
+              <item name="exception" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="xyb_server" type="58d84e3e:PackageViewProjectNode" />
+              <item name="xyb-master" type="616d4139:PackageViewModuleNode" />
+              <item name="com.xyb" type="1f31426a:PackageElementNode" />
+              <item name="interceptor" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="xyb_server" type="58d84e3e:PackageViewProjectNode" />
+              <item name="xyb-master" type="616d4139:PackageViewModuleNode" />
+              <item name="com.xyb" type="1f31426a:PackageElementNode" />
+              <item name="service" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="xyb_server" type="58d84e3e:PackageViewProjectNode" />
+              <item name="xyb-master" type="616d4139:PackageViewModuleNode" />
+              <item name="com.xyb" type="1f31426a:PackageElementNode" />
+              <item name="utils" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="xyb_server" type="58d84e3e:PackageViewProjectNode" />
+              <item name="xyb-master" type="616d4139:PackageViewModuleNode" />
+              <item name="com.xyb" type="1f31426a:PackageElementNode" />
+              <item name="web" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="xyb_server" type="58d84e3e:PackageViewProjectNode" />
+              <item name="xyb-master" type="616d4139:PackageViewModuleNode" />
+              <item name="com.xyb" type="1f31426a:PackageElementNode" />
+              <item name="AppApplication" type="1a9f42e2:ClassTreeNode" />
+            </path>
+            <path>
+              <item name="xyb_server" type="58d84e3e:PackageViewProjectNode" />
+              <item name="xyb-master" type="616d4139:PackageViewModuleNode" />
+              <item name="Libraries" type="5c3f07af:PackageViewLibrariesNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -275,112 +436,33 @@
             </path>
             <path>
               <item name="xyb_server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xyb_server" type="462c0819:PsiDirectoryNode" />
-              <item name=".mvn" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xyb_server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xyb_server" type="462c0819:PsiDirectoryNode" />
-              <item name=".mvn" type="462c0819:PsiDirectoryNode" />
-              <item name="wrapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xyb_server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xyb_server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xyb_server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xyb_server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xyb_server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xyb_server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xyb_server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xyb_server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="xyb" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xyb_server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xyb_server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="xyb" type="462c0819:PsiDirectoryNode" />
-              <item name="conf" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xyb_server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xyb_server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="xyb" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xyb_server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xyb_server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="xyb" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xyb_server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xyb_server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="xyb" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xyb_server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xyb_server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="xyb" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xyb_server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xyb_server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="xyb" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xyb_server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xyb_server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xyb_server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xyb_server" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
             <path>
               <item name="xyb_server" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: io.swagger:swagger-annotations:1.5.14" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="xyb_server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: io.swagger:swagger-annotations:1.5.14" type="70bed36:NamedLibraryElementNode" />
+              <item name="swagger-annotations-1.5.14.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xyb_server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: io.swagger:swagger-annotations:1.5.14" type="70bed36:NamedLibraryElementNode" />
+              <item name="swagger-annotations-1.5.14.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="annotations" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xyb_server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: io.swagger:swagger-annotations:1.5.14" type="70bed36:NamedLibraryElementNode" />
+              <item name="swagger-annotations-1.5.14.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="annotations" type="462c0819:PsiDirectoryNode" />
+              <item name="ApiOperation" type="1a9f42e2:ClassTreeNode" />
             </path>
             <path>
               <item name="xyb_server" type="b2602c69:ProjectViewProjectNode" />
@@ -426,70 +508,11 @@
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="bind" type="462c0819:PsiDirectoryNode" />
               <item name="annotation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xyb_server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.springframework:spring-web:5.0.4.RELEASE" type="70bed36:NamedLibraryElementNode" />
-              <item name="spring-web-5.0.4.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="springframework" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="bind" type="462c0819:PsiDirectoryNode" />
-              <item name="annotation" type="462c0819:PsiDirectoryNode" />
-              <item name="PatchMapping" type="1a9f42e2:ClassTreeNode" />
-            </path>
-            <path>
-              <item name="xyb_server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.springframework:spring-web:5.0.4.RELEASE" type="70bed36:NamedLibraryElementNode" />
-              <item name="spring-web-5.0.4.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="springframework" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="bind" type="462c0819:PsiDirectoryNode" />
-              <item name="annotation" type="462c0819:PsiDirectoryNode" />
-              <item name="PathVariable" type="1a9f42e2:ClassTreeNode" />
-            </path>
-            <path>
-              <item name="xyb_server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.springframework:spring-web:5.0.4.RELEASE" type="70bed36:NamedLibraryElementNode" />
-              <item name="spring-web-5.0.4.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="springframework" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="bind" type="462c0819:PsiDirectoryNode" />
-              <item name="annotation" type="462c0819:PsiDirectoryNode" />
-              <item name="PostMapping" type="1a9f42e2:ClassTreeNode" />
-            </path>
-            <path>
-              <item name="xyb_server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.springframework:spring-web:5.0.4.RELEASE" type="70bed36:NamedLibraryElementNode" />
-              <item name="spring-web-5.0.4.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="springframework" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="bind" type="462c0819:PsiDirectoryNode" />
-              <item name="annotation" type="462c0819:PsiDirectoryNode" />
-              <item name="RequestMapping" type="1a9f42e2:ClassTreeNode" />
-            </path>
-            <path>
-              <item name="xyb_server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.springframework:spring-web:5.0.4.RELEASE" type="70bed36:NamedLibraryElementNode" />
-              <item name="spring-web-5.0.4.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="springframework" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="bind" type="462c0819:PsiDirectoryNode" />
-              <item name="annotation" type="462c0819:PsiDirectoryNode" />
-              <item name="RequestParam" type="1a9f42e2:ClassTreeNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -502,12 +525,13 @@
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="RequestMappingsPanelOrder2" value="2" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="spring.boot" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="SearchEverywhereHistoryKey" value="swagger&#9;FILE&#9;file:///Users/rrd/Documents/xyb_server/src/main/java/com/xyb/conf/SwaggerConf.java&#10;swagger-ui&#9;FILE&#9;jar:///Users/rrd/.m2/repository/io/springfox/springfox-swagger-ui/2.8.0/springfox-swagger-ui-2.8.0.jar!/META-INF/resources/webjars/springfox-swagger-ui/swagger-ui-bundle.js&#10;AccountInfoService&#9;FILE&#9;file:///Users/rrd/Documents/xyb_server/src/main/java/com/xyb/service/AccountInfoService.java" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -515,6 +539,11 @@
       <recent name="com.xyb.web" />
       <recent name="com.xyb.service" />
       <recent name="com.xyb.domain.repository" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/xyb/interceptor" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/xyb/annotation" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -831,12 +860,16 @@
       <workItem from="1522744402046" duration="26435000" />
       <workItem from="1522931739933" duration="788000" />
       <workItem from="1522932728192" duration="3235000" />
-      <workItem from="1522987507850" duration="1594000" />
+      <workItem from="1522987507850" duration="6089000" />
+      <workItem from="1523019684313" duration="675000" />
+      <workItem from="1523020734762" duration="4310000" />
+      <workItem from="1523027185857" duration="23615000" />
+      <workItem from="1523156359884" duration="1174000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90014000" />
+    <option name="totallyTimeSpent" value="124283000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -848,11 +881,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1280" height="728" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.265625" sideWeight="0.26817447" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.71147543" sideWeight="0.36429724" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.49676898" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -861,29 +893,29 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34801137" sideWeight="0.4555735" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328125" sideWeight="0.49353796" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32786885" sideWeight="0.4911147" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33934426" sideWeight="0.74717283" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32786885" sideWeight="0.4806139" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32867134" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32786885" sideWeight="0.49353796" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.265625" sideWeight="0.73182553" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.49676898" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32867134" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32386363" sideWeight="0.48465267" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32875606" sideWeight="0.8549323" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31311476" sideWeight="0.6357027" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.49353796" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32786885" sideWeight="0.49353796" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.4555735" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42245558" sideWeight="0.79836065" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32875606" sideWeight="0.14506769" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42245558" sideWeight="0.20163934" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32786885" sideWeight="0.45880452" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11954766" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.49676898" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.49353796" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -900,17 +932,119 @@
           <line>24</line>
           <properties />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/xyb/web/ClothesOrderController.java</url>
-          <line>23</line>
+          <line>29</line>
           <properties />
-          <option name="timeStamp" value="29" />
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/xyb/domain/repository/ClothesOrderRepository.java</url>
+          <line>14</line>
+          <properties />
+          <option name="timeStamp" value="32" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/xyb/web/ClothesOrderController.java</url>
-          <line>32</line>
+          <line>20</line>
           <properties />
-          <option name="timeStamp" value="30" />
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/xyb/web/ClothesOrderController.java</url>
+          <line>45</line>
+          <properties />
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/xyb/web/AccountInfoController.java</url>
+          <line>23</line>
+          <properties />
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/xyb/interceptor/AuthenticationInterceptor.java</url>
+          <line>57</line>
+          <properties />
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/xyb/interceptor/AuthenticationInterceptor.java</url>
+          <line>58</line>
+          <properties />
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/xyb/utils/TokenUtils.java</url>
+          <line>80</line>
+          <properties />
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/xyb/utils/TokenUtils.java</url>
+          <line>81</line>
+          <properties />
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/xyb/utils/TokenUtils.java</url>
+          <line>82</line>
+          <properties />
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/xyb/interceptor/AuthenticationInterceptor.java</url>
+          <line>52</line>
+          <properties />
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/xyb/interceptor/AuthenticationInterceptor.java</url>
+          <line>53</line>
+          <properties />
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/xyb/web/AccountInfoController.java</url>
+          <line>24</line>
+          <properties />
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/xyb/web/AccountInfoController.java</url>
+          <line>21</line>
+          <properties />
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/xyb/web/StoreController.java</url>
+          <line>34</line>
+          <properties />
+          <option name="timeStamp" value="59" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/xyb/web/StoreController.java</url>
+          <line>75</line>
+          <properties />
+          <option name="timeStamp" value="61" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/xyb/web/StoreController.java</url>
+          <line>77</line>
+          <properties />
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/xyb/exception/RestInfo.java</url>
+          <line>23</line>
+          <properties />
+          <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/xyb/exception/GlobalExceptionHandler.java</url>
+          <line>22</line>
+          <properties />
+          <option name="timeStamp" value="66" />
         </line-breakpoint>
         <line-breakpoint type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/com/xyb/service/impl/MemberImpl.java</url>
@@ -918,26 +1052,228 @@
           <properties class="com.xyb.service.impl.MemberImpl" method="findAll" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <line-breakpoint type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/xyb/domain/repository/ClothesOrderRepository.java</url>
+          <line>15</line>
+          <properties class="com.xyb.domain.repository.ClothesOrderRepository" />
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="31" />
+      <option name="time" value="67" />
     </breakpoint-manager>
-    <watches-manager />
+    <watches-manager>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression="PathSelectors" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>PathSelectors</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/SpecificationsEntity.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/utils/TokenUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="25" column="25" lean-forward="true" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
+        <state relative-caret-position="-28">
+          <caret line="45" column="25" lean-forward="false" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/UserEntity.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/annotation/LoginRequired.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="9" column="31" lean-forward="false" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/annotation/CurrentUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="12" column="18" lean-forward="false" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/swagger/swagger-annotations/1.5.14/swagger-annotations-1.5.14.jar!/io/swagger/annotations/ApiOperation.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="14" column="18" lean-forward="false" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/springfox/springfox-core/2.8.0/springfox-core-2.8.0.jar!/springfox/documentation/service/Contact.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="12" column="11" lean-forward="false" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/web/DemoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="32" column="9" lean-forward="false" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/springfox/springfox-swagger-ui/2.8.0/springfox-swagger-ui-2.8.0.jar!/META-INF/resources/webjars/springfox-swagger-ui/swagger-ui-bundle.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/springfox/springfox-core/2.8.0/springfox-core-2.8.0.jar!/springfox/documentation/builders/ApiInfoBuilder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="43" column="20" lean-forward="false" selection-start-line="43" selection-start-column="20" selection-end-line="43" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/springfox/springfox-spring-web/2.8.0/springfox-spring-web-2.8.0.jar!/springfox/documentation/spring/web/plugins/ApiSelectorBuilder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="16" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="78" column="21" lean-forward="false" selection-start-line="78" selection-start-column="21" selection-end-line="78" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/conf/SwaggerConf.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/service/impl/AccountInfoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/service/impl/MemberImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <caret line="19" column="2" lean-forward="false" selection-start-line="19" selection-start-column="2" selection-end-line="20" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/domain/repository/MemberRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="15" column="17" lean-forward="false" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/domain/repository/ClothesCategoryRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/domain/repository/ClothesOrderRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="11" column="40" lean-forward="false" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="87" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-jpa/2.0.5.RELEASE/spring-data-jpa-2.0.5.RELEASE.jar!/org/springframework/data/jpa/repository/JpaRepository.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="16" column="12" lean-forward="false" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/domain/repository/StoreRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="67" lean-forward="false" selection-start-line="9" selection-start-column="67" selection-end-line="9" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/AccountInfoEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-611">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/ClothesCategoryEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="31" column="27" lean-forward="false" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/ClothesOrderEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="63" column="29" lean-forward="false" selection-start-line="63" selection-start-column="19" selection-end-line="63" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/DictionaryEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="70" column="52" lean-forward="false" selection-start-line="70" selection-start-column="52" selection-end-line="70" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/MaterialEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/LaundryExpert.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="113" column="52" lean-forward="false" selection-start-line="113" selection-start-column="52" selection-end-line="113" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/MemberCategoryEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="28" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/MemberEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="130" column="52" lean-forward="false" selection-start-line="130" selection-start-column="52" selection-end-line="130" selection-end-column="52" />
         </state>
       </provider>
     </entry>
@@ -948,145 +1284,111 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-jpa/2.0.5.RELEASE/spring-data-jpa-2.0.5.RELEASE.jar!/org/springframework/data/jpa/repository/JpaRepository.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/SpecificationsEntity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="15" column="17" lean-forward="false" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+        <state relative-caret-position="260">
+          <caret line="68" column="52" lean-forward="false" selection-start-line="68" selection-start-column="52" selection-end-line="68" selection-end-column="52" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/service/ChothesCategoryService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/UserEntity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="14" column="8" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
-          <folding />
+        <state relative-caret-position="-25">
+          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/service/MemberService.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.0.4.RELEASE/spring-webmvc-5.0.4.RELEASE.jar!/org/springframework/web/servlet/HandlerExecutionChain.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="23" column="12" lean-forward="false" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/service/impl/ChothesCategoryImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="18" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/service/impl/ClothesOrderImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="21" column="30" lean-forward="false" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
-          <folding>
-            <element signature="e#755#756#0" expanded="true" />
-            <element signature="e#810#811#0" expanded="true" />
-            <element signature="e#889#890#0" expanded="true" />
-            <element signature="e#947#948#0" expanded="true" />
-            <element signature="e#1014#1015#0" expanded="true" />
-            <element signature="e#1070#1071#0" expanded="true" />
-            <element signature="e#1252#1253#0" expanded="true" />
-            <element signature="e#1310#1311#0" expanded="true" />
-            <element signature="e#1393#1394#0" expanded="true" />
-            <element signature="e#1457#1458#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="112">
+          <caret line="86" column="0" lean-forward="false" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/StoreEntity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="16" column="20" lean-forward="false" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+        <state relative-caret-position="105">
+          <caret line="62" column="16" lean-forward="false" selection-start-line="62" selection-start-column="16" selection-end-line="62" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/MemberEntity.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/src.zip!/java/util/Optional.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="975">
-          <caret line="72" column="5" lean-forward="false" selection-start-line="72" selection-start-column="5" selection-end-line="72" selection-end-column="5" />
+        <state relative-caret-position="52">
+          <caret line="144" column="19" lean-forward="false" selection-start-line="144" selection-start-column="19" selection-end-line="144" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/MemberCategoryEntity.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/2.0.5.RELEASE/spring-data-commons-2.0.5.RELEASE.jar!/org/springframework/data/repository/CrudRepository.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        <state relative-caret-position="175">
+          <caret line="25" column="9" lean-forward="false" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/MaterialEntity.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/interceptor/AuthenticationInterceptor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="2" selection-end-line="7" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/LaundryExpert.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="15" column="20" lean-forward="false" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        <state relative-caret-position="121">
+          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/conf/SwaggerConf.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/service/impl/StoreImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="37">
-          <caret line="35" column="20" lean-forward="false" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/domain/repository/MemberRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="12" lean-forward="false" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/service/impl/MemberImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="461">
-          <caret line="49" column="34" lean-forward="true" selection-start-line="49" selection-start-column="34" selection-end-line="49" selection-end-column="34" />
+        <state relative-caret-position="290">
+          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#746#747#0" expanded="false" />
-            <element signature="e#798#799#0" expanded="false" />
-            <element signature="e#859#860#0" expanded="false" />
-            <element signature="e#906#907#0" expanded="false" />
-            <element signature="e#959#960#0" expanded="false" />
-            <element signature="e#1006#1007#0" expanded="false" />
-            <element signature="e#1075#1076#0" expanded="false" />
-            <element signature="e#1127#1128#0" expanded="false" />
-            <element signature="e#1202#1203#0" expanded="false" />
-            <element signature="e#1258#1259#0" expanded="false" />
+            <element signature="e#952#953#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/exception/RestInfo.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.4.RELEASE/spring-web-5.0.4.RELEASE.jar!/org/springframework/web/bind/annotation/ControllerAdvice.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="14" column="26" lean-forward="false" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+        <state relative-caret-position="150">
+          <caret line="20" column="18" lean-forward="false" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/AppApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding>
+            <element signature="e#494#495#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/web/AccountInfoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="15" column="35" lean-forward="false" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/web/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/src.zip!/java/lang/RuntimeException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="42" column="13" lean-forward="false" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/exception/MyException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+        <state relative-caret-position="120">
+          <caret line="8" column="1" lean-forward="false" selection-start-line="8" selection-start-column="1" selection-end-line="10" selection-end-column="5" />
           <folding>
             <element signature="e#162#163#0" expanded="true" />
             <element signature="e#192#193#0" expanded="true" />
@@ -1094,567 +1396,90 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/src.zip!/java/lang/Exception.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="64" column="11" lean-forward="false" selection-start-line="64" selection-start-column="11" selection-end-line="64" selection-end-column="11" />
+          <folding>
+            <element signature="e#1663#1664#0" expanded="true" />
+            <element signature="e#1693#1694#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/exception/RestInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="47" lean-forward="false" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="47" />
+          <folding>
+            <element signature="e#509#510#0" expanded="true" />
+            <element signature="e#541#542#0" expanded="true" />
+            <element signature="e#913#914#0" expanded="true" />
+            <element signature="e#951#952#0" expanded="true" />
+            <element signature="e#1045#1046#0" expanded="true" />
+            <element signature="e#1075#1076#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/exception/GlobalExceptionHandler.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="34" column="42" lean-forward="false" selection-start-line="34" selection-start-column="42" selection-end-line="34" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/exception/AuthorityException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="56" lean-forward="false" selection-start-line="2" selection-start-column="56" selection-end-line="2" selection-end-column="56" />
+          <folding>
+            <element signature="e#132#133#0" expanded="true" />
+            <element signature="e#162#163#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/service/MemberService.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="14" column="41" lean-forward="false" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/AppApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <element signature="e#433#434#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.0.0.RELEASE/spring-boot-2.0.0.RELEASE.jar!/org/springframework/boot/SpringApplication.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="754" column="0" lean-forward="false" selection-start-line="754" selection-start-column="0" selection-end-line="754" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/domain/repository/ClothesCategoryRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="14" column="17" lean-forward="false" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.0.4.RELEASE/spring-beans-5.0.4.RELEASE.jar!/org/springframework/beans/BeanUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="89" column="0" lean-forward="false" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.0.4.RELEASE/spring-beans-5.0.4.RELEASE.jar!/org/springframework/beans/factory/support/SimpleInstantiationStrategy.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.0.4.RELEASE/spring-beans-5.0.4.RELEASE.jar!/org/springframework/beans/TypeConverterSupport.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.0.4.RELEASE/spring-beans-5.0.4.RELEASE.jar!/org/springframework/beans/AbstractPropertyAccessor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.0.4.RELEASE/spring-core-5.0.4.RELEASE.jar!/org/springframework/util/ObjectUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="87" column="0" lean-forward="false" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.0.4.RELEASE/spring-beans-5.0.4.RELEASE.jar!/org/springframework/beans/TypeConverterDelegate.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.0.4.RELEASE/spring-beans-5.0.4.RELEASE.jar!/org/springframework/beans/BeanWrapperImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.0.4.RELEASE/spring-beans-5.0.4.RELEASE.jar!/org/springframework/beans/PropertyEditorRegistrySupport.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="102" column="0" lean-forward="false" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.0.4.RELEASE/spring-core-5.0.4.RELEASE.jar!/org/springframework/core/io/ResourceEditor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.0.4.RELEASE/spring-beans-5.0.4.RELEASE.jar!/org/springframework/beans/support/ResourceEditorRegistrar.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.0.4.RELEASE/spring-beans-5.0.4.RELEASE.jar!/org/springframework/beans/factory/support/AbstractBeanFactory.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10500">
-          <caret line="803" column="0" lean-forward="false" selection-start-line="803" selection-start-column="0" selection-end-line="803" selection-end-column="0" />
-          <folding>
-            <marker date="1521817537311" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1521817537311" expanded="false" signature="165:3255" ph="..." />
-            <marker date="1521817537311" expanded="true" signature="4806:4813" ph="{}" />
-            <marker date="1521817537311" expanded="false" signature="4886:4897" ph=" { " />
-            <marker date="1521817537311" expanded="false" signature="4940:4946" ph=" }" />
-            <marker date="1521817537311" expanded="true" signature="5009:5089" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="5184:5265" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="5344:5414" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="5535:5606" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="5754:11745" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="8503:8812" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="9855:10286" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="11792:12250" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="12333:13810" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="13893:15221" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="14796:14943" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="15332:19670" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="19785:19872" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="19966:21732" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="21778:22956" ph="{...}" />
-            <marker date="1521817537311" expanded="false" signature="23017:23028" ph=" { " />
-            <marker date="1521817537311" expanded="false" signature="23058:23064" ph=" }" />
-            <marker date="1521817537311" expanded="true" signature="23116:23355" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="23435:23736" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="23812:23930" ph="{...}" />
-            <marker date="1521817537311" expanded="false" signature="23989:24000" ph=" { " />
-            <marker date="1521817537311" expanded="false" signature="24028:24034" ph=" }" />
-            <marker date="1521817537311" expanded="false" signature="24109:24120" ph=" { " />
-            <marker date="1521817537311" expanded="false" signature="24159:24165" ph=" }" />
-            <marker date="1521817537311" expanded="false" signature="24224:24235" ph=" { " />
-            <marker date="1521817537311" expanded="false" signature="24263:24269" ph=" }" />
-            <marker date="1521817537311" expanded="false" signature="24334:24345" ph=" { " />
-            <marker date="1521817537311" expanded="false" signature="24388:24394" ph=" }" />
-            <marker date="1521817537311" expanded="false" signature="24436:24447" ph=" { " />
-            <marker date="1521817537311" expanded="false" signature="24477:24483" ph=" }" />
-            <marker date="1521817537311" expanded="true" signature="24570:24625" ph="{...}" />
-            <marker date="1521817537311" expanded="false" signature="24702:24713" ph=" { " />
-            <marker date="1521817537311" expanded="false" signature="24748:24754" ph=" }" />
-            <marker date="1521817537311" expanded="true" signature="24840:24899" ph="{...}" />
-            <marker date="1521817537311" expanded="false" signature="24966:24977" ph=" { " />
-            <marker date="1521817537311" expanded="false" signature="25007:25013" ph=" }" />
-            <marker date="1521817537311" expanded="true" signature="25093:25233" ph="{...}" />
-            <marker date="1521817537311" expanded="false" signature="25304:25315" ph=" { " />
-            <marker date="1521817537311" expanded="false" signature="25352:25358" ph=" }" />
-            <marker date="1521817537311" expanded="true" signature="25473:25705" ph="{...}" />
-            <marker date="1521817537311" expanded="false" signature="25779:25790" ph=" { " />
-            <marker date="1521817537311" expanded="false" signature="25827:25833" ph=" }" />
-            <marker date="1521817537311" expanded="false" signature="25911:25922" ph=" { " />
-            <marker date="1521817537311" expanded="false" signature="25948:25954" ph=" }" />
-            <marker date="1521817537311" expanded="false" signature="26017:26028" ph=" { " />
-            <marker date="1521817537311" expanded="false" signature="26063:26069" ph=" }" />
-            <marker date="1521817537311" expanded="false" signature="26137:26148" ph=" { " />
-            <marker date="1521817537311" expanded="false" signature="26174:26180" ph=" }" />
-            <marker date="1521817537311" expanded="true" signature="26226:26647" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="26725:26867" ph="{...}" />
-            <marker date="1521817537311" expanded="false" signature="26914:26925" ph=" { " />
-            <marker date="1521817537311" expanded="false" signature="26971:26977" ph=" }" />
-            <marker date="1521817537311" expanded="true" signature="27056:27564" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="27640:28151" ph="{...}" />
-            <marker date="1521817537311" expanded="false" signature="28195:28206" ph=" { " />
-            <marker date="1521817537311" expanded="false" signature="28244:28250" ph=" }" />
-            <marker date="1521817537311" expanded="false" signature="28310:28321" ph=" { " />
-            <marker date="1521817537311" expanded="false" signature="28352:28358" ph=" }" />
-            <marker date="1521817537311" expanded="false" signature="28423:28434" ph=" { " />
-            <marker date="1521817537311" expanded="false" signature="28486:28492" ph=" }" />
-            <marker date="1521817537311" expanded="false" signature="28555:28566" ph=" { " />
-            <marker date="1521817537311" expanded="false" signature="28616:28622" ph=" }" />
-            <marker date="1521817537311" expanded="true" signature="28685:29537" ph="{...}" />
-            <marker date="1521817537311" expanded="false" signature="29584:29595" ph=" { " />
-            <marker date="1521817537311" expanded="false" signature="29650:29656" ph=" }" />
-            <marker date="1521817537311" expanded="true" signature="29726:29855" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="29942:30006" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="30066:30215" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="30293:32090" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="32177:32518" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="32603:33131" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="33190:33308" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="33380:33574" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="33636:34169" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="34230:34664" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="34732:34834" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="34921:35058" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="35111:35866" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="35922:36008" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="36061:36237" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="36290:36399" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="36475:38339" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="38187:38320" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="38442:38653" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="38784:38872" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="39042:41471" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="41620:41726" ph="{...}" />
-            <marker date="1521817537311" expanded="false" signature="41789:41800" ph=" { " />
-            <marker date="1521817537311" expanded="false" signature="41844:41850" ph=" }" />
-            <marker date="1521817537311" expanded="true" signature="41889:42164" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="42320:43327" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="42542:42632" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="43460:45120" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="45251:45740" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="45859:46124" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="46203:46375" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="46477:47611" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="47667:48058" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="48128:48293" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="48367:48429" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="48511:48695" ph="{...}" />
-            <marker date="1521817537311" expanded="false" signature="48743:48754" ph=" { " />
-            <marker date="1521817537311" expanded="false" signature="48792:48798" ph=" }" />
-            <marker date="1521817537311" expanded="true" signature="48931:50072" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="50126:50243" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="50324:50569" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="50678:51477" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.0.4.RELEASE/spring-beans-5.0.4.RELEASE.jar!/org/springframework/beans/factory/support/AbstractAutowireCapableBeanFactory.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3870">
-          <caret line="336" column="0" lean-forward="false" selection-start-line="336" selection-start-column="0" selection-end-line="336" selection-end-column="0" />
-          <folding>
-            <marker date="1521817537311" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1521817537311" expanded="false" signature="165:3572" ph="..." />
-            <marker date="1521817537311" expanded="true" signature="4328:5125" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="5214:5291" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="5379:5446" ph="{...}" />
-            <marker date="1521817537311" expanded="false" signature="5510:5521" ph=" { " />
-            <marker date="1521817537311" expanded="false" signature="5555:5561" ph=" }" />
-            <marker date="1521817537311" expanded="true" signature="5665:5736" ph="{...}" />
-            <marker date="1521817537311" expanded="false" signature="5818:5829" ph=" { " />
-            <marker date="1521817537311" expanded="false" signature="5865:5871" ph=" }" />
-            <marker date="1521817537311" expanded="true" signature="5949:6020" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="6116:6205" ph="{...}" />
-            <marker date="1521817537311" expanded="false" signature="6258:6269" ph=" { " />
-            <marker date="1521817537311" expanded="false" signature="6307:6313" ph=" }" />
-            <marker date="1521817537311" expanded="false" signature="6370:6381" ph=" { " />
-            <marker date="1521817537311" expanded="false" signature="6423:6429" ph=" }" />
-            <marker date="1521817537311" expanded="true" signature="6507:7140" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="7212:7481" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="7533:7923" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="8017:8853" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="8997:9107" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="9223:9435" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="9549:10418" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="10016:10132" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="10545:11063" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="11165:11452" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="11525:11618" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="11742:12196" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="12319:12772" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="12823:12953" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="13082:14867" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="14998:19119" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="16480:16567" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="19238:20186" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="20309:20770" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="20897:25685" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="25787:27364" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="27479:28315" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="27502:27608" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="27583:27598" ph="{}" />
-            <marker date="1521817537311" expanded="true" signature="27774:28204" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="28414:29071" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="29191:30418" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="30541:31592" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="31713:32150" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="32255:32950" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="33067:33633" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="33746:35637" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="35731:36265" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="36398:36693" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="36853:37578" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="37663:38413" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="37834:37947" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="38545:38659" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="38815:38926" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="39027:42393" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="42517:43469" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="43593:45634" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="45734:46364" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="46476:47046" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="47143:47583" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="47660:47875" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="48043:48839" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="48953:52555" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="52695:53118" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="53220:54188" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="53321:53422" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="54256:54824" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="54944:56233" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="55429:55560" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="56348:58331" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="57480:57596" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="57678:57757" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="58419:58508" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="58562:58666" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="58757:59004" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="58857:58918" ph="{...}" />
-            <marker date="1521817537311" expanded="false" signature="58961:58976" ph=" { " />
-            <marker date="1521817537311" expanded="false" signature="58988:58998" ph=" }" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.0.4.RELEASE/spring-core-5.0.4.RELEASE.jar!/org/springframework/util/Assert.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding>
-            <marker date="1521817529040" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1521817529040" expanded="false" signature="148:269" ph="..." />
-            <marker date="1521817529040" expanded="true" signature="322:329" ph="{}" />
-            <marker date="1521817529040" expanded="true" signature="396:494" ph="{...}" />
-            <marker date="1521817529040" expanded="true" signature="579:698" ph="{...}" />
-            <marker date="1521817529040" expanded="true" signature="704:722" ph="/**...*/" />
-            <marker date="1521817529040" expanded="true" signature="788:880" ph="{...}" />
-            <marker date="1521817529040" expanded="true" signature="948:1049" ph="{...}" />
-            <marker date="1521817529040" expanded="true" signature="1135:1257" ph="{...}" />
-            <marker date="1521817529040" expanded="true" signature="1263:1281" ph="/**...*/" />
-            <marker date="1521817529040" expanded="true" signature="1348:1436" ph="{...}" />
-            <marker date="1521817529040" expanded="true" signature="1509:1613" ph="{...}" />
-            <marker date="1521817529040" expanded="true" signature="1704:1829" ph="{...}" />
-            <marker date="1521817529040" expanded="true" signature="1835:1853" ph="/**...*/" />
-            <marker date="1521817529040" expanded="true" signature="1925:2013" ph="{...}" />
-            <marker date="1521817529040" expanded="true" signature="2087:2191" ph="{...}" />
-            <marker date="1521817529040" expanded="true" signature="2283:2408" ph="{...}" />
-            <marker date="1521817529040" expanded="true" signature="2414:2432" ph="/**...*/" />
-            <marker date="1521817529040" expanded="true" signature="2505:2608" ph="{...}" />
-            <marker date="1521817529040" expanded="true" signature="2682:2800" ph="{...}" />
-            <marker date="1521817529040" expanded="true" signature="2892:3031" ph="{...}" />
-            <marker date="1521817529040" expanded="true" signature="3037:3055" ph="/**...*/" />
-            <marker date="1521817529040" expanded="true" signature="3128:3252" ph="{...}" />
-            <marker date="1521817529040" expanded="true" signature="3324:3440" ph="{...}" />
-            <marker date="1521817529040" expanded="true" signature="3530:3667" ph="{...}" />
-            <marker date="1521817529040" expanded="true" signature="3673:3691" ph="/**...*/" />
-            <marker date="1521817529040" expanded="true" signature="3762:3890" ph="{...}" />
-            <marker date="1521817529040" expanded="true" signature="3995:4192" ph="{...}" />
-            <marker date="1521817529040" expanded="true" signature="4315:4533" ph="{...}" />
-            <marker date="1521817529040" expanded="true" signature="4539:4557" ph="/**...*/" />
-            <marker date="1521817529040" expanded="true" signature="4661:4851" ph="{...}" />
-            <marker date="1521817529040" expanded="true" signature="4717:4843" ph="{...}" />
-            <marker date="1521817529040" expanded="true" signature="4927:5043" ph="{...}" />
-            <marker date="1521817529040" expanded="true" signature="5137:5274" ph="{...}" />
-            <marker date="1521817529040" expanded="true" signature="5280:5298" ph="/**...*/" />
-            <marker date="1521817529040" expanded="true" signature="5373:5494" ph="{...}" />
-            <marker date="1521817529040" expanded="true" signature="5576:5930" ph="{...}" />
-            <marker date="1521817529040" expanded="true" signature="6030:6405" ph="{...}" />
-            <marker date="1521817529040" expanded="true" signature="6411:6429" ph="/**...*/" />
-            <marker date="1521817529040" expanded="true" signature="6510:6618" ph="{...}" />
-            <marker date="1521817529040" expanded="true" signature="6704:6829" ph="{...}" />
-            <marker date="1521817529040" expanded="true" signature="6933:7079" ph="{...}" />
-            <marker date="1521817529040" expanded="true" signature="7085:7103" ph="/**...*/" />
-            <marker date="1521817529040" expanded="true" signature="7188:7319" ph="{...}" />
-            <marker date="1521817529040" expanded="true" signature="7394:7512" ph="{...}" />
-            <marker date="1521817529040" expanded="true" signature="7605:7744" ph="{...}" />
-            <marker date="1521817529040" expanded="true" signature="7750:7768" ph="/**...*/" />
-            <marker date="1521817529040" expanded="true" signature="7842:7959" ph="{...}" />
-            <marker date="1521817529040" expanded="true" signature="8050:8231" ph="{...}" />
-            <marker date="1521817529040" expanded="true" signature="8340:8542" ph="{...}" />
-            <marker date="1521817529040" expanded="false" signature="8616:8627" ph=" { " />
-            <marker date="1521817529040" expanded="false" signature="8655:8661" ph=" }" />
-            <marker date="1521817529040" expanded="true" signature="8763:9000" ph="{...}" />
-            <marker date="1521817529040" expanded="true" signature="9120:9378" ph="{...}" />
-            <marker date="1521817529040" expanded="false" signature="9453:9464" ph=" { " />
-            <marker date="1521817529040" expanded="false" signature="9501:9507" ph=" }" />
-            <marker date="1521817529040" expanded="true" signature="9612:10223" ph="{...}" />
-            <marker date="1521817529040" expanded="true" signature="10341:10852" ph="{...}" />
-            <marker date="1521817529040" expanded="true" signature="10911:11015" ph="{...}" />
-            <marker date="1521817529040" expanded="true" signature="11102:11174" ph="{...}" />
-            <marker date="1521817529040" expanded="true" signature="11272:11358" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.0.4.RELEASE/spring-beans-5.0.4.RELEASE.jar!/org/springframework/beans/AbstractNestablePropertyAccessor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1185">
-          <caret line="113" column="0" lean-forward="false" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
-          <folding>
-            <marker date="1521817537311" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1521817537311" expanded="false" signature="149:1185" ph="..." />
-            <marker date="1521817537311" expanded="false" signature="1669:1680" ph=" { " />
-            <marker date="1521817537311" expanded="false" signature="1691:1697" ph=" }" />
-            <marker date="1521817537311" expanded="true" signature="1778:2028" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="2092:2260" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="2325:2520" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="2622:2814" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="2938:3400" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="3474:3545" ph="{...}" />
-            <marker date="1521817537311" expanded="false" signature="3590:3601" ph=" { " />
-            <marker date="1521817537311" expanded="false" signature="3637:3643" ph=" }" />
-            <marker date="1521817537311" expanded="false" signature="3694:3705" ph=" { " />
-            <marker date="1521817537311" expanded="false" signature="3755:3761" ph=" }" />
-            <marker date="1521817537311" expanded="true" signature="3871:4309" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="4356:4469" ph="{...}" />
-            <marker date="1521817537311" expanded="false" signature="4514:4525" ph=" { " />
-            <marker date="1521817537311" expanded="false" signature="4569:4575" ph=" }" />
-            <marker date="1521817537311" expanded="false" signature="4616:4627" ph=" { " />
-            <marker date="1521817537311" expanded="false" signature="4650:4656" ph=" }" />
-            <marker date="1521817537311" expanded="true" signature="4700:4804" ph="{...}" />
-            <marker date="1521817537311" expanded="false" signature="4846:4857" ph=" { " />
-            <marker date="1521817537311" expanded="false" signature="4898:4904" ph=" }" />
-            <marker date="1521817537311" expanded="true" signature="5006:5621" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="5696:6673" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="6812:6984" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="7103:12348" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="12454:13878" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="13997:17190" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="17285:17920" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="18031:18931" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="18992:19391" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="19452:19851" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="20081:20886" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="21065:21164" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="21258:21563" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="21700:27015" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="27156:27434" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="27851:28808" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="28979:29551" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="29643:29788" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="29893:30381" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="30477:32082" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="32180:32466" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="32582:33080" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="33169:34926" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="35036:36600" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="36631:36976" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="37025:37287" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="37195:37281" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="37341:38903" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="37559:37692" ph="{...}" />
-            <marker date="1521817537311" expanded="false" signature="37735:37750" ph=" { " />
-            <marker date="1521817537311" expanded="false" signature="37775:37785" ph=" }" />
-            <marker date="1521817537311" expanded="false" signature="37822:37837" ph=" { " />
-            <marker date="1521817537311" expanded="false" signature="37858:37868" ph=" }" />
-            <marker date="1521817537311" expanded="false" signature="37905:37920" ph=" { " />
-            <marker date="1521817537311" expanded="false" signature="37941:37951" ph=" }" />
-            <marker date="1521817537311" expanded="true" signature="38148:38265" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="38343:38460" ph="{...}" />
-            <marker date="1521817537311" expanded="true" signature="38540:38662" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/domain/repository/ClothesOrderRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/idea.vmoptions">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="33" lean-forward="false" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/ClothesCategoryEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="19" column="26" lean-forward="true" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/DictionaryEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="57" column="5" lean-forward="false" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/web/ClothesCategoryController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/web/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-206">
-          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <caret line="14" column="3" lean-forward="false" selection-start-line="14" selection-start-column="3" selection-end-line="23" selection-end-column="51" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/web/MemberController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="33" column="24" lean-forward="false" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
+        <state relative-caret-position="150">
+          <caret line="20" column="17" lean-forward="false" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/web/DemoController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/service/StoreService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="57" column="0" lean-forward="true" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+        <state relative-caret-position="105">
+          <caret line="11" column="16" lean-forward="false" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/ClothesOrderEntity.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/web/StoreController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="30" column="32" lean-forward="false" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/domain/repository/UserRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="18" column="23" lean-forward="false" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/web/DAOController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="26" column="15" lean-forward="false" selection-start-line="26" selection-start-column="15" selection-end-line="26" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/service/ClothesOrderService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="15" column="9" lean-forward="false" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/web/ClothesOrderController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="46" column="26" lean-forward="false" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="42" />
+        <state relative-caret-position="453">
+          <caret line="117" column="16" lean-forward="true" selection-start-line="117" selection-start-column="16" selection-end-line="117" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

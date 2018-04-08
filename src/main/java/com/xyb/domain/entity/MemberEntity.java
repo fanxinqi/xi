@@ -4,13 +4,10 @@ import io.swagger.annotations.ApiModelProperty;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
-import com.xyb.domain.entity.MemberCategoryEntity;
 import java.util.Set;
 @Entity
 @Table(name = "member")
 public class MemberEntity {
-
-
     @Id
     @GeneratedValue
     @Column(name = "id")
@@ -41,8 +38,6 @@ public class MemberEntity {
     private long birthday;
 
     @Column(name = "create_time")
-    @ApiModelProperty(required = true)
-    @NotNull(message = "请添加建立的时间")
     private long createTime;
 
     @Column(name = "address")
@@ -133,7 +128,7 @@ public class MemberEntity {
     }
 
     public void setCreateTime(long createTime) {
-        this.createTime = createTime;
+        this.createTime = System.currentTimeMillis();
     }
 
     public String getAddress() {

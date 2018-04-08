@@ -29,8 +29,6 @@ public class ClothesCategoryEntity {
     @Column(name = "des")
     private String des;
     @Column(name = "create_time")
-    @ApiModelProperty(required = true)
-    @NotNull(message = "请添加建立的时间")
     private long createTime;
     @Column(name = "previewUrls")
     private String previewUrls;
@@ -92,7 +90,7 @@ public class ClothesCategoryEntity {
     }
 
     public void setCreateTime(long createTime) {
-        this.createTime = createTime;
+        this.createTime = System.currentTimeMillis();
     }
     public long getParentId() {
         return parentId;

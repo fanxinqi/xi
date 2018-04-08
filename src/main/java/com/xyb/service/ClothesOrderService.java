@@ -16,5 +16,5 @@ public interface ClothesOrderService {
     void deleteById(Long id);
 
     Optional<ClothesOrderEntity> findById(Long id);
-    Optional<ClothesOrderEntity> findByPhone(String name);
+    List<ClothesOrderEntity> findByPhone(String name);
 }

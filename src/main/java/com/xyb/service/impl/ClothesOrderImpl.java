@@ -1,10 +1,7 @@
 package com.xyb.service.impl;
 
-import com.xyb.domain.entity.ClothesCategoryEntity;
 import com.xyb.domain.entity.ClothesOrderEntity;
-import com.xyb.domain.repository.ClothesCategoryRepository;
 import com.xyb.domain.repository.ClothesOrderRepository;
-import com.xyb.service.ChothesCategoryService;
 import com.xyb.service.ClothesOrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -47,7 +44,7 @@ public class ClothesOrderImpl implements ClothesOrderService {
     }
 
     @Override
-    public Optional<ClothesOrderEntity> findByPhone(String phone) {
+    public List<ClothesOrderEntity> findByPhone(String phone) {
         return clothesOrderRepository.findByPhone(phone);
     }
 }

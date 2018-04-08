@@ -19,8 +19,6 @@ public class ClothesOrderEntity {
     @NotNull(message = "价格不能为空")
     private float price;
     @Column(name = "create_time")
-    @ApiModelProperty(required = true)
-    @NotNull(message = "请添加建立的时间")
     private long createTime;
     @Column(name = "preview_urls")
     @ApiModelProperty(required = true)
@@ -68,7 +66,7 @@ public class ClothesOrderEntity {
     }
 
     public void setCreateTime(long createTime) {
-        this.createTime = createTime;
+        this.createTime = System.currentTimeMillis();
     }
 
     public String getPreviewUrls() {

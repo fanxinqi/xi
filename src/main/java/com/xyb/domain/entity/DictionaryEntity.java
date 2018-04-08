@@ -29,8 +29,6 @@ public class DictionaryEntity {
     @NotNull(message = "请选择type")
     private int type;
     @Column(name = "create_time")
-    @ApiModelProperty(required = true)
-    @NotNull(message = "请生成create_time")
     private long createTime;
 
     public String getName() {
@@ -70,7 +68,7 @@ public class DictionaryEntity {
     }
 
     public void setCreateTime(long createTime) {
-        this.createTime = createTime;
+        this.createTime = System.currentTimeMillis();
     }
 
 }
