@@ -4,6 +4,10 @@ import com.xyb.domain.entity.ClothesCategoryEntity;
 import com.xyb.domain.repository.ClothesCategoryRepository;
 import com.xyb.service.ChothesCategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.data.web.SpringDataWebProperties;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -18,8 +22,8 @@ public class ChothesCategoryImpl implements ChothesCategoryService {
     @Autowired
     private ClothesCategoryRepository chlothesCategoryRepository;
     @Override
-    public List<ClothesCategoryEntity> findAll() {
-        return chlothesCategoryRepository.findAll();
+    public Page<ClothesCategoryEntity> findAll(Pageable pageable) {
+        return chlothesCategoryRepository.findAll(pageable);
     }
 
     @Override
@@ -46,4 +50,5 @@ public class ChothesCategoryImpl implements ChothesCategoryService {
     public Optional<ClothesCategoryEntity> findByName(String name) {
         return chlothesCategoryRepository.findByName(name);
     }
+
 }

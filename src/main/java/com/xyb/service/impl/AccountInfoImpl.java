@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
+
 @Service
 public class AccountInfoImpl implements AccountInfoService {
     @Autowired
@@ -41,6 +42,7 @@ public class AccountInfoImpl implements AccountInfoService {
 
     @Override
     public AccountInfoEntity findByName(String name) {
-        return accountInfoRepository.findByPhone(name);
+        return accountInfoRepository.findByName(name);
     }
+
 }

@@ -1,6 +1,9 @@
 package com.xyb.service;
 
 import com.xyb.domain.entity.ClothesCategoryEntity;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 
 import java.util.List;
 import java.util.Optional;
@@ -12,7 +15,7 @@ import java.util.concurrent.CopyOnWriteArrayList;
  */
 
 public interface ChothesCategoryService {
-    List<ClothesCategoryEntity> findAll();
+    Page<ClothesCategoryEntity> findAll(Pageable pageable);
 
     ClothesCategoryEntity save(ClothesCategoryEntity entity);
 

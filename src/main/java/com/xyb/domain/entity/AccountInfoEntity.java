@@ -3,8 +3,11 @@ package com.xyb.domain.entity;
 import io.swagger.annotations.ApiModelProperty;
 import org.mapstruct.Mapper;
 
+import javax.management.relation.Role;
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
+import java.util.Set;
+
 @Entity
 @Table(name = "account_info")
 public class AccountInfoEntity {
@@ -13,10 +16,10 @@ public class AccountInfoEntity {
     @Column(name = "id")
     @ApiModelProperty("id")
     private Long id;
-    @Column(name = "phone")
+    @Column(name = "name")
     @ApiModelProperty(required = true)
-    @NotNull(message = "手机号不能为空")
-    private String phone;
+    @NotNull(message = "用户名号不能为空")
+    private String name;
     @Column(name = "pass_word")
     @ApiModelProperty(required = true)
     @NotNull(message = "密码不能为空")
@@ -34,21 +37,42 @@ public class AccountInfoEntity {
     @Column(name = "store_id")
     @ApiModelProperty(required = true)
     @NotNull(message = "所属分店不能为空")
-    private int storeId;
+    private long storeId;
+    @ManyToMany(cascade = {CascadeType.REFRESH}, fetch = FetchType.EAGER)
+    @JoinTable(name = "account_role", joinColumns = {@JoinColumn(name = "account_id")}, inverseJoinColumns = {@JoinColumn(name = "role_id")})
+    private Set<RoleInfoEntity> roleInfoEntitySet;
+    @ManyToMany(cascade = {CascadeType.REFRESH}, fetch = FetchType.EAGER)
+    @JoinTable(name = "account_permission", joinColumns = {@JoinColumn(name = "account_id")}, inverseJoinColumns = {@JoinColumn(name = "permission_id")})
+    private Set<PermissionInfoEntity> permissionInfoEntitySet;
+
+    public Set<PermissionInfoEntity> getPermissionInfoEntitySet() {
+        return permissionInfoEntitySet;
+    }
+    public void setPermissionInfoEntitySet(Set<PermissionInfoEntity> permissionInfoEntitySet) {
+        this.permissionInfoEntitySet = permissionInfoEntitySet;
+    }
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Set<RoleInfoEntity> getRoleInfoEntitySet() {
+        return roleInfoEntitySet;
+    }
+
+    public void setRoleInfoEntitySet(Set<RoleInfoEntity> roleInfoEntitySet) {
+        this.roleInfoEntitySet = roleInfoEntitySet;
+    }
+
     public Long getId() {
         return id;
     }
 
     public void setId(Long id) {
         this.id = id;
-    }
-
-    public String getPhone() {
-        return phone;
-    }
-
-    public void setPhone(String phone) {
-        this.phone = phone;
     }
 
     public String getPassWord() {
@@ -99,7 +123,7 @@ public class AccountInfoEntity {
         this.birthday = birthday;
     }
 
-    public int getStoreId() {
+    public long getStoreId() {
         return storeId;
     }
 

@@ -10,6 +10,8 @@ public class RestInfo<T> {
     public static final Integer AUTHORITY_ERROR = 101;
     public static final Integer PARAM_ERROR = 102;
     public static final Integer INPUT_ERROR = 103;
+    public static final Integer OPERATE_ERROR = 104;
+    public static final String OPERATE_ERROR_STRING = "操作失败";
 
 
     private Integer code =this.OK;
@@ -36,24 +38,27 @@ public class RestInfo<T> {
         return code;
     }
 
-    public void setCode(Integer code) {
+    public RestInfo setCode(Integer code) {
         this.code = code;
+        return this;
     }
 
     public String getMessage() {
         return message;
     }
 
-    public void setMessage(String message) {
+    public RestInfo setMessage(String message) {
         this.message = message;
+        return this;
     }
 
     public String getUrl() {
         return url;
     }
 
-    public void setUrl(String url) {
+    public RestInfo setUrl(String url) {
         this.url = url;
+        return this;
     }
 
     public T getData() {
