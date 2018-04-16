@@ -22,8 +22,8 @@ public class MemberImpl implements MemberService {
     private MemberRepository memberRepository;
 
     @Override
-    public List<MemberEntity> findAll() {
-        return memberRepository.findAll();
+    public Page<MemberEntity> findAll(Pageable pageable) {
+        return memberRepository.findAll(pageable);
     }
 
     @Override
@@ -74,6 +74,11 @@ public class MemberImpl implements MemberService {
     @Override
     public MemberEntity findByStoreIdAndId(long storeId, long id) {
         return memberRepository.findByStoreIdAndId(storeId,id);
+    }
+
+    @Override
+    public MemberEntity findByStoreIdAndName(long storeId, String name) {
+        return memberRepository.findByStoreIdAndName(storeId,name);
     }
 
 

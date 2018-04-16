@@ -14,7 +14,7 @@ import java.util.Optional;
  */
 
 public interface MemberService {
-    List<MemberEntity> findAll();
+    Page<MemberEntity> findAll(Pageable pageable);
 
     MemberEntity save(MemberEntity entity);
 
@@ -29,4 +29,5 @@ public interface MemberService {
     MemberEntity findByPhone(String  phone);
     MemberEntity findByStoreIdAndPhone(long storeId,String  phone);
     MemberEntity findByStoreIdAndId(long storeId,long  id);
+    MemberEntity findByStoreIdAndName(long storeId,String   name);
 }

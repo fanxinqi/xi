@@ -4,8 +4,8 @@ import com.xyb.annotation.LoginRequired;
 import com.xyb.domain.entity.AccountInfoEntity;
 import com.xyb.exception.MyException;
 import com.xyb.service.AccountInfoService;
+import com.xyb.utils.JWTUtil;
 import com.xyb.utils.StringUtils;
-import com.xyb.utils.TokenUtils;
 import io.jsonwebtoken.Claims;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.method.HandlerMethod;
@@ -16,8 +16,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.lang.reflect.Method;
 
+import static com.xyb.constants.Constants.HEADER_TOKEN;
+
 public class AuthenticationInterceptor implements HandlerInterceptor {
-    public final static String ACCESS_TOKEN = "accessToken";
     @Autowired
     private AccountInfoService accountInfoService;
 
@@ -43,19 +44,18 @@ public class AuthenticationInterceptor implements HandlerInterceptor {
         // 有 @LoginRequired 注解，需要认证
         if (methodAnnotation != null) {
             // 判断是否存在令牌信息，如果存在，则允许登录
-            String accessToken = request.getHeader(ACCESS_TOKEN);
-            accessToken = StringUtils.isBlank(accessToken) ? request.getParameter(ACCESS_TOKEN) : accessToken;
+            String accessToken = request.getHeader(HEADER_TOKEN);
+            accessToken = StringUtils.isBlank(accessToken) ? request.getParameter(HEADER_TOKEN) : accessToken;
             if (StringUtils.isBlank(accessToken)) {
                 throw new MyException("无token，请重新登录");
             }
-            Claims claims = null;
+            String userName = null;
             try {
-                claims = TokenUtils.parseJWT(accessToken);
+                userName = JWTUtil.getUsername(accessToken);
             } catch (Exception e) {
                 e.printStackTrace();
                 throw new MyException("用户不存在，请重新登录");
             }
-            String userName = claims.getId();
             AccountInfoEntity user = accountInfoService.findByName(userName);
             if (user == null) {
                 throw new MyException("用户不存在，请重新登录");
