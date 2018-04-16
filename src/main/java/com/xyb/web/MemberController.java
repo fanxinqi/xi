@@ -49,7 +49,7 @@ public class MemberController {
     }
 
     @GetMapping("/list_category")
-    public RestInfo getUserList(@RequestHeader(HEADER_TOKEN) String token, @PageableDefault(page = 0, size = 10, sort = {"id"}, direction = Sort.Direction.DESC) Pageable pageable) {
+    public RestInfo getUserList(@RequestHeader(value = HEADER_TOKEN, required = false) String token, @PageableDefault(page = 0, size = 10, sort = {"id"}, direction = Sort.Direction.DESC) Pageable pageable) {
         AccountInfoEntity entity = null;
         if (token != null) {
             entity = tokenVerify.getUserInfoByToken(token);
@@ -64,7 +64,7 @@ public class MemberController {
     }
 
     @PostMapping(value = "/save")
-    public RestInfo addMember(@RequestHeader(HEADER_TOKEN) String token, @RequestBody MemberEntity member) {
+    public RestInfo addMember(@RequestHeader(value = HEADER_TOKEN, required = false) String token, @RequestBody MemberEntity member) {
         if (member == null) {
             throw new MyException("请传入相应的实体");
         }
@@ -78,6 +78,60 @@ public class MemberController {
                     } else {
                         member.setStoreId(entity.getStoreId());
                         return new RestInfo(memberService.save(member));
+                    }
+                }
+
+            }
+        }
+        throw new AuthorityException("你没有相应的权限");
+    }
+
+    @PostMapping(value = "/update")
+    public RestInfo updateMember(@RequestHeader(value = HEADER_TOKEN, required = false) String token, @RequestBody MemberEntity member) {
+        if (member == null) {
+            throw new MyException("请传入相应的实体");
+        }
+        AccountInfoEntity entity = null;
+        if (token != null) {
+            entity = tokenVerify.getUserInfoByToken(token);
+            if (entity.getStoreId() > 0) {
+                if (member.getId() > 0) {
+                  MemberEntity memberEntity = memberService.findByStoreIdAndId(entity.getStoreId(),entity.getId());
+                    if (memberEntity != null) {
+                        if (!StringUtils.isBlank(member.getPhone())) {
+                            memberEntity.setPhone(member.getPhone());
+                        }
+                        if (!StringUtils.isBlank(member.getAddress())) {
+                            memberEntity.setAddress(member.getAddress());
+                        }
+                        if (member.getBirthday() > 0) {
+                            memberEntity.setBirthday(member.getBirthday());
+                        }
+                        if (!StringUtils.isBlank(member.getDes())) {
+                            memberEntity.setDes(member.getDes());
+                        }
+                        if (!StringUtils.isBlank(member.getHeadUrl())) {
+                            memberEntity.setHeadUrl(member.getHeadUrl());
+                        }
+                        if (!StringUtils.isBlank(member.getIdNum())) {
+                            memberEntity.setIdNum(member.getIdNum());
+                        }
+                        if (!StringUtils.isBlank(member.getName())) {
+                            memberEntity.setName(member.getName());
+                        }
+                        if (!StringUtils.isBlank(member.getRemainFee())) {
+                            memberEntity.setRemainFee(member.getRemainFee());
+                        }
+                        if (member.getBirthday() > 0) {
+                            memberEntity.setBirthday(member.getBirthday());
+                        }
+                        if (member.getMemberCategoryId() > 0) {
+                            memberEntity.setMemberCategoryId(member.getMemberCategoryId());
+                        }
+                        return new RestInfo(memberService.save(memberEntity));
+
+                    } else {
+                        throw new MyException("您还没有该会员，还不能进行编辑");
                     }
                 }
 

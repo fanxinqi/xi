@@ -71,5 +71,10 @@ public class MemberImpl implements MemberService {
         return memberRepository.findByStoreIdAndPhone(storeId,phone);
     }
 
+    @Override
+    public MemberEntity findByStoreIdAndId(long storeId, long id) {
+        return memberRepository.findByStoreIdAndId(storeId,id);
+    }
+
 
 }

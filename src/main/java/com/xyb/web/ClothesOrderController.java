@@ -42,7 +42,7 @@ public class ClothesOrderController {
 
     //    @LoginRequired
     @GetMapping("/list")
-    public RestInfo getClothesCategoryList(@RequestHeader(HEADER_TOKEN) String token, @PageableDefault(page = 0, size = 10, sort = {"id"}, direction = Sort.Direction.DESC) Pageable pageable) {
+    public RestInfo getClothesOrderList(@RequestHeader(value = HEADER_TOKEN,required = false) String token, @PageableDefault(page = 0, size = 10, sort = {"id"}, direction = Sort.Direction.DESC) Pageable pageable) {
         AccountInfoEntity entity = null;
         if (token != null) {
             entity = tokenVerify.getUserInfoByToken(token);
@@ -71,7 +71,7 @@ public class ClothesOrderController {
 
     @LoginRequired
     @PostMapping(value = "/save")
-    public RestInfo saveOrUpdateClothesCategory(@RequestHeader(HEADER_TOKEN) String token, @RequestBody ClothesOrderEntity clothesOrderEntity) {
+    public RestInfo saveOrUpdateClothesCategory(@RequestHeader(value =HEADER_TOKEN,required = false) String token, @RequestBody ClothesOrderEntity clothesOrderEntity) {
         return new RestInfo<>(clothesOrderService.save(clothesOrderEntity));
     }
 
@@ -82,22 +82,22 @@ public class ClothesOrderController {
     }
 
     @PostMapping(value = "/search_by_phone")
-    public RestInfo getClothesCategoryByName(@RequestHeader(HEADER_TOKEN) String token, @RequestParam(value = "phone", required = true) String phone, @PageableDefault(page = 0, size = 10, sort = {"id"}, direction = Sort.Direction.DESC) Pageable pageable) {
+    public RestInfo getClothesCategoryByName(@RequestHeader(value =HEADER_TOKEN,required = false) String token, @RequestParam(value = "phone", required = true) String phone, @PageableDefault(page = 0, size = 10, sort = {"id"}, direction = Sort.Direction.DESC) Pageable pageable) {
         AccountInfoEntity entity = null;
         if (token != null) {
             entity = tokenVerify.getUserInfoByToken(token);
             if (entity != null) {
                 String roleName = tokenVerify.getRoleNameByUser(entity);
-                    if (ADMIN_ROL.equals(roleName)) {
-                        return new RestInfo(clothesOrderService.findByPhone(phone, pageable));
-                    } else if (STORE_ROL.equals(roleName)) {
-                        if (entity.getStoreId() <= 0) {
-                            throw new MyException("您还没有对应的店铺信息");
-                        }
-                        return new RestInfo(clothesOrderService.findByStoreIdAndPhone(entity.getStoreId(), phone, pageable));
+                if (ADMIN_ROL.equals(roleName)) {
+                    return new RestInfo(clothesOrderService.findByPhone(phone, pageable));
+                } else if (STORE_ROL.equals(roleName)) {
+                    if (entity.getStoreId() <= 0) {
+                        throw new MyException("您还没有对应的店铺信息");
                     }
+                    return new RestInfo(clothesOrderService.findByStoreIdAndPhone(entity.getStoreId(), phone, pageable));
                 }
             }
+        }
         throw new AuthorityException("您还没有相应的权限");
     }
 

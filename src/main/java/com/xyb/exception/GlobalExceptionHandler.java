@@ -17,7 +17,7 @@ import javax.servlet.http.HttpServletRequest;
 @EnableWebMvc
 @ControllerAdvice
 public class GlobalExceptionHandler {
-    @ExceptionHandler(value = MyException.class)
+    @ExceptionHandler(MyException.class)
     @ResponseBody
     public RestInfo<String> jsonErrorHandler(HttpServletRequest req, MyException e) throws Exception {
         RestInfo<String> r = new RestInfo<>();
@@ -27,9 +27,9 @@ public class GlobalExceptionHandler {
         r.setUrl(req.getRequestURL().toString());
         return r;
     }
-    @ExceptionHandler(value = AuthorityException.class)
+    @ExceptionHandler(AuthorityException.class)
     @ResponseBody
-    public RestInfo<String> emptyResultDataErrorHandler(HttpServletRequest req, MyException e) throws Exception {
+    public RestInfo<String> AuthorityErrorHandler(HttpServletRequest req, AuthorityException e) throws Exception {
         RestInfo<String> r = new RestInfo<>();
         r.setMessage(e.getMessage());
         r.setCode(RestInfo.AUTHORITY_ERROR);

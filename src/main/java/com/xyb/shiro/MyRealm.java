@@ -4,6 +4,7 @@ import com.xyb.common.TokenVerify;
 import com.xyb.domain.entity.AccountInfoEntity;
 import com.xyb.domain.entity.PermissionInfoEntity;
 import com.xyb.domain.entity.RoleInfoEntity;
+import com.xyb.exception.AuthorityException;
 import com.xyb.service.AccountInfoService;
 import com.xyb.service.UserService;
 import com.xyb.utils.JWTUtil;
@@ -66,16 +67,16 @@ public class MyRealm extends AuthorizingRealm {
         // 解密获得username，用于和数据库进行对比
         String username = JWTUtil.getUsername(token);
         if (username == null) {
-            throw new AuthenticationException("token invalid");
+            throw new AuthorityException("token invalid");
         }
 
         AccountInfoEntity userBean = userService.findByName(username);
         if (userBean == null) {
-            throw new AuthenticationException("User didn't existed!");
+            throw new AuthorityException("User didn't existed!");
         }
 
         if (! JWTUtil.verify(token, username, userBean.getPassWord())) {
-            throw new AuthenticationException("Username or password error");
+            throw new AuthorityException("Username or password error");
         }
 
         return new SimpleAuthenticationInfo(token, token, "my_realm");

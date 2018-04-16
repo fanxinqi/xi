@@ -25,6 +25,7 @@ public interface MemberRepository extends JpaRepository<MemberEntity, Long> {
     MemberEntity findTopByStoreId(long storeId);
     MemberEntity findByStoreIdAndPhone(long storeId,String phone);
     MemberEntity findByPhone(String phone);
+    MemberEntity findByStoreIdAndId(long storeId,long id);
 //
 //    @Query("from MemberEntity m  inner join MemberCategoryEntity mc where m.member_category_id = mc.id")
 //    public List<Object[]> findList();

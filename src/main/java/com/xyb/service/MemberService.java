@@ -28,4 +28,5 @@ public interface MemberService {
     MemberEntity findTopByStoreId(long storeId);
     MemberEntity findByPhone(String  phone);
     MemberEntity findByStoreIdAndPhone(long storeId,String  phone);
+    MemberEntity findByStoreIdAndId(long storeId,long  id);
 }
