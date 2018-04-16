@@ -44,6 +44,20 @@ public class ClothesOrderEntity {
     @ManyToMany(cascade = {CascadeType.REFRESH}, fetch = FetchType.EAGER)
     @JoinTable(name = "order_pay_type", joinColumns = {@JoinColumn(name = "order_id")}, inverseJoinColumns = {@JoinColumn(name = "pay_type_id")})
     private Set<PaymentEntity> paymentEntitySet;
+    @Column(name = "store_id")
+    @ApiModelProperty(required = true)
+    @NotNull(message = "请选择门店")
+    private long storeId;
+
+    public long getStoreId() {
+        return storeId;
+    }
+
+    public void setStoreId(long storeId) {
+        this.storeId = storeId;
+    }
+
+
 
     public Long getId() {
         return id;

@@ -1,5 +1,6 @@
 package com.xyb.shiro;
 
+import com.xyb.common.TokenVerify;
 import com.xyb.domain.entity.AccountInfoEntity;
 import com.xyb.domain.entity.PermissionInfoEntity;
 import com.xyb.domain.entity.RoleInfoEntity;
@@ -24,14 +25,11 @@ import org.springframework.stereotype.Service;
 public class MyRealm extends AuthorizingRealm {
 
     private static final Logger LOGGER = LogManager.getLogger(MyRealm.class);
-
+    @Autowired
     private AccountInfoService userService;
 
     @Autowired
-    public void setUserService(AccountInfoService userService) {
-        this.userService = userService;
-    }
-
+    private TokenVerify tokenVerify;
     /**
      * 大坑！，必须重写此方法，不然Shiro会报错
      */
@@ -45,16 +43,10 @@ public class MyRealm extends AuthorizingRealm {
      */
     @Override
     protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principals) {
-        String username = JWTUtil.getUsername(principals.toString());
-        AccountInfoEntity user = userService.findByName(username);
+        AccountInfoEntity user = tokenVerify.getUserInfoByToken(principals.toString());
+        String  roleName=tokenVerify.getRoleNameByUser(user);
         SimpleAuthorizationInfo simpleAuthorizationInfo = new SimpleAuthorizationInfo();
-        if(user.getRoleInfoEntitySet()!=null)
-        {
-            for(RoleInfoEntity entity:user.getRoleInfoEntitySet())
-            {
-                simpleAuthorizationInfo.addRole(entity.getName());
-            }
-        }
+        simpleAuthorizationInfo.addRole(roleName);
         if(user.getPermissionInfoEntitySet()!=null)
         {
             for(PermissionInfoEntity entity:user.getPermissionInfoEntitySet())

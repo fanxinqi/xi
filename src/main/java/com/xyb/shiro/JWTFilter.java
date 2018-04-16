@@ -1,5 +1,7 @@
 package com.xyb.shiro;
 
+import com.xyb.exception.AuthorityException;
+import com.xyb.exception.RestInfo;
 import org.apache.shiro.web.filter.authc.BasicHttpAuthenticationFilter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -11,6 +13,7 @@ import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.io.PrintWriter;
 
 import static com.xyb.constants.Constants.HEADER_TOKEN;
 
@@ -25,6 +28,27 @@ public class JWTFilter extends BasicHttpAuthenticationFilter {
     protected boolean isLoginAttempt(ServletRequest request, ServletResponse response) {
         HttpServletRequest req = (HttpServletRequest) request;
         String authorization = req.getHeader(HEADER_TOKEN);
+//        if(authorization==null)
+//        {
+//            RestInfo<String> r = new RestInfo<>();
+//            r.setMessage("没有权限");
+//            r.setCode(RestInfo.AUTHORITY_ERROR);
+////            JSONObject responseJSONObject = JSONObject.fromObject(responseObject);
+//            HttpServletResponse httpServletResponse = (HttpServletResponse) response;
+//            PrintWriter out=null;
+//            try {
+//                response.resetBuffer();
+//                 out = response.getWriter();
+//                out.append("lihaili");
+//            } catch (IOException e) {
+//                e.printStackTrace();
+//            } finally {
+//                if (out != null) {
+//                    out.close();
+//                }
+//                return false;
+//            }
+//        }
         return authorization != null;
     }
 

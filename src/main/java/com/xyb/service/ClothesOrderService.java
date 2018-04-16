@@ -2,12 +2,12 @@ package com.xyb.service;
 
 
 import com.xyb.domain.entity.ClothesOrderEntity;
-
-import java.util.List;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import java.util.Optional;
 
 public interface ClothesOrderService {
-    List<ClothesOrderEntity> findAll();
+    Page<ClothesOrderEntity> findAll(Pageable pageable);
 
     ClothesOrderEntity save(ClothesOrderEntity entity);
 
@@ -16,5 +16,7 @@ public interface ClothesOrderService {
     void deleteById(Long id);
 
     Optional<ClothesOrderEntity> findById(Long id);
-    List<ClothesOrderEntity> findByPhone(String name);
+    Page<ClothesOrderEntity> findByPhone(String name,Pageable pageable);
+    Page<ClothesOrderEntity> findByStoreId(long storeId,Pageable pageable);
+    Page<ClothesOrderEntity> findByStoreIdAndPhone(long storeId,String phone,Pageable pageable);
 }

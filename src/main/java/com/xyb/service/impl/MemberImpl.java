@@ -5,8 +5,9 @@ import com.xyb.domain.entity.UserEntity;
 import com.xyb.domain.repository.MemberRepository;
 import com.xyb.service.MemberService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Service;
-
+import org.springframework.data.domain.Pageable;
 import javax.persistence.EntityManager;
 import java.util.List;
 import java.util.Optional;
@@ -49,4 +50,26 @@ public class MemberImpl implements MemberService {
     public Optional<MemberEntity> findByName(String name) {
         return memberRepository.findByName(name);
     }
+
+    @Override
+    public Page<MemberEntity> findByStoreId(long storeId, Pageable pageable) {
+        return memberRepository.findByStoreId(storeId,pageable);
+    }
+
+    @Override
+    public MemberEntity findTopByStoreId(long storeId) {
+        return memberRepository.findTopByStoreId(storeId);
+    }
+
+    @Override
+    public MemberEntity findByPhone(String phone) {
+        return memberRepository.findByPhone(phone);
+    }
+
+    @Override
+    public MemberEntity findByStoreIdAndPhone(long storeId, String phone) {
+        return memberRepository.findByStoreIdAndPhone(storeId,phone);
+    }
+
+
 }

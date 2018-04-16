@@ -38,6 +38,23 @@ public class AccountInfoEntity {
     @ApiModelProperty(required = true)
     @NotNull(message = "所属分店不能为空")
     private long storeId;
+
+    public void setStoreId(long storeId) {
+        this.storeId = storeId;
+    }
+
+    public long getRoleId() {
+        return roleId;
+    }
+
+    public void setRoleId(long roleId) {
+        this.roleId = roleId;
+    }
+
+    @Column(name = "role_id")
+    @ApiModelProperty(required = true)
+    @NotNull(message = "所属角色不能为空")
+    private long roleId;
     @ManyToMany(cascade = {CascadeType.REFRESH}, fetch = FetchType.EAGER)
     @JoinTable(name = "account_role", joinColumns = {@JoinColumn(name = "account_id")}, inverseJoinColumns = {@JoinColumn(name = "role_id")})
     private Set<RoleInfoEntity> roleInfoEntitySet;
