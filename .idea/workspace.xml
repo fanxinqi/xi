@@ -3,24 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="68022376-e0f6-425b-ad99-3e4f2eabe2b7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xyb/conf/WebMvcConfigurer.java" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/conf/WebMvcConfigurer.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xyb/domain/repository/MemberRepository.java" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/domain/repository/MemberRepository.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xyb/interceptor/AuthenticationInterceptor.java" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/interceptor/AuthenticationInterceptor.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xyb/service/MemberService.java" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/service/MemberService.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xyb/service/impl/MemberImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/service/impl/MemberImpl.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xyb/shiro/JWTFilter.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xyb/shiro/JWTToken.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xyb/shiro/MyRealm.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xyb/shiro/ShiroConfig.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xyb/utils/TokenUtils.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xyb/web/AccountInfoController.java" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/web/AccountInfoController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xyb/web/MemberController.java" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/web/MemberController.java" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/domain/repository/MemberRepository.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/domain/repository/MemberRepository.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/interceptor/AuthenticationInterceptor.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/interceptor/AuthenticationInterceptor.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/service/MemberService.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/service/MemberService.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/service/impl/MemberImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/service/impl/MemberImpl.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/utils/TokenUtils.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/web/MemberController.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/web/MemberController.class" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -75,14 +57,14 @@
       <file leaf-file-name="MemberController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/web/MemberController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+            <state relative-caret-position="330">
+              <caret line="50" column="58" lean-forward="false" selection-start-line="50" selection-start-column="58" selection-end-line="50" selection-end-column="58" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AccountInfoEntity.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AccountInfoEntity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/AccountInfoEntity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="393">
@@ -99,16 +81,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="362">
               <caret line="52" column="26" lean-forward="true" selection-start-line="52" selection-start-column="26" selection-end-line="52" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginRequired.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/annotation/LoginRequired.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -141,7 +113,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Constants.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Constants.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/constants/Constants.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="45">
@@ -1033,12 +1005,12 @@
       <workItem from="1523501496039" duration="1818000" />
       <workItem from="1523612150371" duration="20571000" />
       <workItem from="1523782818552" duration="18280000" />
-      <workItem from="1523849132625" duration="11246000" />
+      <workItem from="1523849132625" duration="11632000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="202173000" />
+    <option name="totallyTimeSpent" value="202559000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1051,6 +1023,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1920" y="-143" width="1920" height="1080" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.71147543" sideWeight="0.36429724" order="7" side_tool="true" content_ui="tabs" />
@@ -1062,7 +1035,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40447155" sideWeight="0.74717283" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40447155" sideWeight="0.74717283" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32786885" sideWeight="0.4806139" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31199187" sideWeight="0.45880452" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1072,13 +1045,13 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41147542" sideWeight="0.49353796" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3932927" sideWeight="0.6357027" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32786885" sideWeight="0.49353796" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35873982" sideWeight="0.4555735" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26464325" sideWeight="0.86860067" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35873982" sideWeight="0.4555735" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26464325" sideWeight="0.87004757" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2172524" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42245558" sideWeight="0.20537898" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3678862" sideWeight="0.49353796" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26464325" sideWeight="0.13139932" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26464325" sideWeight="0.12995246" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1869,22 +1842,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/constants/Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="59" lean-forward="false" selection-start-line="3" selection-start-column="47" selection-end-line="3" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/web/MemberController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/service/MemberService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -1911,6 +1868,22 @@
           <folding>
             <element signature="e#3673#3674#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/web/MemberController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="50" column="58" lean-forward="false" selection-start-line="50" selection-start-column="58" selection-end-line="50" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/constants/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="59" lean-forward="false" selection-start-line="3" selection-start-column="47" selection-end-line="3" selection-end-column="59" />
+          <folding />
         </state>
       </provider>
     </entry>
