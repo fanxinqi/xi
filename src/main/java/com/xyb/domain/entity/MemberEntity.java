@@ -5,6 +5,7 @@ import io.swagger.annotations.ApiModelProperty;
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.util.Set;
+
 @Entity
 @Table(name = "member")
 public class MemberEntity {
@@ -56,6 +57,16 @@ public class MemberEntity {
     @Column(name = "remain_fee")
     private String remainFee;
 
+    public int getGender() {
+        return gender;
+    }
+
+    public void setGender(int gender) {
+        this.gender = gender;
+    }
+
+    private int gender;
+
     @ManyToMany(cascade = {CascadeType.REFRESH}, fetch = FetchType.EAGER)
     @JoinTable(name = "member_categorys", joinColumns = {@JoinColumn(name = "m_id")}, inverseJoinColumns = {@JoinColumn(name = "c_id")})
     private Set<MemberCategoryEntity> memberCategoryEntitySet;
@@ -63,8 +74,9 @@ public class MemberEntity {
     public Set<MemberCategoryEntity> getMemberCategoryEntity() {
         return memberCategoryEntitySet;
     }
+
     public void setMemberCategoryEntity(Set<MemberCategoryEntity> memberCategoryEntitySet) {
-        this.memberCategoryEntitySet= memberCategoryEntitySet;
+        this.memberCategoryEntitySet = memberCategoryEntitySet;
     }
 
     public Long getId() {

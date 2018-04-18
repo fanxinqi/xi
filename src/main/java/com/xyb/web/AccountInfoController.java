@@ -15,12 +15,12 @@ public class AccountInfoController {
     private AccountInfoService infoService;
     @ApiOperation(value="登录接口", notes="post请求")
     @PostMapping(value = "/login")
-    public RestInfo loginWithPassword(@RequestParam(value = "user_name") String user_name, @RequestParam(value = "password") String password) {
+    public RestInfo loginWithPassword(@RequestParam(value = "userName") String userName, @RequestParam(value = "password") String password) {
         RestInfo restInfo = new RestInfo<String>();
-        AccountInfoEntity dbEntity = infoService.findByName(user_name);
+        AccountInfoEntity dbEntity = infoService.findByName(userName);
         if (dbEntity != null) {
             if (dbEntity.getPassWord().equals(password)) {
-                dbEntity.setToken(JWTUtil.sign(user_name, password));
+                dbEntity.setToken(JWTUtil.sign(userName, password));
                 infoService.save(dbEntity);
                 restInfo = new RestInfo(dbEntity);
                 restInfo.setMessage("登录成功");

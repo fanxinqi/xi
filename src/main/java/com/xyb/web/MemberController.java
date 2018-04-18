@@ -125,10 +125,11 @@ public class MemberController {
     @PostMapping(value = "/update")
     public RestInfo updateMember(@RequestHeader(value = HEADER_TOKEN) String token, @RequestBody MemberEntity member) {
         if (member == null) {
-            throw new MyException("请传入相应的实体");
+            throw new MyException("请传入更新的内容");
         }
         AccountInfoEntity entity = null;
         entity = tokenVerify.getUserInfoByToken(token);
+        String roleName = tokenVerify.getRoleNameByUser(entity);
         if (entity.getStoreId() > 0) {
             if (member.getId() > 0) {
                 MemberEntity memberEntity = memberService.findByStoreIdAndId(entity.getStoreId(), entity.getId());
@@ -162,6 +163,10 @@ public class MemberController {
                     }
                     if (member.getMemberCategoryId() > 0) {
                         memberEntity.setMemberCategoryId(member.getMemberCategoryId());
+                    }
+                    if(member.getGender()>0)
+                    {
+                        memberEntity.setGender(member.getGender());
                     }
                     return new RestInfo(memberService.save(memberEntity));
 
