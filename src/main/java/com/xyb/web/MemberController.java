@@ -19,6 +19,7 @@ import org.springframework.data.domain.Sort;
 import org.springframework.data.web.PageableDefault;
 import org.springframework.web.bind.annotation.*;
 
+import javax.annotation.Generated;
 import javax.validation.Valid;
 import java.util.ArrayList;
 import java.util.List;
@@ -183,6 +184,13 @@ public class MemberController {
     @PostMapping(value = "/search_by_name")
     public Page<MemberEntity> searchMemberByName(@RequestParam(value = "storeId", required = true) long storeId, @PageableDefault(page = 0, size = 10, sort = {"id"}, direction = Sort.Direction.DESC) Pageable pageable) {
         return memberService.findByStoreId(storeId, pageable);
+    }
+
+    @LoginRequired
+    @GetMapping(value = "/searchMemberByPhone")
+    public RestInfo searchMemberByPhone(@RequestParam(value = "phone", required = true) String phone,@RequestHeader(value = HEADER_TOKEN, required = false) String token, @PageableDefault(page = 0, size = 10, sort = {"id"}, direction = Sort.Direction.DESC) Pageable pageable) {
+        AccountInfoEntity entity = tokenVerify.getUserInfoByToken(token);
+        return new RestInfo(memberService.findByStoreIdAndPhone(entity.getStoreId(),phone));
     }
 
     @LoginRequired

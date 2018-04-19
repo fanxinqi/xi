@@ -23,10 +23,12 @@ public class WebMvcConfigurer extends WebMvcConfigurerAdapter {
         return new AuthenticationInterceptor();
     }
 
-//    @Override
-//    public void addResourceHandlers(ResourceHandlerRegistry registry) {
-//        registry.addResourceHandler("/static/**").addResourceLocations("classpath:/static/");
-//        super.addResourceHandlers(registry);
-//    }
+    @Override
+    public void addResourceHandlers(ResourceHandlerRegistry registry) {
+
+        registry.addResourceHandler("/sh/static/**").addResourceLocations("classpath:/static/");
+
+        super.addResourceHandlers(registry);
+    }
 }
 
