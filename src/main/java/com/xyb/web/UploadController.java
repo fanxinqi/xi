@@ -12,10 +12,17 @@ import org.springframework.web.multipart.MultipartHttpServletRequest;
 import javax.servlet.http.HttpServletRequest;
 import java.io.*;
 import java.util.List;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
+
+import java.math.BigInteger;
+import java.util.UUID;
 
 @RestController
 @RequestMapping("/attachment")
 public class UploadController {
+
+    String uploadPath="/Users/fanxinqi/Desktop/洗衣帮项目/jiukuaijiu/yixibang/xi/target/classes/static/";
     /**
      * 单文件上传
      *
@@ -27,14 +34,14 @@ public class UploadController {
     @ResponseBody
     public RestInfo upload(@RequestParam("file") MultipartFile file, String pathInfo,HttpServletRequest request) {
         if (!file.isEmpty()) {
-            String rootpath = request.getSession().getServletContext().getRealPath("/");
-            String filepath = "/upload/"+pathInfo+"/" + DateUtils.longToString(System.currentTimeMillis()) + "/";
+//            String rootpath = request.getSession().getServletContext().getRealPath("/static");
+//            String filepath = "/upload/"+pathInfo+"/" + DateUtils.longToString(System.currentTimeMillis()) + "/";
             String fileOriginalName = file.getOriginalFilename();
-            String newfilename = DateUtils.longToString(System.currentTimeMillis()) + fileOriginalName.substring(fileOriginalName.lastIndexOf("."));
-            File saveFile = new File(rootpath+filepath+newfilename);
+//            String newfilename = DateUtils.longToString(System.currentTimeMillis()) + fileOriginalName.substring(fileOriginalName.lastIndexOf("."));
+            String newfilename =System.currentTimeMillis()+ fileOriginalName.substring(fileOriginalName.lastIndexOf("."));
+            File saveFile = new File(uploadPath+newfilename);
             if (!saveFile.getParentFile().exists()) {
                 saveFile.getParentFile().mkdirs();
-
             }
             BufferedOutputStream out=null;
             try {
@@ -42,7 +49,7 @@ public class UploadController {
                 out.write(file.getBytes());
                 FileUploadModel fileUploadModel=new FileUploadModel();
                 fileUploadModel.setMessage(saveFile.getName() + " 上传成功");
-                fileUploadModel.setUrl(saveFile.getPath());
+                fileUploadModel.setUrl("/api/sh/static/"+newfilename);
                 return  new RestInfo(fileUploadModel);
             } catch (FileNotFoundException e) {
                 e.printStackTrace();
