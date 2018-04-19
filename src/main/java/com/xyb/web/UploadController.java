@@ -34,6 +34,7 @@ public class UploadController {
             File saveFile = new File(rootpath+filepath+newfilename);
             if (!saveFile.getParentFile().exists()) {
                 saveFile.getParentFile().mkdirs();
+
             }
             BufferedOutputStream out=null;
             try {
