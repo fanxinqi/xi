@@ -16,6 +16,7 @@ import java.util.concurrent.CopyOnWriteArrayList;
 
 public interface ChothesCategoryService {
     Page<ClothesCategoryEntity> findAll(Pageable pageable);
+    List<ClothesCategoryEntity> findAll();
 
     ClothesCategoryEntity save(ClothesCategoryEntity entity);
 
@@ -24,5 +25,6 @@ public interface ChothesCategoryService {
     void deleteById(Long id);
 
     Optional<ClothesCategoryEntity> findById(Long id);
-    Optional<ClothesCategoryEntity> findByName(String name);
+
+    ClothesCategoryEntity findByName(String name);
 }

@@ -2,12 +2,15 @@ package com.xyb.service;
 
 import com.xyb.domain.entity.MemberEntity;
 import com.xyb.domain.entity.StoreEntity;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 
 import java.util.List;
 import java.util.Optional;
 
 public interface StoreService {
-    List<StoreEntity> findAll();
+    Page<StoreEntity> findAll(Pageable pageable);
+    Page<StoreEntity> findAllByName(String name,Pageable pageable);
 
     StoreEntity save(StoreEntity entity);
 
@@ -16,5 +19,5 @@ public interface StoreService {
     void deleteById(Long id);
 
     Optional<StoreEntity> findById(Long id);
-    Optional<StoreEntity> findByName(String name);
+    StoreEntity findByName(String name);
 }

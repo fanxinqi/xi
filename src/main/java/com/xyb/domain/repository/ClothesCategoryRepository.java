@@ -15,7 +15,7 @@ import java.util.Optional;
  */
 
 public interface ClothesCategoryRepository extends JpaRepository<ClothesCategoryEntity, Long> {
-    Optional<ClothesCategoryEntity> findByName(String name);
+    ClothesCategoryEntity findByName(String name);
 
     @Query("from ClothesCategoryEntity cc where cc.name=:name")
     Optional<ClothesCategoryEntity> findUser(@Param("name") String name);

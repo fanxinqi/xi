@@ -23,18 +23,27 @@ public class ClothesCategoryEntity {
     @NotNull(message = "名称不能为空")
     private String name;
     @Column(name = "price")
-    @ApiModelProperty(required = true)
-    @NotNull(message = "价格不能为空")
     private float price;
     @Column(name = "des")
     private String des;
     @Column(name = "create_time")
     private long createTime;
-    @Column(name = "previewUrls")
-    private String previewUrls;
     @ManyToMany(cascade = {CascadeType.REFRESH}, fetch = FetchType.EAGER)
     @JoinTable(name = "category_parent_children", joinColumns = {@JoinColumn(name = "c_id")}, inverseJoinColumns = {@JoinColumn(name = "p_id")})
     private Set<ClothesCategoryEntity> childrenClothesCategoryEntitySet;
+
+    public FileEntity getImageEntity() {
+        return ImageEntity;
+    }
+
+    public void setImageEntity(FileEntity imageEntity) {
+        ImageEntity = imageEntity;
+    }
+
+    @ManyToOne(cascade = {CascadeType.REFRESH}, fetch = FetchType.EAGER)
+    @JoinTable(name = "clothes_category_file_res", joinColumns = {@JoinColumn(name = "clothes_category_id")}, inverseJoinColumns = {@JoinColumn(name = "file_res_id")})
+    private FileEntity ImageEntity;
+
 
     public Set<ClothesCategoryEntity> getChildrenClothesCategoryEntitySet() {
         return childrenClothesCategoryEntitySet;
@@ -42,15 +51,6 @@ public class ClothesCategoryEntity {
 
     public void setChildrenClothesCategoryEntitySet(Set<ClothesCategoryEntity> childrenClothesCategoryEntitySet) {
         this.childrenClothesCategoryEntitySet = childrenClothesCategoryEntitySet;
-    }
-
-
-    public String getPreviewUrls() {
-        return previewUrls;
-    }
-
-    public void setPreviewUrls(String previewUrls) {
-        this.previewUrls = previewUrls;
     }
 
     public Long getId() {
@@ -92,6 +92,7 @@ public class ClothesCategoryEntity {
     public void setCreateTime(long createTime) {
         this.createTime = System.currentTimeMillis();
     }
+
     public long getParentId() {
         return parentId;
     }

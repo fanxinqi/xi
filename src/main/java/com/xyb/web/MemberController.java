@@ -3,6 +3,7 @@ package com.xyb.web;
 import com.xyb.annotation.LoginRequired;
 import com.xyb.common.TokenVerify;
 import com.xyb.domain.entity.AccountInfoEntity;
+import com.xyb.domain.entity.ClothesOrderEntity;
 import com.xyb.domain.entity.MemberCategoryEntity;
 import com.xyb.domain.entity.MemberEntity;
 import com.xyb.domain.model.MemberAndCategory;
@@ -14,6 +15,7 @@ import com.xyb.service.MemberService;
 import com.xyb.utils.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.web.PageableDefault;
@@ -66,8 +68,8 @@ public class MemberController {
     }
 
     @LoginRequired
-    @GetMapping("/list_category")
-    public RestInfo getMemberListCategory(@RequestHeader(value = HEADER_TOKEN, required = false) String token, @PageableDefault(page = 0, size = 10, sort = {"storeId"}, direction = Sort.Direction.DESC) Pageable pageable) {
+    @GetMapping("/listCategory")
+    public RestInfo getMemberListCategory(@RequestHeader(value = HEADER_TOKEN) String token, @PageableDefault(page = 0, size = 10, sort = {"storeId"}, direction = Sort.Direction.DESC) Pageable pageable) {
         AccountInfoEntity entity = null;
         if (token != null) {
             entity = tokenVerify.getUserInfoByToken(token);
@@ -113,6 +115,7 @@ public class MemberController {
                         if (memberService.findByStoreIdAndPhone(entity.getStoreId(), member.getPhone()) != null) {
                             throw new MyException("您已有会员，是否需要充值");
                         } else {
+                            member.setStoreId(entity.getStoreId());
                             return new RestInfo(memberService.save(member));
                         }
                     }
@@ -125,78 +128,176 @@ public class MemberController {
     @LoginRequired
     @PostMapping(value = "/update")
     public RestInfo updateMember(@RequestHeader(value = HEADER_TOKEN) String token, @RequestBody MemberEntity member) {
-        if (member == null) {
+        if (member == null || member.getId() <= 0) {
             throw new MyException("请传入更新的内容");
         }
         AccountInfoEntity entity = null;
         entity = tokenVerify.getUserInfoByToken(token);
         String roleName = tokenVerify.getRoleNameByUser(entity);
-        if (entity.getStoreId() > 0) {
-            if (member.getId() > 0) {
-                MemberEntity memberEntity = memberService.findByStoreIdAndId(entity.getStoreId(), entity.getId());
+        if (ADMIN_ROL.equals(roleName)) {
+            Optional<MemberEntity> memberEntityOptional = memberService.findById(member.getId());
+            if (memberEntityOptional != null) {
+                MemberEntity memberEntity = memberEntityOptional.get();
                 if (memberEntity != null) {
-                    if (!StringUtils.isBlank(member.getPhone())) {
-                        memberEntity.setPhone(member.getPhone());
-                    }
-                    if (!StringUtils.isBlank(member.getAddress())) {
-                        memberEntity.setAddress(member.getAddress());
-                    }
-                    if (member.getBirthday() > 0) {
-                        memberEntity.setBirthday(member.getBirthday());
-                    }
-                    if (!StringUtils.isBlank(member.getDes())) {
-                        memberEntity.setDes(member.getDes());
-                    }
-                    if (!StringUtils.isBlank(member.getHeadUrl())) {
-                        memberEntity.setHeadUrl(member.getHeadUrl());
-                    }
-                    if (!StringUtils.isBlank(member.getIdNum())) {
-                        memberEntity.setIdNum(member.getIdNum());
-                    }
-                    if (!StringUtils.isBlank(member.getName())) {
-                        memberEntity.setName(member.getName());
-                    }
-                    if (!StringUtils.isBlank(member.getRemainFee())) {
-                        memberEntity.setRemainFee(member.getRemainFee());
-                    }
-                    if (member.getBirthday() > 0) {
-                        memberEntity.setBirthday(member.getBirthday());
-                    }
-                    if (member.getMemberCategoryId() > 0) {
-                        memberEntity.setMemberCategoryId(member.getMemberCategoryId());
-                    }
-                    if(member.getGender()>0)
-                    {
-                        memberEntity.setGender(member.getGender());
-                    }
-                    return new RestInfo(memberService.save(memberEntity));
-
+                    return new RestInfo(memberService.save(updateMember(memberEntity, member)));
                 } else {
                     throw new MyException("您还没有该会员，还不能进行编辑");
                 }
+            } else {
+                throw new MyException("您还没有该会员，还不能进行编辑");
             }
 
+        } else if (STORE_ROL.equals(roleName)) {
+            if (entity.getStoreId() > 0) {
+                if (member.getId() > 0) {
+                    MemberEntity memberEntity = memberService.findByStoreIdAndId(entity.getStoreId(), member.getId());
+                    if (memberEntity != null) {
+                        return new RestInfo(memberService.save(updateMember(memberEntity, member)));
+                    } else {
+                        throw new MyException("您还没有该会员，还不能进行编辑");
+                    }
+                }
+            }
         }
+
         throw new MyException("操作失败");
     }
 
     @LoginRequired
-    @PostMapping(value = "/search_by_name")
-    public Page<MemberEntity> searchMemberByName(@RequestParam(value = "storeId", required = true) long storeId, @PageableDefault(page = 0, size = 10, sort = {"id"}, direction = Sort.Direction.DESC) Pageable pageable) {
-        return memberService.findByStoreId(storeId, pageable);
+    @GetMapping(value = "/searchByName")
+    public RestInfo searchMemberByName(@RequestHeader(value = HEADER_TOKEN) String token
+            , @RequestParam(value = "name") String name
+            , @RequestParam(value = "storeId", required = true) long storeId, @PageableDefault(page = 0, size = 10, sort = {"id"}, direction = Sort.Direction.DESC) Pageable pageable) {
+        AccountInfoEntity user = null;
+        user = tokenVerify.getUserInfoByToken(token);
+        if (user != null) {
+            Page<MemberEntity> page = null;
+            String roleName = tokenVerify.getRoleNameByUser(user);
+            if (ADMIN_ROL.equals(roleName)) {
+                page = memberService.findByName(name, pageable);
+            } else if (STORE_ROL.equals(roleName)) {
+                if (user.getStoreId() <= 0) {
+                    throw new MyException("您还没有对应的店铺信息");
+                }
+                page = memberService.findByStoreIdAndName(user.getStoreId(), name, pageable);
+            }
+            return new RestInfo(page);
+        }
+        throw new AuthorityException("您还没有相应的权限");
     }
 
     @LoginRequired
     @GetMapping(value = "/searchMemberByPhone")
-    public RestInfo searchMemberByPhone(@RequestParam(value = "phone", required = true) String phone,@RequestHeader(value = HEADER_TOKEN, required = false) String token, @PageableDefault(page = 0, size = 10, sort = {"id"}, direction = Sort.Direction.DESC) Pageable pageable) {
-        AccountInfoEntity entity = tokenVerify.getUserInfoByToken(token);
-        return new RestInfo(memberService.findByStoreIdAndPhone(entity.getStoreId(),phone));
+    public RestInfo searchMemberByPhone(@RequestHeader(value = HEADER_TOKEN) String token, @RequestParam(value = "phone", required = true) String phone, @PageableDefault(page = 0, size = 10, sort = {"id"}, direction = Sort.Direction.DESC) Pageable pageable) {
+        AccountInfoEntity user = null;
+        user = tokenVerify.getUserInfoByToken(token);
+        if (user != null) {
+            String roleName = tokenVerify.getRoleNameByUser(user);
+            Page<MemberEntity> page = null;
+            if (ADMIN_ROL.equals(roleName)) {
+                page = memberService.findByPhone(phone, pageable);
+            } else if (STORE_ROL.equals(roleName)) {
+                if (user.getStoreId() <= 0) {
+                    throw new MyException("您还没有对应的店铺信息");
+                }
+                MemberEntity memberEntity = memberService.findByStoreIdAndPhone(user.getStoreId(), phone);
+                ArrayList<MemberEntity> memberList = new ArrayList<>();
+                memberList.add(memberEntity);
+                page = new PageImpl(memberList);
+            }
+            return new RestInfo(page);
+        }
+        throw new AuthorityException("您还没有相应的权限");
     }
 
     @LoginRequired
-    @PostMapping(value = "/delete_by_id")
-    public void deleteMemberById(@RequestParam(value = "id", required = true) long id) {
-        memberService.deleteById(id);
+    @GetMapping(value = "/searchMemberById")
+    public RestInfo searchMemberById(@RequestHeader(value = HEADER_TOKEN) String token, @RequestParam(value = "id", required = true) long id, @PageableDefault(page = 0, size = 10, sort = {"id"}, direction = Sort.Direction.DESC) Pageable pageable) {
+        AccountInfoEntity user = null;
+        user = tokenVerify.getUserInfoByToken(token);
+        if (user != null) {
+            MemberEntity memberEntity = null;
+            String roleName = tokenVerify.getRoleNameByUser(user);
+            if (ADMIN_ROL.equals(roleName)) {
+                Optional<MemberEntity> optionalMemberEntity = memberService.findById(id);
+                memberEntity = optionalMemberEntity == null ? null : optionalMemberEntity.get();
+            } else if (STORE_ROL.equals(roleName)) {
+                if (user.getStoreId() <= 0) {
+                    throw new MyException("您还没有对应的店铺信息");
+                }
+                memberEntity = memberService.findByStoreIdAndId(user.getStoreId(), id);
+            }
+            return new RestInfo(memberEntity);
+        }
+        throw new AuthorityException("您还没有相应的权限");
+    }
+
+    @LoginRequired
+    @PostMapping(value = "/deleteById")
+    public RestInfo deleteMemberById(@RequestHeader(value = HEADER_TOKEN) String token, @RequestParam(value = "id", required = true) long id) {
+        AccountInfoEntity user = null;
+        user = tokenVerify.getUserInfoByToken(token);
+        if (user != null) {
+            MemberEntity memberEntity = null;
+            String roleName = tokenVerify.getRoleNameByUser(user);
+            if (ADMIN_ROL.equals(roleName)) {
+                Optional<MemberEntity> optionalMemberEntity = memberService.findById(id);
+                memberEntity = optionalMemberEntity == null ? null : optionalMemberEntity.get();
+            } else if (STORE_ROL.equals(roleName)) {
+                if (user.getStoreId() <= 0) {
+                    throw new MyException("您还没有对应的会员信息");
+                }
+                memberEntity = memberService.findByStoreIdAndId(user.getStoreId(), id);
+            }
+            if (memberEntity != null) {
+                memberService.delete(memberEntity);
+                return new RestInfo();
+            } else {
+                throw new MyException("您还没有对应的会员信息");
+            }
+        }
+        throw new AuthorityException("您还没有相应的权限");
+
+    }
+
+    private MemberEntity updateMember(MemberEntity memberEntity, MemberEntity requestMember) {
+        if (memberEntity == null) {
+            return null;
+        }
+        if (!StringUtils.isBlank(requestMember.getPhone())) {
+            memberEntity.setPhone(requestMember.getPhone());
+        }
+        if (!StringUtils.isBlank(requestMember.getAddress())) {
+            memberEntity.setAddress(requestMember.getAddress());
+        }
+        if (requestMember.getBirthday() > 0) {
+            memberEntity.setBirthday(requestMember.getBirthday());
+        }
+        if (!StringUtils.isBlank(requestMember.getDes())) {
+            memberEntity.setDes(requestMember.getDes());
+        }
+        if (!StringUtils.isBlank(requestMember.getHeadUrl())) {
+            memberEntity.setHeadUrl(requestMember.getHeadUrl());
+        }
+        if (!StringUtils.isBlank(requestMember.getIdNum())) {
+            memberEntity.setIdNum(requestMember.getIdNum());
+        }
+        if (!StringUtils.isBlank(requestMember.getName())) {
+            memberEntity.setName(requestMember.getName());
+        }
+        if (!StringUtils.isBlank(requestMember.getRemainFee())) {
+            memberEntity.setRemainFee(requestMember.getRemainFee());
+        }
+        if (requestMember.getBirthday() > 0) {
+            memberEntity.setBirthday(requestMember.getBirthday());
+        }
+        if (requestMember.getMemberCategoryId() > 0) {
+            memberEntity.setMemberCategoryId(requestMember.getMemberCategoryId());
+        }
+        if (requestMember.getGender() > 0) {
+            memberEntity.setGender(requestMember.getGender());
+        }
+        return memberEntity;
     }
 
 }

@@ -4,6 +4,7 @@ import io.swagger.annotations.ApiModelProperty;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
+import java.util.Set;
 
 @Entity
 @Table(name = "member_Category")
@@ -29,6 +30,17 @@ public class MemberCategoryEntity  {
     @NotNull(message = "请生成会员到期时间")
     private long activeTime;
 
+    public FileEntity getImageEntity() {
+        return imageEntity;
+    }
+
+    public void setImageEntity(FileEntity imageEntity) {
+        this.imageEntity = imageEntity;
+    }
+
+    @ManyToOne(cascade = {CascadeType.REFRESH}, fetch = FetchType.EAGER)
+    @JoinTable(name = "member_category_file_res", joinColumns = {@JoinColumn(name = "member_category_id")}, inverseJoinColumns = {@JoinColumn(name = "file_res_id")})
+    private FileEntity imageEntity;
     public Long getId() {
         return id;
     }

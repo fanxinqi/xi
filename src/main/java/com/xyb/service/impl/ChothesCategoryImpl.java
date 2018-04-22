@@ -27,6 +27,11 @@ public class ChothesCategoryImpl implements ChothesCategoryService {
     }
 
     @Override
+    public List<ClothesCategoryEntity> findAll() {
+        return chlothesCategoryRepository.findAll();
+    }
+
+    @Override
     public ClothesCategoryEntity save(ClothesCategoryEntity entity) {
         return chlothesCategoryRepository.save(entity);
     }
@@ -47,7 +52,7 @@ public class ChothesCategoryImpl implements ChothesCategoryService {
     }
 
     @Override
-    public Optional<ClothesCategoryEntity> findByName(String name) {
+    public ClothesCategoryEntity findByName(String name) {
         return chlothesCategoryRepository.findByName(name);
     }
 

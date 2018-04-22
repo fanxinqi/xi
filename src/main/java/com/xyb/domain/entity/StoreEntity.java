@@ -25,32 +25,36 @@ public class StoreEntity {
     @ApiModelProperty(required = true)
     private String address;
     @Column(name = "create_time")
-    private Long createTime;
-    @ManyToMany(cascade = {CascadeType.REFRESH}, fetch = FetchType.EAGER)
-    @JoinTable(name = "store_member", joinColumns = {@JoinColumn(name = "store_id")}, inverseJoinColumns = {@JoinColumn(name = "member_id")})
-    private Set<MemberEntity> storeMemberSet;
-    @ManyToMany(cascade = {CascadeType.REFRESH}, fetch = FetchType.EAGER)
-    @JoinTable(name = "store_order", joinColumns = {@JoinColumn(name = "store_id")}, inverseJoinColumns = {@JoinColumn(name = "order_id")})
-    private Set<ClothesOrderEntity> storeOrderSet;
+    private long createTime;
     @ManyToMany(cascade = {CascadeType.REFRESH}, fetch = FetchType.EAGER)
     @JoinTable(name = "store_laundry_expert", joinColumns = {@JoinColumn(name = "store_id")}, inverseJoinColumns = {@JoinColumn(name = "laundry_expert_id")})
     private Set<ClothesOrderEntity> storeLaundryExpertSet;
 
-    public Set<MemberEntity> getStoreMemberSet() {
-        return storeMemberSet;
+    @Column(name = "des")
+    private String des;
+
+    public String getDes() {
+        return des;
     }
 
-    public void setStoreMemberSet(Set<MemberEntity> storeMemberSet) {
-        this.storeMemberSet = storeMemberSet;
+    public void setDes(String des) {
+        this.des = des;
     }
 
-    public Set<ClothesOrderEntity> getStoreOrderSet() {
-        return storeOrderSet;
+    public FileEntity getImageEntity() {
+        return imageEntity;
     }
 
-    public void setStoreOrderSet(Set<ClothesOrderEntity> storeOrderSet) {
-        this.storeOrderSet = storeOrderSet;
+    public void setImageEntity(FileEntity imageEntity) {
+        this.imageEntity = imageEntity;
     }
+
+    @ManyToOne(cascade = {CascadeType.REFRESH}, fetch = FetchType.EAGER)
+    @JoinTable(name = "store_file_res", joinColumns = {@JoinColumn(name = "store_id")}, inverseJoinColumns = {@JoinColumn(name = "file_res_id")})
+    private FileEntity imageEntity;
+
+
+
 
     public Set<ClothesOrderEntity> getStoreLaundryExpertSet() {
         return storeLaundryExpertSet;
@@ -85,11 +89,11 @@ public class StoreEntity {
     }
 
 
-    public Long getCreateTime() {
+    public long getCreateTime() {
         return createTime;
     }
 
-    public void setCreateTime(Long createTime) {
+    public void setCreateTime(long createTime) {
         this.createTime = System.currentTimeMillis();
     }
 

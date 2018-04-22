@@ -6,6 +6,8 @@ import com.xyb.domain.repository.StoreRepository;
 import com.xyb.service.MemberService;
 import com.xyb.service.StoreService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -16,9 +18,15 @@ public class StoreImpl implements StoreService {
     @Autowired
     private StoreRepository storeRepository;
 
+
     @Override
-    public List<StoreEntity> findAll() {
-        return storeRepository.findAll();
+    public Page<StoreEntity> findAll(Pageable pageable) {
+        return storeRepository.findAll(pageable);
+    }
+
+    @Override
+    public Page<StoreEntity> findAllByName(String name,Pageable pageable) {
+        return storeRepository.findAllByName(name,pageable);
     }
 
     @Override
@@ -42,7 +50,7 @@ public class StoreImpl implements StoreService {
     }
 
     @Override
-    public Optional<StoreEntity> findByName(String name) {
+    public StoreEntity findByName(String name) {
         return storeRepository.findByName(name);
     }
 }

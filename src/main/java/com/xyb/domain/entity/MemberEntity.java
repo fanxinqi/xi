@@ -70,6 +70,19 @@ public class MemberEntity {
     @ManyToMany(cascade = {CascadeType.REFRESH}, fetch = FetchType.EAGER)
     @JoinTable(name = "member_categorys", joinColumns = {@JoinColumn(name = "m_id")}, inverseJoinColumns = {@JoinColumn(name = "c_id")})
     private Set<MemberCategoryEntity> memberCategoryEntitySet;
+    @ManyToOne(cascade = {CascadeType.REFRESH}, fetch = FetchType.EAGER)
+    @JoinTable(name = "member_file_res", joinColumns = {@JoinColumn(name = "member_id")}, inverseJoinColumns = {@JoinColumn(name = "file_res_id")})
+    private FileEntity imageEntity;
+
+    public FileEntity getImageEntity() {
+        return imageEntity;
+    }
+
+    public void setImageEntity(FileEntity imageEntity) {
+        this.imageEntity = imageEntity;
+    }
+
+
 
     public Set<MemberCategoryEntity> getMemberCategoryEntity() {
         return memberCategoryEntitySet;
@@ -174,5 +187,13 @@ public class MemberEntity {
     public void setRemainFee(String remainFee) {
         this.remainFee = remainFee;
     }
+    public Set<MemberCategoryEntity> getMemberCategoryEntitySet() {
+        return memberCategoryEntitySet;
+    }
+
+    public void setMemberCategoryEntitySet(Set<MemberCategoryEntity> memberCategoryEntitySet) {
+        this.memberCategoryEntitySet = memberCategoryEntitySet;
+    }
+
 }
 

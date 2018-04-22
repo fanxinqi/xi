@@ -61,5 +61,10 @@ public class  ClothesOrderImpl implements ClothesOrderService {
         return clothesOrderRepository.findByStoreIdAndPhone(storeId,phone,pageable);
     }
 
+    @Override
+    public ClothesOrderEntity findByStoreIdAndId(long storeId, long id) {
+        return clothesOrderRepository.findByStoreIdAndId(storeId,id);
+    }
+
 
 }

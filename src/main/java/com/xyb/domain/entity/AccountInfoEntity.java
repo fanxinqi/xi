@@ -39,6 +39,7 @@ public class AccountInfoEntity {
     @NotNull(message = "所属分店不能为空")
     private long storeId;
 
+
     public void setStoreId(long storeId) {
         this.storeId = storeId;
     }
@@ -61,13 +62,25 @@ public class AccountInfoEntity {
     @ManyToMany(cascade = {CascadeType.REFRESH}, fetch = FetchType.EAGER)
     @JoinTable(name = "account_permission", joinColumns = {@JoinColumn(name = "account_id")}, inverseJoinColumns = {@JoinColumn(name = "permission_id")})
     private Set<PermissionInfoEntity> permissionInfoEntitySet;
+    @ManyToOne(cascade = {CascadeType.REFRESH}, fetch = FetchType.EAGER)
+    @JoinTable(name = "account_file_res", joinColumns = {@JoinColumn(name = "account_id")}, inverseJoinColumns = {@JoinColumn(name = "file_res_id")})
+    private FileEntity ImageEntity;
 
+    public FileEntity getImageEntity() {
+        return ImageEntity;
+    }
+
+    public void setImageEntity(FileEntity imageEntity) {
+        ImageEntity = imageEntity;
+    }
     public Set<PermissionInfoEntity> getPermissionInfoEntitySet() {
         return permissionInfoEntitySet;
     }
+
     public void setPermissionInfoEntitySet(Set<PermissionInfoEntity> permissionInfoEntitySet) {
         this.permissionInfoEntitySet = permissionInfoEntitySet;
     }
+
     public String getName() {
         return name;
     }

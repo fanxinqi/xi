@@ -23,11 +23,18 @@ public interface MemberService {
     void deleteById(Long id);
 
     Optional<MemberEntity> findById(Long id);
-    Optional<MemberEntity> findByName(String name);
-    Page<MemberEntity> findByStoreId(long storeId,Pageable pageable);
+
+    Page<MemberEntity> findByName(String name, Pageable pageable);
+
+    Page<MemberEntity> findByStoreId(long storeId, Pageable pageable);
+
     MemberEntity findTopByStoreId(long storeId);
-    MemberEntity findByPhone(String  phone);
-    MemberEntity findByStoreIdAndPhone(long storeId,String  phone);
-    MemberEntity findByStoreIdAndId(long storeId,long  id);
-    MemberEntity findByStoreIdAndName(long storeId,String   name);
+
+    Page<MemberEntity> findByPhone(String phone, Pageable pageable);
+
+    MemberEntity findByStoreIdAndPhone(long storeId, String phone);
+
+    MemberEntity findByStoreIdAndId(long storeId, long id);
+
+    Page<MemberEntity> findByStoreIdAndName(long storeId, String name, Pageable pageable);
 }

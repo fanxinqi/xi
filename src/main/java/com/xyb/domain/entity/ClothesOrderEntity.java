@@ -1,5 +1,6 @@
 package com.xyb.domain.entity;
 
+import com.xyb.utils.OrderIdGenerateUtils;
 import io.swagger.annotations.ApiModelProperty;
 
 import javax.persistence.*;
@@ -14,16 +15,8 @@ public class ClothesOrderEntity {
     @Column(name = "id")
     @ApiModelProperty("id")
     private Long id;
-    @Column(name = "price")
-    @ApiModelProperty(required = true)
-    @NotNull(message = "价格不能为空")
-    private float price;
     @Column(name = "create_time")
     private long createTime;
-    @Column(name = "preview_urls")
-    @ApiModelProperty(required = true)
-    @NotNull(message = "请上传图片")
-    private String previewUrls;
     @Column(name = "phone")
     @ApiModelProperty(required = true)
     @NotNull(message = "请输入手机号")
@@ -34,20 +27,53 @@ public class ClothesOrderEntity {
     private String storageNum;
     @ManyToMany(cascade = {CascadeType.REFRESH}, fetch = FetchType.EAGER)
     @JoinTable(name = "order_clothes_category", joinColumns = {@JoinColumn(name = "order_id")}, inverseJoinColumns = {@JoinColumn(name = "clothes_category_id")})
-    private Set<ClothesCategoryEntity> clothesCategoryEntitySet;
-    @ManyToMany(cascade = {CascadeType.REFRESH}, fetch = FetchType.EAGER)
+    private Set<ClothesCategoryEntity> categoryEntitySet;
+    @ManyToOne(cascade = {CascadeType.REFRESH}, fetch = FetchType.EAGER)
     @JoinTable(name = "order_clothes_state", joinColumns = {@JoinColumn(name = "order_id")}, inverseJoinColumns = {@JoinColumn(name = "clothes_state_id")})
-    private Set<DictionaryEntity> orderClothesStateEntitySet;
-    @ApiModelProperty(required = true)
-    @NotNull(message = "请选择支付方式")
-    @Column(name = "payment_entity_set")
-    @ManyToMany(cascade = {CascadeType.REFRESH}, fetch = FetchType.EAGER)
+    private DictionaryEntity stateEntity;
+    @ManyToOne(cascade = {CascadeType.REFRESH}, fetch = FetchType.EAGER)
     @JoinTable(name = "order_pay_type", joinColumns = {@JoinColumn(name = "order_id")}, inverseJoinColumns = {@JoinColumn(name = "pay_type_id")})
-    private Set<PaymentEntity> paymentEntitySet;
+    private PaymentEntity paymentEntity;
+
     @Column(name = "store_id")
     @ApiModelProperty(required = true)
     @NotNull(message = "请选择门店")
+    @ManyToMany(cascade = {CascadeType.REFRESH}, fetch = FetchType.EAGER)
+    @JoinTable(name = "order_file_res", joinColumns = {@JoinColumn(name = "order_id")}, inverseJoinColumns = {@JoinColumn(name = "file_res_id")})
+    private Set<FileEntity> ImageSet;
     private long storeId;
+    @Column(name = "order_id")
+    @ApiModelProperty(required = true)
+    @NotNull(message = "订单号不能为空")
+    private String orderId;
+
+    public void setCategoryEntitySet(Set<ClothesCategoryEntity> categoryEntitySet) {
+        this.categoryEntitySet = categoryEntitySet;
+    }
+
+    public DictionaryEntity getStateEntity() {
+        return stateEntity;
+    }
+
+    public void setStateEntity(DictionaryEntity stateEntity) {
+        this.stateEntity = stateEntity;
+    }
+
+    public Set<FileEntity> getImageSet() {
+        return ImageSet;
+    }
+
+    public void setImageSet(Set<FileEntity> imageSet) {
+        ImageSet = imageSet;
+    }
+
+    public String getOrderId() {
+        return orderId;
+    }
+
+    public void setOrderId(String orderId) {
+        this.orderId = OrderIdGenerateUtils.generateOrderNum();
+    }
 
     public long getStoreId() {
         return storeId;
@@ -57,7 +83,17 @@ public class ClothesOrderEntity {
         this.storeId = storeId;
     }
 
+    public Set<ClothesCategoryEntity> getCategoryEntitySet() {
+        return categoryEntitySet;
+    }
 
+    public PaymentEntity getPaymentEntity() {
+        return paymentEntity;
+    }
+
+    public void setPaymentEntity(PaymentEntity paymentEntity) {
+        this.paymentEntity = paymentEntity;
+    }
 
     public Long getId() {
         return id;
@@ -67,52 +103,12 @@ public class ClothesOrderEntity {
         this.id = id;
     }
 
-    public float getPrice() {
-        return price;
-    }
-
-    public void setPrice(float price) {
-        this.price = price;
-    }
-
     public long getCreateTime() {
         return createTime;
     }
 
     public void setCreateTime(long createTime) {
         this.createTime = System.currentTimeMillis();
-    }
-
-    public String getPreviewUrls() {
-        return previewUrls;
-    }
-
-    public void setPreviewUrls(String previewUrls) {
-        this.previewUrls = previewUrls;
-    }
-
-    public Set<ClothesCategoryEntity> getClothesCategoryEntitySet() {
-        return clothesCategoryEntitySet;
-    }
-
-    public void setClothesCategoryEntitySet(Set<ClothesCategoryEntity> clothesCategoryEntitySet) {
-        this.clothesCategoryEntitySet = clothesCategoryEntitySet;
-    }
-
-    public Set<DictionaryEntity> getOrderClothesStateEntitySet() {
-        return orderClothesStateEntitySet;
-    }
-
-    public void setOrderClothesStateEntitySet(Set<DictionaryEntity> orderClothesStateEntitySet) {
-        this.orderClothesStateEntitySet = orderClothesStateEntitySet;
-    }
-
-    public Set<PaymentEntity> getPaymentEntitySet() {
-        return paymentEntitySet;
-    }
-
-    public void setPaymentEntitySet(Set<PaymentEntity> paymentEntitySet) {
-        this.paymentEntitySet = paymentEntitySet;
     }
 
     public String getPhone() {

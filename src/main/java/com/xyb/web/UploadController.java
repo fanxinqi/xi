@@ -1,28 +1,26 @@
 package com.xyb.web;
 
-import ch.qos.logback.core.util.FileUtil;
-import com.xyb.domain.model.FileUploadModel;
+import com.xyb.domain.entity.FileEntity;
 import com.xyb.exception.MyException;
 import com.xyb.exception.RestInfo;
-import com.xyb.utils.DateUtils;
+import com.xyb.service.FileSrcService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.multipart.MultipartHttpServletRequest;
 
 import javax.servlet.http.HttpServletRequest;
 import java.io.*;
+import java.util.ArrayList;
 import java.util.List;
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
-
-import java.math.BigInteger;
-import java.util.UUID;
 
 @RestController
 @RequestMapping("/attachment")
 public class UploadController {
-
-    String uploadPath="/Users/fanxinqi/Desktop/洗衣帮项目/jiukuaijiu/yixibang/xi/target/classes/static/";
+    @Autowired
+    private FileSrcService fileSrcService;
+    String uploadPath="/Users/rrd/Documents/xyb_server/target/classes/static/";
+    String preSuffix="/api/sh/static/";
     /**
      * 单文件上传
      *
@@ -34,10 +32,7 @@ public class UploadController {
     @ResponseBody
     public RestInfo upload(@RequestParam("file") MultipartFile file, String pathInfo,HttpServletRequest request) {
         if (!file.isEmpty()) {
-//            String rootpath = request.getSession().getServletContext().getRealPath("/static");
-//            String filepath = "/upload/"+pathInfo+"/" + DateUtils.longToString(System.currentTimeMillis()) + "/";
             String fileOriginalName = file.getOriginalFilename();
-//            String newfilename = DateUtils.longToString(System.currentTimeMillis()) + fileOriginalName.substring(fileOriginalName.lastIndexOf("."));
             String newfilename =System.currentTimeMillis()+ fileOriginalName.substring(fileOriginalName.lastIndexOf("."));
             File saveFile = new File(uploadPath+newfilename);
             if (!saveFile.getParentFile().exists()) {
@@ -47,10 +42,9 @@ public class UploadController {
             try {
                  out = new BufferedOutputStream(new FileOutputStream(saveFile));
                 out.write(file.getBytes());
-                FileUploadModel fileUploadModel=new FileUploadModel();
-                fileUploadModel.setMessage(saveFile.getName() + " 上传成功");
-                fileUploadModel.setUrl("/api/sh/static/"+newfilename);
-                return  new RestInfo(fileUploadModel);
+                FileEntity fileEntity=new FileEntity();
+                fileEntity.setUrl(preSuffix+newfilename);
+                return  new RestInfo(fileSrcService.save(fileEntity));
             } catch (FileNotFoundException e) {
                 e.printStackTrace();
                 throw  new MyException("上传失败," + e.getMessage());
@@ -80,12 +74,7 @@ public class UploadController {
      */
     @PostMapping("/uploadFiles")
     @ResponseBody
-    public RestInfo uploadFiles(HttpServletRequest request) throws IOException {
-        File savePath = new File(request.getSession().getServletContext().getRealPath("/upload/"));
-        if (!savePath.exists()) {
-            savePath.mkdirs();
-        }
-        List<MultipartFile> files = ((MultipartHttpServletRequest) request).getFiles("file");
+    public RestInfo uploadFiles(@RequestParam("file") ArrayList<MultipartFile> files, HttpServletRequest request) throws IOException {
         if(files==null || files.size()<=0)
         {
             return new RestInfo("上传失败，因为文件为空.");
@@ -97,16 +86,26 @@ public class UploadController {
             if (!file.isEmpty()) {
                 try {
                     byte[] bytes = file.getBytes();
-                    File saveFile = new File(savePath, file.getOriginalFilename());
+                    String fileOriginalName = file.getOriginalFilename();
+                    String newFileName =System.currentTimeMillis()+ fileOriginalName.substring(fileOriginalName.lastIndexOf("."));
+                    File saveFile = new File(uploadPath+ newFileName);
                     stream = new BufferedOutputStream(new FileOutputStream(saveFile));
                     stream.write(bytes);
-                    stream.close();
+                    FileEntity fileEntity=new FileEntity();
+                    fileEntity.setUrl(preSuffix+ newFileName);
+                    fileSrcService.save(fileEntity);
                 } catch (Exception e) {
-                    if (stream != null) {
-                        stream.close();
-                        stream = null;
-                    }
                     return new RestInfo("第 " + i + " 个文件上传有错误" + e.getMessage());
+                }finally {
+                    if(stream!=null)
+                    {
+                        try {
+                            stream.flush();
+                            stream.close();
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
+                    }
                 }
             } else {
                 return new RestInfo("第 " + i + " 个文件为空");

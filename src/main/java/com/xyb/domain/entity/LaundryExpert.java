@@ -4,6 +4,7 @@ import io.swagger.annotations.ApiModelProperty;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
+import java.util.Set;
 
 @Entity
 @Table(name = "laundry_expert")
@@ -48,6 +49,18 @@ public class LaundryExpert {
     private long storeId;
     @Column(name = "professional_des")
     private String professionalDes;
+    @ManyToOne(cascade = {CascadeType.REFRESH}, fetch = FetchType.EAGER)
+    @JoinTable(name = "laundry_file_res", joinColumns = {@JoinColumn(name = "laundry_id")}, inverseJoinColumns = {@JoinColumn(name = "file_res_id")})
+    private FileEntity imageEntity;
+
+    public FileEntity getImageEntity() {
+        return imageEntity;
+    }
+
+    public void setImageEntity(FileEntity imageEntity) {
+        this.imageEntity = imageEntity;
+    }
+
 
 
     public Long getId() {

@@ -3,6 +3,7 @@ package com.xyb.domain.entity;
 import io.swagger.annotations.ApiModelProperty;
 
 import javax.persistence.*;
+import java.util.Set;
 
 @Entity
 @Table(name = "role")
@@ -16,6 +17,23 @@ public class RoleInfoEntity {
     private String name;
     @Column(name = "des")
     private String des;
+    @ManyToOne(cascade = {CascadeType.REFRESH}, fetch = FetchType.EAGER)
+    @JoinTable(name = "role_file_res", joinColumns = {@JoinColumn(name = "role_id")}, inverseJoinColumns = {@JoinColumn(name = "file_res_id")})
+    private FileEntity imageEntity;
+
+    public FileEntity getImageEntity() {
+        return imageEntity;
+    }
+
+    public void setImageEntity(FileEntity imageEntity) {
+        this.imageEntity = imageEntity;
+    }
+
+
+
+
+
+
 
     public Long getId() {
         return id;

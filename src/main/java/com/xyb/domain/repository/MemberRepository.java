@@ -11,22 +11,30 @@ import org.springframework.data.repository.query.Param;
 import java.util.List;
 import java.util.Optional;
 
-/**A
+/**
+ * A
+ *
  * @Author fanxinqi
  * @Date 2018/3/20
  */
 
 public interface MemberRepository extends JpaRepository<MemberEntity, Long> {
-    Optional<MemberEntity> findByName(String name);
+    Page<MemberEntity> findByName(String name, Pageable pageable);
 
     @Query("from MemberEntity u where u.name =:name ")
     Optional<MemberEntity> findUser(@Param("name") String name);
+
     Page<MemberEntity> findByStoreId(long storeId, Pageable pageable);
+
     MemberEntity findTopByStoreId(long storeId);
-    MemberEntity findByStoreIdAndPhone(long storeId,String phone);
-    MemberEntity findByPhone(String phone);
-    MemberEntity findByStoreIdAndId(long storeId,long id);
-    MemberEntity findByStoreIdAndName(long storeId,String  name);
+
+    MemberEntity findByStoreIdAndPhone(long storeId, String phone);
+
+    Page<MemberEntity> findByPhone(String phone, Pageable pageable);
+
+    MemberEntity findByStoreIdAndId(long storeId, long id);
+
+    Page<MemberEntity> findByStoreIdAndName(long storeId, String name, Pageable pageable);
 //
 //    @Query("from MemberEntity m  inner join MemberCategoryEntity mc where m.member_category_id = mc.id")
 //    public List<Object[]> findList();

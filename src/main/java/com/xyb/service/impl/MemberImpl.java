@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Service;
 import org.springframework.data.domain.Pageable;
+
 import javax.persistence.EntityManager;
 import java.util.List;
 import java.util.Optional;
@@ -47,13 +48,13 @@ public class MemberImpl implements MemberService {
     }
 
     @Override
-    public Optional<MemberEntity> findByName(String name) {
-        return memberRepository.findByName(name);
+    public Page<MemberEntity> findByName(String name, Pageable pageable) {
+        return memberRepository.findByName(name, pageable);
     }
 
     @Override
     public Page<MemberEntity> findByStoreId(long storeId, Pageable pageable) {
-        return memberRepository.findByStoreId(storeId,pageable);
+        return memberRepository.findByStoreId(storeId, pageable);
     }
 
     @Override
@@ -62,24 +63,22 @@ public class MemberImpl implements MemberService {
     }
 
     @Override
-    public MemberEntity findByPhone(String phone) {
-        return memberRepository.findByPhone(phone);
+    public Page<MemberEntity> findByPhone(String phone, Pageable pageable) {
+        return memberRepository.findByPhone(phone, pageable);
     }
 
     @Override
     public MemberEntity findByStoreIdAndPhone(long storeId, String phone) {
-        return memberRepository.findByStoreIdAndPhone(storeId,phone);
+        return memberRepository.findByStoreIdAndPhone(storeId, phone);
     }
 
     @Override
     public MemberEntity findByStoreIdAndId(long storeId, long id) {
-        return memberRepository.findByStoreIdAndId(storeId,id);
+        return memberRepository.findByStoreIdAndId(storeId, id);
     }
 
     @Override
-    public MemberEntity findByStoreIdAndName(long storeId, String name) {
-        return memberRepository.findByStoreIdAndName(storeId,name);
+    public Page<MemberEntity> findByStoreIdAndName(long storeId, String name, Pageable pageable) {
+        return memberRepository.findByStoreIdAndName(storeId, name, pageable);
     }
-
-
 }

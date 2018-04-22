@@ -1,11 +1,14 @@
 package com.xyb.web;
 
+import com.xyb.annotation.LoginRequired;
+import com.xyb.common.TokenVerify;
+import com.xyb.domain.entity.AccountInfoEntity;
 import com.xyb.domain.entity.ClothesCategoryEntity;
 import com.xyb.domain.entity.StoreEntity;
+import com.xyb.exception.AuthorityException;
 import com.xyb.exception.MyException;
 import com.xyb.exception.RestInfo;
 import com.xyb.utils.StringUtils;
-import org.apache.shiro.authz.annotation.RequiresRoles;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
@@ -22,6 +25,9 @@ import java.util.concurrent.ConcurrentHashMap;
 
 import com.xyb.service.ChothesCategoryService;
 
+import static com.xyb.constants.Constants.ADMIN_ROL;
+import static com.xyb.constants.Constants.HEADER_TOKEN;
+import static com.xyb.constants.Constants.STORE_ROL;
 import static com.xyb.exception.RestInfo.OPERATE_ERROR_STRING;
 
 /**
@@ -31,18 +37,20 @@ import static com.xyb.exception.RestInfo.OPERATE_ERROR_STRING;
  * @Date 2018/3/20
  */
 @RestController
-@RequestMapping("/clothes_category")
+@RequestMapping("/clothesCategory")
 public class ClothesCategoryController {
     @Autowired
     private ChothesCategoryService chothesCategoryService;
+    @Autowired
+    private TokenVerify tokenVerify;
     /**
      * 内存中保存，用于演示。ConcurrentHashMap是线程安全的map
      */
     private static Map<Long, ClothesCategoryEntity> clothesCategorys = new ConcurrentHashMap<>();
 
+    @LoginRequired
     @GetMapping("/list")
-//    @RequiresRoles("ADMIN")
-    public RestInfo<ClothesCategoryEntity> getClothesCategoryList(@PageableDefault(page = 0, size=10,sort = { "id" }, direction = Sort.Direction.DESC) Pageable pageable) {
+    public RestInfo<ClothesCategoryEntity> getClothesCategoryList(@PageableDefault(page = 0, size = 1000, sort = {"id"}, direction = Sort.Direction.DESC) Pageable pageable) {
         Page<ClothesCategoryEntity> r = chothesCategoryService.findAll(pageable);
         List<ClothesCategoryEntity> sortList = new ArrayList<>();
         for (ClothesCategoryEntity entity : r) {
@@ -55,68 +63,115 @@ public class ClothesCategoryController {
                 }
             }
         }
-        PageImpl page=new PageImpl(sortList);
+        PageImpl page = new PageImpl(sortList);
         return new RestInfo(page);
     }
 
-    @GetMapping(value = "/get_by_id")
+    @LoginRequired
+    @GetMapping(value = "/getById")
     public RestInfo<ClothesCategoryEntity> getClothesCategoryById(@RequestParam(value = "id", required = true) long id) {
-        // 处理"/clotheCategory/{id}"的GET请求，用来获取url中id值的User信息
-        // url中的id可通过@PathVariable绑定到函数的参数中
-        return new RestInfo(chothesCategoryService.findById(id));
-    }
-
-    @PostMapping(value = "/save_or_update")
-    public RestInfo saveOrUpdateClothesCategory(@ModelAttribute ClothesCategoryEntity clothesCategory) {
-        return new RestInfo(chothesCategoryService.save(clothesCategory));
-    }
-    @PostMapping(value = "/update")
-    public RestInfo update(@RequestBody ClothesCategoryEntity parameterEntity) {
-        ClothesCategoryEntity entity = new ClothesCategoryEntity();
-        long id = 0;
-        if (parameterEntity != null && parameterEntity.getId() != null) {
-            id = parameterEntity.getId();
-            if (chothesCategoryService.findById(id).isPresent()) {
-                entity = chothesCategoryService.findById(id).get();
-                if (!StringUtils.isBlank(parameterEntity.getDes())) {
-                    entity.setDes(parameterEntity.getDes());
-                }
-                if (!StringUtils.isBlank(parameterEntity.getName())) {
-                    entity.setName(parameterEntity.getName());
-                }
-                if (parameterEntity.getPrice()!=0) {
-                    entity.setPrice(parameterEntity.getPrice());
-                }
-
-                entity = chothesCategoryService.save(entity);
-            } else {
-                throw new MyException("更新的条目的id有误");
-            }
-
-        } else {
-            if (parameterEntity == null) {
-                throw new MyException("请提交要更新的内容");
-            }
-            if (parameterEntity.getId() == null) {
-                throw new MyException("请提交要更新的条目的id");
-            }
+        Optional<ClothesCategoryEntity> clothesCategoryEntityOptional = chothesCategoryService.findById(id);
+        ClothesCategoryEntity clothesCategoryEntity = null;
+        if (clothesCategoryEntityOptional.isPresent()) {
+            clothesCategoryEntity = clothesCategoryEntityOptional.get();
         }
-        return new RestInfo(entity);
-    }
-    @PostMapping(value = "/delete_by_id")
-    public    RestInfo deleteClothesCategory(@RequestParam(value = "id", required = true) long id) {
-        try {
-            chothesCategoryService.deleteById(id);
-            return new RestInfo();
-        } catch (Exception e) {
-            e.printStackTrace();
-            return new RestInfo().setCode(RestInfo.OPERATE_ERROR).setMessage(OPERATE_ERROR_STRING);
-        }
+        return new RestInfo(clothesCategoryEntity);
     }
 
-    @PostMapping(value = "/search_by_name")
+    @LoginRequired
+    @GetMapping(value = "/searchByName")
     public RestInfo<ClothesCategoryEntity> getClothesCategoryByName(@RequestParam(value = "name", required = true) String name) {
-        Optional<ClothesCategoryEntity>entityOptional=chothesCategoryService.findByName(name);
-        return new RestInfo<>(entityOptional!=null?entityOptional.get():null);
+        if (StringUtils.isBlank(name)) {
+            throw new MyException("请输入要搜索的名字");
+        }
+        ClothesCategoryEntity clothesCategoryEntity = chothesCategoryService.findByName(name);
+        return new RestInfo(clothesCategoryEntity);
+    }
+
+    @LoginRequired
+    @PostMapping(value = "/save")
+    public RestInfo saveOrUpdateClothesCategory(@RequestHeader(value = HEADER_TOKEN) String token, @RequestBody ClothesCategoryEntity clothesCategory) {
+        if (clothesCategory == null) {
+            throw new MyException("请传入更新的内容");
+        }
+        AccountInfoEntity user = null;
+        user = tokenVerify.getUserInfoByToken(token);
+        if (user != null) {
+            String roleName = tokenVerify.getRoleNameByUser(user);
+            if (ADMIN_ROL.equals(roleName)) {
+                return new RestInfo(chothesCategoryService.save(clothesCategory));
+            } else {
+                throw new AuthorityException("还没有相应的权限");
+            }
+        }
+        throw new MyException("操作失败");
+    }
+
+    @PostMapping(value = "/update")
+    public RestInfo update(@RequestHeader(value = HEADER_TOKEN) String token, @RequestBody ClothesCategoryEntity requestClothesCategory) {
+        if (requestClothesCategory == null || requestClothesCategory.getId() <= 0) {
+            throw new MyException("请传入更新的内容");
+        }
+        AccountInfoEntity user = null;
+        user = tokenVerify.getUserInfoByToken(token);
+        if (user != null) {
+            String roleName = tokenVerify.getRoleNameByUser(user);
+            ClothesCategoryEntity clothesCategoryEntity = null;
+            if (ADMIN_ROL.equals(roleName)) {
+                Optional<ClothesCategoryEntity> clothesCategoryEntityOptional = chothesCategoryService.findById(requestClothesCategory.getId());
+                if (clothesCategoryEntityOptional != null) {
+                    clothesCategoryEntity = clothesCategoryEntityOptional.get();
+                } else {
+                    throw new MyException("您还没有该分类，还不能进行编辑");
+                }
+            } else if (STORE_ROL.equals(roleName)) {
+                throw new AuthorityException("您还没有相应的权限");
+            }
+            if (clothesCategoryEntity != null) {
+                chothesCategoryService.save(updateClothesCategory(clothesCategoryEntity, requestClothesCategory));
+            } else {
+                throw new AuthorityException("您还没有相应的权限");
+            }
+        }
+        throw new AuthorityException("您还没有相应的权限");
+    }
+
+    @LoginRequired
+    @PostMapping(value = "/deleteById")
+    public RestInfo deleteClothesCategory(@RequestHeader(value = HEADER_TOKEN) String token, @RequestParam(value = "id", required = true) long id) {
+        AccountInfoEntity user = null;
+        user = tokenVerify.getUserInfoByToken(token);
+        if (user != null) {
+            ClothesCategoryEntity storeEntity = null;
+            String roleName = tokenVerify.getRoleNameByUser(user);
+            if (ADMIN_ROL.equals(roleName)) {
+                Optional<ClothesCategoryEntity> clothesCategoryEntityOptional = chothesCategoryService.findById(id);
+                storeEntity = clothesCategoryEntityOptional == null ? null : clothesCategoryEntityOptional.get();
+                try {
+                    chothesCategoryService.delete(storeEntity);
+                    return new RestInfo();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                    throw new MyException("操作失败");
+                }
+            } else if (STORE_ROL.equals(roleName)) {
+                throw new AuthorityException("您还没有相应的权限");
+            }
+        }
+        throw new AuthorityException("您还没有相应的权限");
+    }
+
+
+    private ClothesCategoryEntity updateClothesCategory(ClothesCategoryEntity clothesCategoryEntity, ClothesCategoryEntity requestCategory) {
+        if (!StringUtils.isBlank(requestCategory.getDes())) {
+            clothesCategoryEntity.setDes(requestCategory.getDes());
+        }
+        if (!StringUtils.isBlank(requestCategory.getName())) {
+            clothesCategoryEntity.setName(requestCategory.getName());
+        }
+        if (requestCategory.getPrice() != 0) {
+            clothesCategoryEntity.setPrice(requestCategory.getPrice());
+        }
+        return clothesCategoryEntity;
     }
 }

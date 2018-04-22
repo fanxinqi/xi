@@ -1,5 +1,10 @@
 package com.xyb.web;
 
+import com.xyb.annotation.LoginRequired;
+import com.xyb.common.TokenVerify;
+import com.xyb.domain.entity.AccountInfoEntity;
+import com.xyb.domain.entity.ClothesOrderEntity;
+import com.xyb.domain.entity.MemberEntity;
 import com.xyb.domain.entity.StoreEntity;
 import com.xyb.exception.AuthorityException;
 import com.xyb.exception.MyException;
@@ -7,116 +12,216 @@ import com.xyb.exception.RestInfo;
 import com.xyb.service.StoreService;
 import com.xyb.utils.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
+import org.springframework.data.web.PageableDefault;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Optional;
+
+import static com.xyb.constants.Constants.ADMIN_ROL;
+import static com.xyb.constants.Constants.HEADER_TOKEN;
+import static com.xyb.constants.Constants.STORE_ROL;
 
 @RestController
 @RequestMapping("/store")
 public class StoreController {
     @Autowired
     private StoreService storeService;
+    @Autowired
+    private TokenVerify tokenVerify;
 
-    @PostMapping("/get_store")
-    public RestInfo getStoreById(@RequestParam(value = "storeId", required = true) long storeId) {
-        StoreEntity entity = new StoreEntity();
-        Optional<StoreEntity> optionalStoreEntity = storeService.findById(storeId);
-        if (optionalStoreEntity.isPresent()) {
-            entity = optionalStoreEntity.get();
+    @LoginRequired
+    @GetMapping("/getStoreById")
+    public RestInfo getStoreById(@RequestHeader(value = HEADER_TOKEN) String token, @RequestParam(value = "id", required = true) long id) {
+
+        AccountInfoEntity user = null;
+        user = tokenVerify.getUserInfoByToken(token);
+        if (user != null) {
+            StoreEntity storeEntity = null;
+            String roleName = tokenVerify.getRoleNameByUser(user);
+            if (ADMIN_ROL.equals(roleName)) {
+                Optional<StoreEntity> storeEntityOptional = storeService.findById(id);
+                if (storeEntityOptional.isPresent()) {
+                    storeEntity = storeEntityOptional.get();
+                }
+            } else if (STORE_ROL.equals(roleName)) {
+                if (user.getStoreId() <= 0) {
+                    throw new MyException("您还没有对应的店铺信息");
+                }
+                if (user.getStoreId() != id) {
+                    throw new AuthorityException("您还没有相应的权限");
+                }
+                Optional<StoreEntity> storeEntityOptional = storeService.findById(id);
+                if (storeEntityOptional.isPresent()) {
+                    storeEntity = storeEntityOptional.get();
+                }
+            }
+            return new RestInfo(storeEntity);
         }
-        return new RestInfo(entity);
+        throw new AuthorityException("您还没有相应的权限");
     }
 
+    @LoginRequired
+    @GetMapping("/list")
+    public RestInfo getStoreList(@RequestHeader(value = HEADER_TOKEN) String token,
+                                 @PageableDefault(page = 0, size = 10, sort = {"id"}, direction = Sort.Direction.DESC) Pageable pageable
+            , @RequestParam(value = "name", required = false) String name) {
+
+        AccountInfoEntity user = null;
+        user = tokenVerify.getUserInfoByToken(token);
+        if (user != null) {
+            StoreEntity storeEntity = null;
+            String roleName = tokenVerify.getRoleNameByUser(user);
+            if (ADMIN_ROL.equals(roleName)) {
+                Page<StoreEntity> storeEntityList=null;
+                if(StringUtils.isBlank(name))
+                {
+                    storeEntityList = storeService.findAll(pageable);
+                }else {
+                    storeEntityList=storeService.findAllByName(name,pageable);
+                }
+                return new RestInfo(storeEntityList);
+            } else if (STORE_ROL.equals(roleName)) {
+                throw new AuthorityException("您还没有相应的权限");
+            }
+        }
+        throw new AuthorityException("您还没有相应的权限");
+    }
+
+    @LoginRequired
     @PostMapping(value = "/update")
-    public RestInfo update(@RequestBody StoreEntity parameterEntity) {
-        StoreEntity entity = new StoreEntity();
-        long id = 0;
-        if (parameterEntity != null && parameterEntity.getId() != null) {
-            id = parameterEntity.getId();
-            if (storeService.findById(id).isPresent()) {
-                entity = storeService.findById(id).get();
-                if (!StringUtils.isBlank(parameterEntity.getAddress())) {
-                    entity.setAddress(parameterEntity.getAddress());
+    public RestInfo update(@RequestHeader(value = HEADER_TOKEN) String token, @RequestBody StoreEntity requestStoreEntity) {
+        if (requestStoreEntity == null || requestStoreEntity.getId() <= 0) {
+            throw new MyException("请传入更新的内容");
+        }
+        AccountInfoEntity user = null;
+        user = tokenVerify.getUserInfoByToken(token);
+        if (user != null) {
+            String roleName = tokenVerify.getRoleNameByUser(user);
+            StoreEntity storeEntity = null;
+            if (ADMIN_ROL.equals(roleName)) {
+                Optional<StoreEntity> storeEntityOptional = storeService.findById(requestStoreEntity.getId());
+                if (storeEntityOptional != null) {
+                    storeEntity = storeEntityOptional.get();
+                } else {
+                    throw new MyException("您还没有该店铺，还不能进行编辑");
                 }
-                if (!StringUtils.isBlank(parameterEntity.getName())) {
-                    entity.setName(parameterEntity.getName());
+            } else if (STORE_ROL.equals(roleName)) {
+                if (user.getStoreId() <= 0) {
+                    throw new MyException("您还没有该店铺，还不能进行编辑");
                 }
-                if (parameterEntity.getStoreLaundryExpertSet() != null && parameterEntity.getStoreLaundryExpertSet().size() > 0) {
-                    entity.setStoreLaundryExpertSet(parameterEntity.getStoreLaundryExpertSet());
+                if (user.getStoreId() != requestStoreEntity.getId()) {
+                    throw new MyException("您还没有该店铺，还不能进行编辑");
                 }
-                entity = storeService.save(entity);
+                Optional<StoreEntity> storeEntityOptional = storeService.findById(requestStoreEntity.getId());
+                if (storeEntityOptional != null) {
+                    storeEntity = storeEntityOptional.get();
+                } else {
+                    throw new MyException("您还没有该店铺，还不能进行编辑");
+                }
+            }
+            if (storeEntity != null) {
+                return new RestInfo(storeService.save(updateStore(storeEntity, requestStoreEntity)));
             } else {
-                throw new MyException("更新的条目的id有误");
-            }
-
-        } else {
-            if (parameterEntity == null) {
-                throw new MyException("请提交要更新的内容");
-            }
-            if (parameterEntity.getId() == null) {
-                throw new MyException("请提交要更新的条目的id");
+                throw new MyException("您还没有该订单权限，还不能进行编辑");
             }
         }
-        return new RestInfo(entity);
+        throw new MyException("操作失败");
     }
 
+    @LoginRequired
     @PostMapping(value = "/save")
-    public RestInfo save(@RequestBody StoreEntity parameterEntity) {
-        StoreEntity entity = new StoreEntity();
-        if (parameterEntity != null) {
-            entity = storeService.save(parameterEntity);
-        } else {
-            throw new MyException("请提交需要保存的内容");
+    public RestInfo save(@RequestHeader(value = HEADER_TOKEN) String token, @RequestBody StoreEntity requestStoreEntity) {
+        if (requestStoreEntity == null) {
+            throw new MyException("请传入更新的内容");
         }
-        return new RestInfo(entity);
-    }
+        AccountInfoEntity user = null;
+        user = tokenVerify.getUserInfoByToken(token);
+        if (user != null) {
+            String roleName = tokenVerify.getRoleNameByUser(user);
 
-    @PostMapping(value = "/search_by_name")
-    public RestInfo searchStoreByName(@RequestParam(value = "name", required = true) String name) {
-        Optional<StoreEntity> storeEntityOptional = storeService.findByName(name);
-        StoreEntity entity = storeEntityOptional.isPresent() ? storeEntityOptional.get() : null;
-        return new RestInfo(entity);
-    }
+            if (ADMIN_ROL.equals(roleName)) {
+                if(storeService.findByName(requestStoreEntity.getName())!=null)
+                {
+                    throw new MyException("您已存在该店铺名称");
+                }else{
+                    return  new RestInfo(storeService.save(requestStoreEntity));
+                }
 
-    @PostMapping(value = "/delete_by_id")
-    public RestInfo deleteStoreById(@RequestParam(value = "id", required = true) long id) {
-        try {
-            storeService.deleteById(id);
-        } catch (Exception e) {
-            e.printStackTrace();
-            throw new MyException("操作失败");
-        }
-        return new RestInfo();
-    }
-
-    @PostMapping(value = "/get_store_members")
-    public RestInfo getStoreMemberList(@RequestParam(value = "storeId", required = true) long storeId) {
-        Optional<StoreEntity> optionalStoreEntity =
-                storeService.findById(storeId);
-        if (optionalStoreEntity.isPresent()) {
-            StoreEntity entity = optionalStoreEntity.get();
-            if (entity != null) {
-                return new RestInfo(entity.getStoreMemberSet());
             } else {
-                throw new AuthorityException("没有找到对应的数据");
+                throw new AuthorityException("还没有相应的权限");
             }
-        } else {
-            throw new AuthorityException("没有找到对应的数据");
         }
+        throw new MyException("操作失败");
     }
-    @PostMapping(value = "/get_store_orders")
-    public RestInfo getStoreOrderList(@RequestParam(value = "storeId", required = true) long storeId) {
-        Optional<StoreEntity> optionalStoreEntity =
-                storeService.findById(storeId);
-        if (optionalStoreEntity.isPresent()) {
-            StoreEntity entity = optionalStoreEntity.get();
-            if (entity != null) {
-                return new RestInfo(entity.getStoreOrderSet());
-            } else {
-                throw new AuthorityException("您还没有自己的店铺");
-            }
-        } else {
-            throw new AuthorityException("您还没有自己的店铺");
+
+    @LoginRequired
+    @GetMapping(value = "/searchByName")
+    public RestInfo searchStoreByName(@RequestHeader(value = HEADER_TOKEN) String token, @RequestParam(value = "name", required = true) String name) {
+        if (StringUtils.isBlank(name)) {
+            throw new MyException("请输入要搜索的名字");
         }
+        AccountInfoEntity user = null;
+        user = tokenVerify.getUserInfoByToken(token);
+        if (user != null) {
+            String roleName = tokenVerify.getRoleNameByUser(user);
+            if (ADMIN_ROL.equals(roleName)) {
+                StoreEntity storeEntity = storeService.findByName(name);
+                return new RestInfo(storeEntity);
+            } else {
+                throw new AuthorityException("还没有相应的权限");
+            }
+        }
+        throw new MyException("操作失败");
+    }
+
+    @LoginRequired
+    @PostMapping(value = "/deleteById")
+    public RestInfo deleteStoreById(@RequestHeader(value = HEADER_TOKEN) String token, @RequestParam(value = "id", required = true) long id) {
+        AccountInfoEntity user = null;
+        user = tokenVerify.getUserInfoByToken(token);
+        if (user != null) {
+            StoreEntity storeEntity = null;
+            String roleName = tokenVerify.getRoleNameByUser(user);
+            if (ADMIN_ROL.equals(roleName)) {
+                Optional<StoreEntity> optionalStoreEntity = storeService.findById(id);
+                storeEntity = optionalStoreEntity == null ? null : optionalStoreEntity.get();
+                try {
+                    storeService.delete(storeEntity);
+                    return new RestInfo();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                    throw new MyException("操作失败");
+                }
+
+            } else if (STORE_ROL.equals(roleName)) {
+                throw new AuthorityException("还没有相应的权限");
+            }
+        }
+        throw new AuthorityException("您还没有相应的权限");
+    }
+
+
+    private StoreEntity updateStore(StoreEntity storeEntity, StoreEntity requestStoreEntity) {
+        if (!StringUtils.isBlank(requestStoreEntity.getAddress())) {
+            storeEntity.setAddress(requestStoreEntity.getAddress());
+        }
+        if (!StringUtils.isBlank(requestStoreEntity.getName())) {
+            storeEntity.setName(requestStoreEntity.getName());
+        }
+        if (!StringUtils.isBlank(requestStoreEntity.getDes())) {
+            storeEntity.setDes(requestStoreEntity.getDes());
+        }
+        if(requestStoreEntity.getImageEntity()!=null)
+        {
+            if(requestStoreEntity.getImageEntity().getId()>0)
+            {
+                storeEntity.setImageEntity(requestStoreEntity.getImageEntity());
+            }
+        }
+        return storeEntity;
+
     }
 }

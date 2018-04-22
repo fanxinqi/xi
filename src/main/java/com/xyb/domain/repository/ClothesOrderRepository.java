@@ -17,6 +17,8 @@ public interface ClothesOrderRepository extends JpaRepository<ClothesOrderEntity
     Page<ClothesOrderEntity> findByStoreId(long storeId, Pageable pageable);
 
     Page<ClothesOrderEntity> findByStoreIdAndPhone(long storeId, String phone, Pageable pageable);
+
+    ClothesOrderEntity findByStoreIdAndId(long storeId, long id);
 //
 //    @Query(" from ClothesOrderEntity cc where cc.phone=:phone")
 //    List<ClothesOrderEntity> findOrder(@Param("phone") String phone);
