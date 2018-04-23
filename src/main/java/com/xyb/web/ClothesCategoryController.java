@@ -128,7 +128,7 @@ public class ClothesCategoryController {
                 throw new AuthorityException("您还没有相应的权限");
             }
             if (clothesCategoryEntity != null) {
-                chothesCategoryService.save(updateClothesCategory(clothesCategoryEntity, requestClothesCategory));
+                return new RestInfo(chothesCategoryService.save(updateClothesCategory(clothesCategoryEntity, requestClothesCategory)));
             } else {
                 throw new AuthorityException("您还没有相应的权限");
             }

@@ -25,7 +25,6 @@ public class ChothesCategoryImpl implements ChothesCategoryService {
     public Page<ClothesCategoryEntity> findAll(Pageable pageable) {
         return chlothesCategoryRepository.findAll(pageable);
     }
-
     @Override
     public List<ClothesCategoryEntity> findAll() {
         return chlothesCategoryRepository.findAll();

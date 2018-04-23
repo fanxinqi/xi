@@ -2,10 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="68022376-e0f6-425b-ad99-3e4f2eabe2b7" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/domain/repository/CommonEnumRepository.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/domain/repository/LaundryExpertRepository.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/service/CommonEnumService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/service/LaundryExpectService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/service/impl/LaundryExpertImpl.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/web/LaundryExpertController.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/xyb-master.iml" afterPath="$PROJECT_DIR$/.idea/xyb-master.iml" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xyb/constants/Constants.java" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/constants/Constants.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/ClothesOrderEntity.java" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/ClothesOrderEntity.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/LaundryExpert.java" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/LaundryExpertEntity.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/PaymentEntity.java" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/CommonEnumEntity.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xyb/domain/repository/PaymentRepository.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xyb/service/PaymentService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xyb/service/impl/ChothesCategoryImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/service/impl/ChothesCategoryImpl.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xyb/service/impl/PaymentImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/service/impl/CommonEnumImpl.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xyb/web/ClothesCategoryController.java" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/web/ClothesCategoryController.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xyb/web/ClothesOrderController.java" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/web/ClothesOrderController.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/xyb/web/CollectPageController.java" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/web/CollectPageController.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xyb/web/PaymentController.java" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/web/CommonEnumController.java" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/domain/entity/ClothesOrderEntity.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/domain/entity/ClothesOrderEntity.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/domain/entity/LaundryExpert.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/domain/entity/PaymentEntity.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/service/impl/ChothesCategoryImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/service/impl/ChothesCategoryImpl.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/web/ClothesCategoryController.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/web/ClothesCategoryController.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/web/ClothesOrderController.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/web/ClothesOrderController.class" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,41 +46,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ClothesOrderController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ClothesOrderController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/web/ClothesOrderController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="29" column="17" lean-forward="false" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="30" />
+            <state relative-caret-position="247">
+              <caret line="96" column="80" lean-forward="false" selection-start-line="96" selection-start-column="80" selection-end-line="96" selection-end-column="80" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PaymentController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/web/PaymentController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="46" column="50" lean-forward="false" selection-start-line="46" selection-start-column="50" selection-end-line="46" selection-end-column="50" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StoreController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/web/StoreController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1728">
-              <caret line="74" column="43" lean-forward="false" selection-start-line="74" selection-start-column="43" selection-end-line="74" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CollectPageController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CollectPageController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/web/CollectPageController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+            <state relative-caret-position="724">
+              <caret line="51" column="69" lean-forward="false" selection-start-line="51" selection-start-column="69" selection-end-line="51" selection-end-column="69" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -67,133 +68,98 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JSONObject.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-configuration-processor/2.0.0.RELEASE/spring-boot-configuration-processor-2.0.0.RELEASE.jar!/org/springframework/boot/configurationprocessor/json/JSONObject.class">
+      <file leaf-file-name="Constants.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/constants/Constants.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+            <state relative-caret-position="105">
+              <caret line="7" column="48" lean-forward="false" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CommonEnumService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/service/CommonEnumService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="10" column="27" lean-forward="false" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LaundryExpertController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/web/LaundryExpertController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
               <folding>
-                <marker date="1523081562339" expanded="false" signature="0:104" ph="/.../" />
-                <marker date="1523081562339" expanded="false" signature="176:408" ph="..." />
-                <marker date="1523081562339" expanded="true" signature="542:717" ph="{...}" />
-                <marker date="1523081562339" expanded="false" signature="583:598" ph=" { " />
-                <marker date="1523081562339" expanded="false" signature="628:638" ph=" }" />
-                <marker date="1523081562339" expanded="false" signature="672:687" ph=" { " />
-                <marker date="1523081562339" expanded="false" signature="701:711" ph=" }" />
-                <marker date="1523081562339" expanded="false" signature="797:808" ph=" { " />
-                <marker date="1523081562339" expanded="false" signature="844:850" ph=" }" />
-                <marker date="1523081562339" expanded="true" signature="888:1287" ph="{...}" />
-                <marker date="1523081562339" expanded="true" signature="1354:1608" ph="{...}" />
-                <marker date="1523081562339" expanded="true" signature="1666:1710" ph="{...}" />
-                <marker date="1523081562339" expanded="true" signature="1792:2126" ph="{...}" />
-                <marker date="1523081562339" expanded="false" signature="2151:2162" ph=" { " />
-                <marker date="1523081562339" expanded="false" signature="2196:2202" ph=" }" />
-                <marker date="1523081562339" expanded="true" signature="2279:2369" ph="{...}" />
-                <marker date="1523081562339" expanded="true" signature="2445:2553" ph="{...}" />
-                <marker date="1523081562339" expanded="true" signature="2626:2716" ph="{...}" />
-                <marker date="1523081562339" expanded="true" signature="2790:2880" ph="{...}" />
-                <marker date="1523081562339" expanded="true" signature="2956:3304" ph="{...}" />
-                <marker date="1523081562339" expanded="true" signature="3383:3467" ph="{...}" />
-                <marker date="1523081562339" expanded="true" signature="3550:4233" ph="{...}" />
-                <marker date="1523081562339" expanded="true" signature="4290:4440" ph="{...}" />
-                <marker date="1523081562339" expanded="false" signature="4479:4490" ph=" { " />
-                <marker date="1523081562339" expanded="false" signature="4530:4536" ph=" }" />
-                <marker date="1523081562339" expanded="true" signature="4577:4685" ph="{...}" />
-                <marker date="1523081562339" expanded="false" signature="4722:4733" ph=" { " />
-                <marker date="1523081562339" expanded="false" signature="4778:4784" ph=" }" />
-                <marker date="1523081562339" expanded="true" signature="4842:5049" ph="{...}" />
-                <marker date="1523081562339" expanded="false" signature="5085:5096" ph=" { " />
-                <marker date="1523081562339" expanded="false" signature="5133:5139" ph=" }" />
-                <marker date="1523081562339" expanded="true" signature="5205:5447" ph="{...}" />
-                <marker date="1523081562339" expanded="false" signature="5491:5502" ph=" { " />
-                <marker date="1523081562339" expanded="false" signature="5538:5544" ph=" }" />
-                <marker date="1523081562339" expanded="true" signature="5607:5754" ph="{...}" />
-                <marker date="1523081562339" expanded="true" signature="5818:6057" ph="{...}" />
-                <marker date="1523081562339" expanded="false" signature="6099:6110" ph=" { " />
-                <marker date="1523081562339" expanded="false" signature="6150:6156" ph=" }" />
-                <marker date="1523081562339" expanded="true" signature="6216:6361" ph="{...}" />
-                <marker date="1523081562339" expanded="true" signature="6419:6657" ph="{...}" />
-                <marker date="1523081562339" expanded="false" signature="6693:6704" ph=" { " />
-                <marker date="1523081562339" expanded="false" signature="6732:6738" ph=" }" />
-                <marker date="1523081562339" expanded="true" signature="6789:6936" ph="{...}" />
-                <marker date="1523081562339" expanded="true" signature="6996:7229" ph="{...}" />
-                <marker date="1523081562339" expanded="false" signature="7267:7278" ph=" { " />
-                <marker date="1523081562339" expanded="false" signature="7308:7314" ph=" }" />
-                <marker date="1523081562339" expanded="true" signature="7368:7509" ph="{...}" />
-                <marker date="1523081562339" expanded="true" signature="7573:7812" ph="{...}" />
-                <marker date="1523081562339" expanded="false" signature="7854:7865" ph=" { " />
-                <marker date="1523081562339" expanded="false" signature="7897:7903" ph=" }" />
-                <marker date="1523081562339" expanded="true" signature="7963:8108" ph="{...}" />
-                <marker date="1523081562339" expanded="true" signature="8178:8397" ph="{...}" />
-                <marker date="1523081562339" expanded="true" signature="8446:8564" ph="{...}" />
-                <marker date="1523081562339" expanded="true" signature="8636:8858" ph="{...}" />
-                <marker date="1523081562339" expanded="true" signature="8909:9029" ph="{...}" />
-                <marker date="1523081562339" expanded="true" signature="9081:9560" ph="{...}" />
-                <marker date="1523081562339" expanded="false" signature="9588:9599" ph=" { " />
-                <marker date="1523081562339" expanded="false" signature="9646:9652" ph=" }" />
-                <marker date="1523081562339" expanded="true" signature="9683:9804" ph="{...}" />
-                <marker date="1523081562339" expanded="true" signature="9835:10062" ph="{...}" />
-                <marker date="1523081562339" expanded="true" signature="10130:10269" ph="{...}" />
-                <marker date="1523081562339" expanded="true" signature="10332:10643" ph="{...}" />
-                <marker date="1523081562339" expanded="true" signature="10721:11216" ph="{...}" />
-                <marker date="1523081562339" expanded="true" signature="11262:11719" ph="{...}" />
-                <marker date="1523081562339" expanded="true" signature="11761:12991" ph="{...}" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="CommonEnumController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/web/CommonEnumController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="485">
-              <caret line="99" column="0" lean-forward="false" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
+            <state relative-caret-position="420">
+              <caret line="43" column="68" lean-forward="false" selection-start-line="43" selection-start-column="68" selection-end-line="43" selection-end-column="68" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RestInfo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/exception/RestInfo.java">
+      <file leaf-file-name="ClothesOrderImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/service/impl/ClothesOrderImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="134">
-              <caret line="24" column="11" lean-forward="false" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
+            <state relative-caret-position="161">
+              <caret line="28" column="42" lean-forward="true" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="42" />
               <folding>
-                <element signature="e#624#625#0" expanded="true" />
-                <element signature="e#656#657#0" expanded="true" />
+                <element signature="e#851#852#0" expanded="true" />
+                <element signature="e#909#910#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PaymentService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/service/PaymentService.java">
+      <file leaf-file-name="ClothesOrderEntity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/ClothesOrderEntity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ChothesCategoryService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/service/ChothesCategoryService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="16" column="22" lean-forward="false" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ChothesCategoryImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/service/impl/ChothesCategoryImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="30" column="51" lean-forward="false" selection-start-line="30" selection-start-column="51" selection-end-line="30" selection-end-column="51" />
+            <state relative-caret-position="1245">
+              <caret line="124" column="33" lean-forward="false" selection-start-line="124" selection-start-column="33" selection-end-line="124" selection-end-column="33" />
               <folding>
-                <element signature="e#990#991#0" expanded="true" />
-                <element signature="e#1049#1050#0" expanded="true" />
+                <element signature="e#3741#3742#0" expanded="true" />
+                <element signature="e#3785#3786#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClothesCategoryEntity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/ClothesCategoryEntity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="299">
+              <caret line="92" column="8" lean-forward="false" selection-start-line="92" selection-start-column="8" selection-end-line="92" selection-end-column="53" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CommonEnumEntity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/CommonEnumEntity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="186">
+              <caret line="23" column="27" lean-forward="false" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="27" />
+              <folding>
+                <element signature="e#1066#1067#0" expanded="true" />
+                <element signature="e#1093#1094#0" expanded="true" />
+                <element signature="e#1130#1131#0" expanded="true" />
+                <element signature="e#1162#1163#0" expanded="true" />
+                <element signature="e#1197#1198#0" expanded="true" />
+                <element signature="e#1230#1231#0" expanded="true" />
+                <element signature="e#1280#1281#0" expanded="true" />
+                <element signature="e#1340#1341#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -233,11 +199,13 @@
       <find>FileUploadModel</find>
       <find>storeMemberSet</find>
       <find>laundry_expert_list</find>
-      <find>createTime</find>
       <find>urls</find>
       <find>time</find>
       <find>ManyToOne</find>
       <find>json</find>
+      <find>orderId</find>
+      <find>createTime</find>
+      <find>1524193800967</find>
     </findStrings>
     <replaceStrings>
       <replace>clotheCategory</replace>
@@ -257,17 +225,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/service/MemberCategoryService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/domain/repository/MemberCategoryRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/service/impl/MemberCategoryImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/shiro/JWTFilter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/shiro/MyRealm.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/exception/GlobalExceptionHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/interceptor/AuthenticationInterceptor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/conf/WebMvcConfigurer.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/domain/repository/ClothesOrderRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/service/ClothesOrderService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xyb/service/impl/ClothesOrderImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/FileUploadEntity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/FileEntity.java" />
@@ -282,10 +239,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/xyb/web/AccountInfoController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xyb/web/MemberCategoryController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xyb/web/MemberController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/LaundryExpert.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/MemberCategoryEntity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/MemberEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/PaymentEntity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/RoleInfoEntity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/ClothesCategoryEntity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/StoreEntity.java" />
@@ -296,18 +251,31 @@
         <option value="$PROJECT_DIR$/src/main/java/com/xyb/service/impl/StoreImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xyb/web/StoreController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/AccountInfoEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/web/ClothesOrderController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/ClothesOrderEntity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xyb/service/PaymentService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xyb/service/impl/PaymentImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xyb/domain/repository/PaymentRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/web/ClothesCategoryController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xyb/service/ChothesCategoryService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/service/impl/ChothesCategoryImpl.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/xyb/domain/model/CustomJsonObject.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/web/CollectPageController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xyb/web/PaymentController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/LaundryExpert.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyb/service/LaundryExpectService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyb/service/impl/LaundryExpertImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyb/domain/repository/LaundryExpertRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/LaundryExpertEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyb/web/ClothesCategoryController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/PaymentEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyb/domain/repository/CommonEnumRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyb/service/CommonEnumService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyb/service/impl/CommonEnumService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyb/service/impl/ChothesCategoryImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyb/web/LaundryExpertController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyb/web/CommonEnumController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/CommonEnumEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/ClothesOrderEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyb/web/ClothesOrderController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyb/constants/Constants.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyb/web/CollectPageController.java" />
       </list>
     </option>
   </component>
@@ -495,7 +463,47 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="xyb" type="462c0819:PsiDirectoryNode" />
               <item name="domain" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xyb_server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xyb_server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="xyb" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xyb_server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xyb_server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="xyb" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
+              <item name="CommonEnumRepository" type="1a9f42e2:ClassTreeNode" />
+            </path>
+            <path>
+              <item name="xyb_server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xyb_server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="xyb" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xyb_server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xyb_server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="xyb" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="xyb_server" type="b2602c69:ProjectViewProjectNode" />
@@ -505,6 +513,16 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="xyb" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xyb_server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xyb_server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="xyb" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="CommonEnumController" type="1a9f42e2:ClassTreeNode" />
             </path>
             <path>
               <item name="xyb_server" type="b2602c69:ProjectViewProjectNode" />
@@ -900,12 +918,12 @@
       <workItem from="1523782818552" duration="18280000" />
       <workItem from="1523849132625" duration="11632000" />
       <workItem from="1523867960448" duration="11055000" />
-      <workItem from="1524208669174" duration="33247000" />
+      <workItem from="1524208669174" duration="43674000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="256504000" />
+    <option name="totallyTimeSpent" value="266931000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -937,14 +955,14 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32786885" sideWeight="0.49353796" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28150406" sideWeight="0.6357027" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.578252" sideWeight="0.6357027" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4108911" sideWeight="0.49353796" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32786885" sideWeight="0.49353796" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35772356" sideWeight="0.4555735" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17412141" sideWeight="0.87004757" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24186991" sideWeight="0.4555735" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29552716" sideWeight="0.87004757" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.048988286" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42245558" sideWeight="0.20537898" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36647728" sideWeight="0.49353796" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36585367" sideWeight="0.49353796" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26464325" sideWeight="0.12995246" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1001,7 +1019,7 @@
       <breakpoints>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/xyb/web/ClothesOrderController.java</url>
-          <line>78</line>
+          <line>79</line>
           <properties />
           <option name="timeStamp" value="30" />
         </line-breakpoint>
@@ -1043,7 +1061,7 @@
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/xyb/web/ClothesOrderController.java</url>
-          <line>41</line>
+          <line>42</line>
           <properties />
           <option name="timeStamp" value="102" />
         </line-breakpoint>
@@ -1055,13 +1073,13 @@
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/xyb/web/ClothesOrderController.java</url>
-          <line>43</line>
+          <line>44</line>
           <properties />
           <option name="timeStamp" value="104" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/xyb/web/ClothesOrderController.java</url>
-          <line>183</line>
+          <line>188</line>
           <properties />
           <option name="timeStamp" value="106" />
         </line-breakpoint>
@@ -1153,245 +1171,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/web/DAOController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/web/DemoController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="23" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/web/UploadController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="32" column="20" lean-forward="false" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/web/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="30" column="22" lean-forward="false" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/web/AccountInfoController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/interceptor/AuthenticationInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.0.4.RELEASE/spring-aop-5.0.4.RELEASE.jar!/org/springframework/aop/framework/CglibAopProxy.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="495" column="0" lean-forward="false" selection-start-line="495" selection-start-column="0" selection-end-line="495" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/DictionaryEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="27" column="15" lean-forward="false" selection-start-line="26" selection-start-column="2" selection-end-line="28" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/LaundryExpert.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="53" column="35" lean-forward="false" selection-start-line="53" selection-start-column="35" selection-end-line="53" selection-end-column="35" />
-          <folding>
-            <element signature="e#1684#1685#0" expanded="false" />
-            <element signature="e#1718#1719#0" expanded="false" />
-            <element signature="e#1776#1777#0" expanded="false" />
-            <element signature="e#1822#1823#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/MaterialEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/MemberCategoryEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="32" column="40" lean-forward="false" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="40" />
-          <folding>
-            <element signature="e#774#775#0" expanded="false" />
-            <element signature="e#832#833#0" expanded="false" />
-            <element signature="e#878#879#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/PermissionInfoEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/SpecificationsEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/UserEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/FileEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/MemberEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-223">
-          <caret line="41" column="27" lean-forward="false" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/ClothesCategoryEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="24" column="25" lean-forward="false" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="25" />
-          <folding>
-            <element signature="e#1113#1114#0" expanded="false" />
-            <element signature="e#1147#1148#0" expanded="false" />
-            <element signature="e#1205#1206#0" expanded="false" />
-            <element signature="e#1246#1247#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-orm/5.0.4.RELEASE/spring-orm-5.0.4.RELEASE.jar!/org/springframework/orm/jpa/JpaTransactionManager.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="315" column="18" lean-forward="false" selection-start-line="315" selection-start-column="18" selection-end-line="315" selection-end-column="18" />
-          <folding>
-            <marker date="1521817566186" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1521817566186" expanded="false" signature="151:2129" ph="..." />
-            <marker date="1521817566186" expanded="true" signature="2582:2733" ph="{...}" />
-            <marker date="1521817566186" expanded="true" signature="2794:2893" ph="{...}" />
-            <marker date="1521817566186" expanded="false" signature="2970:2981" ph=" { " />
-            <marker date="1521817566186" expanded="false" signature="3013:3019" ph=" }" />
-            <marker date="1521817566186" expanded="false" signature="3092:3103" ph=" { " />
-            <marker date="1521817566186" expanded="false" signature="3136:3142" ph=" }" />
-            <marker date="1521817566186" expanded="true" signature="3214:3374" ph="{...}" />
-            <marker date="1521817566186" expanded="true" signature="3453:3516" ph="{...}" />
-            <marker date="1521817566186" expanded="false" signature="3574:3585" ph=" { " />
-            <marker date="1521817566186" expanded="false" signature="3617:3623" ph=" }" />
-            <marker date="1521817566186" expanded="true" signature="3694:3785" ph="{...}" />
-            <marker date="1521817566186" expanded="true" signature="3861:3971" ph="{...}" />
-            <marker date="1521817566186" expanded="false" signature="4023:4034" ph=" { " />
-            <marker date="1521817566186" expanded="false" signature="4061:4067" ph=" }" />
-            <marker date="1521817566186" expanded="true" signature="4132:4399" ph="{...}" />
-            <marker date="1521817566186" expanded="false" signature="4452:4463" ph=" { " />
-            <marker date="1521817566186" expanded="false" signature="4486:4492" ph=" }" />
-            <marker date="1521817566186" expanded="true" signature="4557:4663" ph="{...}" />
-            <marker date="1521817566186" expanded="false" signature="4702:4713" ph=" { " />
-            <marker date="1521817566186" expanded="false" signature="4736:4742" ph=" }" />
-            <marker date="1521817566186" expanded="true" signature="4822:5336" ph="{...}" />
-            <marker date="1521817566186" expanded="true" signature="5375:6139" ph="{...}" />
-            <marker date="1521817566186" expanded="false" signature="6179:6190" ph=" { " />
-            <marker date="1521817566186" expanded="false" signature="6231:6237" ph=" }" />
-            <marker date="1521817566186" expanded="true" signature="6279:7175" ph="{...}" />
-            <marker date="1521817566186" expanded="true" signature="7241:7339" ph="{...}" />
-            <marker date="1521817566186" expanded="true" signature="7422:11025" ph="{...}" />
-            <marker date="1521817566186" expanded="true" signature="8846:8978" ph="{...}" />
-            <marker date="1521817566186" expanded="false" signature="8891:8918" ph=" { " />
-            <marker date="1521817566186" expanded="false" signature="8938:8960" ph=" }" />
-            <marker date="1521817566186" expanded="true" signature="11091:11503" ph="{...}" />
-            <marker date="1521817566186" expanded="true" signature="11612:12240" ph="{...}" />
-            <marker date="1521817566186" expanded="true" signature="12293:13121" ph="{...}" />
-            <marker date="1521817566186" expanded="true" signature="13208:13714" ph="{...}" />
-            <marker date="1521817566186" expanded="false" signature="13772:13783" ph=" { " />
-            <marker date="1521817566186" expanded="false" signature="13795:13801" ph=" }" />
-            <marker date="1521817566186" expanded="true" signature="13864:14892" ph="{...}" />
-            <marker date="1521817566186" expanded="true" signature="14957:15800" ph="{...}" />
-            <marker date="1521817566186" expanded="true" signature="15872:16241" ph="{...}" />
-            <marker date="1521817566186" expanded="true" signature="16307:17838" ph="{...}" />
-            <marker date="1521817566186" expanded="true" signature="17890:18500" ph="{...}" />
-            <marker date="1521817566186" expanded="true" signature="18140:18247" ph="{...}" />
-            <marker date="1521817566186" expanded="false" signature="18309:18324" ph=" { " />
-            <marker date="1521817566186" expanded="false" signature="18356:18366" ph=" }" />
-            <marker date="1521817566186" expanded="false" signature="18440:18455" ph=" { " />
-            <marker date="1521817566186" expanded="false" signature="18484:18494" ph=" }" />
-            <marker date="1521817566186" expanded="true" signature="18578:22501" ph="{...}" />
-            <marker date="1521817566186" expanded="true" signature="18801:18812" ph="{}" />
-            <marker date="1521817566186" expanded="true" signature="18940:19077" ph="{...}" />
-            <marker date="1521817566186" expanded="true" signature="19139:19291" ph="{...}" />
-            <marker date="1521817566186" expanded="false" signature="19340:19355" ph=" { " />
-            <marker date="1521817566186" expanded="false" signature="19395:19405" ph=" }" />
-            <marker date="1521817566186" expanded="false" signature="19456:19471" ph=" { " />
-            <marker date="1521817566186" expanded="false" signature="19506:19516" ph=" }" />
-            <marker date="1521817566186" expanded="true" signature="19558:19672" ph="{...}" />
-            <marker date="1521817566186" expanded="true" signature="19747:20060" ph="{...}" />
-            <marker date="1521817566186" expanded="false" signature="20122:20137" ph=" { " />
-            <marker date="1521817566186" expanded="false" signature="20165:20175" ph=" }" />
-            <marker date="1521817566186" expanded="true" signature="20215:20537" ph="{...}" />
-            <marker date="1521817566186" expanded="true" signature="20579:20733" ph="{...}" />
-            <marker date="1521817566186" expanded="true" signature="20763:21036" ph="{...}" />
-            <marker date="1521817566186" expanded="true" signature="21106:21431" ph="{...}" />
-            <marker date="1521817566186" expanded="true" signature="21519:21664" ph="{...}" />
-            <marker date="1521817566186" expanded="true" signature="21749:21828" ph="{...}" />
-            <marker date="1521817566186" expanded="true" signature="21885:22495" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/RoleInfoEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="21" column="35" lean-forward="false" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
-          <folding>
-            <element signature="e#689#690#0" expanded="false" />
-            <element signature="e#723#724#0" expanded="false" />
-            <element signature="e#781#782#0" expanded="false" />
-            <element signature="e#827#828#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/StoreEntity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-276">
@@ -1470,41 +1249,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/ClothesOrderEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding>
-            <element signature="e#2255#2256#0" expanded="false" />
-            <element signature="e#2289#2290#0" expanded="false" />
-            <element signature="e#2353#2354#0" expanded="false" />
-            <element signature="e#2399#2400#0" expanded="false" />
-            <element signature="e#2600#2601#0" expanded="false" />
-            <element signature="e#2630#2631#0" expanded="false" />
-            <element signature="e#2676#2677#0" expanded="false" />
-            <element signature="e#2746#2747#0" expanded="false" />
-            <element signature="e#2954#2955#0" expanded="false" />
-            <element signature="e#2994#2995#0" expanded="false" />
-            <element signature="e#3041#3042#0" expanded="false" />
-            <element signature="e#3077#3078#0" expanded="false" />
-            <element signature="e#3142#3143#0" expanded="false" />
-            <element signature="e#3192#3193#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/service/MemberService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
           <caret line="38" column="90" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="38" selection-end-column="90" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/service/impl/FileSrcImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -1525,14 +1273,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/PaymentEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="18" column="38" lean-forward="false" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/2.0.5.RELEASE/spring-data-commons-2.0.5.RELEASE.jar!/org/springframework/data/repository/CrudRepository.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -1549,68 +1289,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/service/impl/PaymentImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="42" column="36" lean-forward="false" selection-start-line="42" selection-start-column="36" selection-end-line="42" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#509#510#0" expanded="false" />
-            <element signature="e#559#560#0" expanded="false" />
-            <element signature="e#628#629#0" expanded="false" />
-            <element signature="e#681#682#0" expanded="false" />
-            <element signature="e#743#744#0" expanded="false" />
-            <element signature="e#783#784#0" expanded="false" />
-            <element signature="e#836#837#0" expanded="false" />
-            <element signature="e#884#885#0" expanded="false" />
-            <element signature="e#954#955#0" expanded="false" />
-            <element signature="e#1008#1009#0" expanded="false" />
-            <element signature="e#1074#1075#0" expanded="false" />
-            <element signature="e#1131#1132#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/domain/repository/PaymentRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="21" column="35" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/web/ClothesCategoryController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="53" column="4" lean-forward="false" selection-start-line="53" selection-start-column="4" selection-end-line="66" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/web/MemberCategoryController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="6" column="32" lean-forward="false" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/web/MemberController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="282">
           <caret line="83" column="40" lean-forward="false" selection-start-line="83" selection-start-column="40" selection-end-line="83" selection-end-column="40" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/service/impl/ChothesCategoryImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="30" column="51" lean-forward="false" selection-start-line="30" selection-start-column="51" selection-end-line="30" selection-end-column="51" />
-          <folding>
-            <element signature="e#990#991#0" expanded="true" />
-            <element signature="e#1049#1050#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1622,21 +1305,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/service/PaymentService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/exception/RestInfo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="134">
           <caret line="24" column="11" lean-forward="false" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
           <folding>
-            <element signature="e#624#625#0" expanded="true" />
-            <element signature="e#656#657#0" expanded="true" />
+            <element signature="e#624#625#0" expanded="false" />
+            <element signature="e#656#657#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1731,10 +1406,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/web/PaymentController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/web/AccountInfoController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="46" column="50" lean-forward="false" selection-start-line="46" selection-start-column="50" selection-end-line="46" selection-end-column="50" />
+        <state relative-caret-position="195">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1747,21 +1422,291 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/web/CollectPageController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/web/UploadController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        <state relative-caret-position="300">
+          <caret line="32" column="20" lean-forward="false" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/web/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="30" column="22" lean-forward="false" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/domain/repository/MemberCategoryRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="17" column="17" lean-forward="false" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/domain/repository/AccountInfoRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/domain/repository/ClothesOrderRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="20" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/service/impl/FileSrcImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/service/impl/MemberCategoryImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="13" column="2" lean-forward="false" selection-start-line="13" selection-start-column="2" selection-end-line="14" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/service/impl/LaundryExpertImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="454">
+          <caret line="48" column="43" lean-forward="false" selection-start-line="48" selection-start-column="43" selection-end-line="48" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#703#704#0" expanded="true" />
+            <element signature="e#767#768#0" expanded="true" />
+            <element signature="e#848#849#0" expanded="true" />
+            <element signature="e#907#908#0" expanded="true" />
+            <element signature="e#975#976#0" expanded="true" />
+            <element signature="e#1029#1030#0" expanded="true" />
+            <element signature="e#1082#1083#0" expanded="true" />
+            <element signature="e#1136#1137#0" expanded="true" />
+            <element signature="e#1212#1213#0" expanded="true" />
+            <element signature="e#1271#1272#0" expanded="true" />
+            <element signature="e#1685#1686#0" expanded="true" />
+            <element signature="e#1712#1713#0" expanded="true" />
+            <element signature="e#1786#1787#0" expanded="true" />
+            <element signature="e#1813#1814#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/domain/repository/LaundryExpertRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="48" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/web/ClothesCategoryController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-99">
+          <caret line="130" column="133" lean-forward="false" selection-start-line="130" selection-start-column="133" selection-end-line="130" selection-end-column="133" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/LaundryExpertEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="52" column="46" lean-forward="true" selection-start-line="52" selection-start-column="46" selection-end-line="52" selection-end-column="46" />
+          <folding>
+            <element signature="e#1849#1850#0" expanded="true" />
+            <element signature="e#1913#1914#0" expanded="true" />
+            <element signature="e#1959#1960#0" expanded="true" />
+            <element signature="e#3143#3144#0" expanded="true" />
+            <element signature="e#3173#3174#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/domain/repository/FileSrcRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="8" column="35" lean-forward="false" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/DictionaryEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="31" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/domain/repository/CommonEnumRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="15" column="45" lean-forward="false" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/service/FileSrcService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/service/impl/ChothesCategoryImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="20" column="28" lean-forward="false" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/service/impl/CommonEnumImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="32" column="22" lean-forward="false" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
+          <folding>
+            <element signature="e#644#645#0" expanded="true" />
+            <element signature="e#701#702#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/web/MemberCategoryController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="6" column="32" lean-forward="false" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/web/DemoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="23" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/service/LaundryExpectService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="25" column="35" lean-forward="false" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/service/impl/ClothesOrderImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="28" column="42" lean-forward="true" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="42" />
+          <folding>
+            <element signature="e#851#852#0" expanded="true" />
+            <element signature="e#909#910#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/ClothesCategoryEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="92" column="8" lean-forward="false" selection-start-line="92" selection-start-column="8" selection-end-line="92" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/CommonEnumEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="23" column="27" lean-forward="false" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="27" />
+          <folding>
+            <element signature="e#1066#1067#0" expanded="true" />
+            <element signature="e#1093#1094#0" expanded="true" />
+            <element signature="e#1130#1131#0" expanded="true" />
+            <element signature="e#1162#1163#0" expanded="true" />
+            <element signature="e#1197#1198#0" expanded="true" />
+            <element signature="e#1230#1231#0" expanded="true" />
+            <element signature="e#1280#1281#0" expanded="true" />
+            <element signature="e#1340#1341#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/web/LaundryExpertController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/ClothesOrderEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1245">
+          <caret line="124" column="33" lean-forward="false" selection-start-line="124" selection-start-column="33" selection-end-line="124" selection-end-column="33" />
+          <folding>
+            <element signature="e#3741#3742#0" expanded="true" />
+            <element signature="e#3785#3786#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/web/CommonEnumController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="43" column="68" lean-forward="false" selection-start-line="43" selection-start-column="68" selection-end-line="43" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/web/ClothesOrderController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="29" column="17" lean-forward="false" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="30" />
+        <state relative-caret-position="247">
+          <caret line="96" column="80" lean-forward="false" selection-start-line="96" selection-start-column="80" selection-end-line="96" selection-end-column="80" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/service/CommonEnumService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="10" column="27" lean-forward="false" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/constants/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="48" lean-forward="false" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/web/CollectPageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="724">
+          <caret line="51" column="69" lean-forward="false" selection-start-line="51" selection-start-column="69" selection-end-line="51" selection-end-column="69" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

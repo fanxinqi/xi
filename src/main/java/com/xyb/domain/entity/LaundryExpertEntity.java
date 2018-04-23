@@ -8,7 +8,7 @@ import java.util.Set;
 
 @Entity
 @Table(name = "laundry_expert")
-public class LaundryExpert {
+public class LaundryExpertEntity {
 
     @Id
     @GeneratedValue
@@ -18,10 +18,7 @@ public class LaundryExpert {
     @Column(name = "name")
     @ApiModelProperty(required = true)
     @NotNull(message = "姓名不能为空")
-
     private String name;
-    @Column(name = "head_url")
-    private String headUrl;
     @Column(name = "phone")
     @ApiModelProperty(required = true)
     @NotNull(message = "请填写联系方式")
@@ -41,9 +38,6 @@ public class LaundryExpert {
     @ApiModelProperty(required = true)
     @NotNull(message = "请填写工作年限")
     private long workingYears;
-    @Column(name = "level_id")
-    @ApiModelProperty(required = true)
-    private long levelId;
     @Column(name = "store_id")
     @ApiModelProperty(required = true)
     private long storeId;
@@ -52,6 +46,18 @@ public class LaundryExpert {
     @ManyToOne(cascade = {CascadeType.REFRESH}, fetch = FetchType.EAGER)
     @JoinTable(name = "laundry_file_res", joinColumns = {@JoinColumn(name = "laundry_id")}, inverseJoinColumns = {@JoinColumn(name = "file_res_id")})
     private FileEntity imageEntity;
+    @ManyToOne(cascade = {CascadeType.REFRESH}, fetch = FetchType.EAGER)
+    @JoinTable(name = "laundry_level_dictionary", joinColumns = {@JoinColumn(name = "laundry_id")}, inverseJoinColumns = {@JoinColumn(name = "dictionary_id")})
+    private DictionaryEntity levelEntity;
+
+    public DictionaryEntity getLevelEntity() {
+        return levelEntity;
+    }
+
+    public void setLevelEntity(DictionaryEntity levelEntity) {
+        this.levelEntity = levelEntity;
+    }
+
 
     public FileEntity getImageEntity() {
         return imageEntity;
@@ -60,7 +66,6 @@ public class LaundryExpert {
     public void setImageEntity(FileEntity imageEntity) {
         this.imageEntity = imageEntity;
     }
-
 
 
     public Long getId() {
@@ -77,14 +82,6 @@ public class LaundryExpert {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public String getHeadUrl() {
-        return headUrl;
-    }
-
-    public void setHeadUrl(String headUrl) {
-        this.headUrl = headUrl;
     }
 
     public String getPhone() {
@@ -141,14 +138,6 @@ public class LaundryExpert {
 
     public void setWorkingYears(long workingYears) {
         this.workingYears = workingYears;
-    }
-
-    public long getLevelId() {
-        return levelId;
-    }
-
-    public void setLevelId(long levelId) {
-        this.levelId = levelId;
     }
 
     public long getStoreId() {

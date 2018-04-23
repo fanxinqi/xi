@@ -10,6 +10,7 @@ import com.xyb.service.AccountInfoService;
 import com.xyb.service.ClothesOrderService;
 import com.xyb.service.StoreService;
 import com.xyb.utils.JWTUtil;
+import com.xyb.utils.OrderIdGenerateUtils;
 import com.xyb.utils.StringUtils;
 import org.apache.shiro.authc.AuthenticationException;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -92,11 +93,15 @@ public class ClothesOrderController {
             if (orderEntity.getStoreId() <= 0) {
                 throw new MyException("请选择您所加订单的门店");
             } else {
+                orderEntity.setStorageNum(1);
+                orderEntity.setOrderId(OrderIdGenerateUtils.generateOrderNum());
                 return new RestInfo(clothesOrderService.save(orderEntity));
             }
         } else if (STORE_ROL.equals(roleName)) {
             if (user.getStoreId() > 0) {
                 orderEntity.setStoreId(user.getStoreId());
+                orderEntity.setStorageNum(1);
+                orderEntity.setOrderId(OrderIdGenerateUtils.generateOrderNum());
                 return new RestInfo(clothesOrderService.save(orderEntity));
             }
         }
@@ -203,7 +208,7 @@ public class ClothesOrderController {
         if (!StringUtils.isBlank(requestClothesOrder.getPhone())) {
             clothesOrderEntity.setPhone(requestClothesOrder.getPhone());
         }
-        if (!StringUtils.isBlank(requestClothesOrder.getStorageNum())) {
+        if (requestClothesOrder.getStorageNum()>0) {
             clothesOrderEntity.setStorageNum(requestClothesOrder.getStorageNum());
         }
         return clothesOrderEntity;

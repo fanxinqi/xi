@@ -3,27 +3,17 @@ package com.xyb.web;
 import com.xyb.annotation.LoginRequired;
 import com.xyb.common.TokenVerify;
 import com.xyb.domain.entity.AccountInfoEntity;
-import com.xyb.domain.entity.ClothesCategoryEntity;
-import com.xyb.domain.entity.PaymentEntity;
+import com.xyb.domain.entity.CommonEnumEntity;
 import com.xyb.exception.AuthorityException;
 import com.xyb.exception.MyException;
 import com.xyb.exception.RestInfo;
-import com.xyb.service.ChothesCategoryService;
-import com.xyb.service.PaymentService;
+import com.xyb.service.CommonEnumService;
 import com.xyb.utils.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.PageImpl;
-import org.springframework.data.domain.Pageable;
-import org.springframework.data.domain.Sort;
-import org.springframework.data.web.PageableDefault;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 import java.util.Optional;
-import java.util.concurrent.ConcurrentHashMap;
 
 import static com.xyb.constants.Constants.*;
 
@@ -34,26 +24,32 @@ import static com.xyb.constants.Constants.*;
  * @Date 2018/3/20
  */
 @RestController
-@RequestMapping("/payment")
-public class PaymentController {
+@RequestMapping("/enum")
+public class CommonEnumController {
     @Autowired
-    private PaymentService paymentService;
+    private CommonEnumService paymentService;
     @Autowired
     private TokenVerify tokenVerify;
 
 
     @LoginRequired
     @GetMapping("/list")
-    public RestInfo<PaymentEntity> getPaymentList() {
-        List<PaymentEntity> list = paymentService.findAll();
+    public RestInfo<CommonEnumEntity> getPaymentList() {
+        List<CommonEnumEntity> list = paymentService.findAll();
+        return new RestInfo(list);
+    }
+    @LoginRequired
+    @GetMapping("/listByType")
+    public RestInfo<CommonEnumEntity> getPaymentList(int type) {
+        List<CommonEnumEntity> list = paymentService.findByType(type);
         return new RestInfo(list);
     }
 
     @LoginRequired
     @GetMapping(value = "/getById")
-    public RestInfo<PaymentEntity> getPaymentById(@RequestParam(value = "id", required = true) long id) {
-        Optional<PaymentEntity> optionalPaymentEntity = paymentService.findById(id);
-        PaymentEntity paymentEntity = null;
+    public RestInfo<CommonEnumEntity> getPaymentById(@RequestParam(value = "id", required = true) long id) {
+        Optional<CommonEnumEntity> optionalPaymentEntity = paymentService.findById(id);
+        CommonEnumEntity paymentEntity = null;
         if (optionalPaymentEntity.isPresent()) {
             paymentEntity = optionalPaymentEntity.get();
         }
@@ -62,17 +58,17 @@ public class PaymentController {
 
     @LoginRequired
     @GetMapping(value = "/searchByName")
-    public RestInfo<PaymentEntity> getPaymentByName(@RequestParam(value = "name", required = true) String name) {
+    public RestInfo<CommonEnumEntity> getPaymentByName(@RequestParam(value = "name", required = true) String name) {
         if (StringUtils.isBlank(name)) {
             throw new MyException("请输入要搜索的名字");
         }
-        PaymentEntity paymentEntity = paymentService.findByName(name);
+        CommonEnumEntity paymentEntity = paymentService.findByName(name);
         return new RestInfo(paymentEntity);
     }
 
     @LoginRequired
     @PostMapping(value = "/save")
-    public RestInfo saveOrUpdatePayment(@RequestHeader(value = HEADER_TOKEN) String token, @RequestBody PaymentEntity paymentEntity) {
+    public RestInfo saveOrUpdatePayment(@RequestHeader(value = HEADER_TOKEN) String token, @RequestBody CommonEnumEntity paymentEntity) {
         if (paymentEntity == null) {
             throw new MyException("请传入更新的内容");
         }
@@ -90,7 +86,7 @@ public class PaymentController {
     }
 
     @PostMapping(value = "/update")
-    public RestInfo update(@RequestHeader(value = HEADER_TOKEN) String token, @RequestBody PaymentEntity requestPaymentEntity) {
+    public RestInfo update(@RequestHeader(value = HEADER_TOKEN) String token, @RequestBody CommonEnumEntity requestPaymentEntity) {
         if (requestPaymentEntity == null || requestPaymentEntity.getId() <= 0) {
             throw new MyException("请传入更新的内容");
         }
@@ -98,9 +94,9 @@ public class PaymentController {
         user = tokenVerify.getUserInfoByToken(token);
         if (user != null) {
             String roleName = tokenVerify.getRoleNameByUser(user);
-            PaymentEntity paymentEntity = null;
+            CommonEnumEntity paymentEntity = null;
             if (ADMIN_ROL.equals(roleName)) {
-                Optional<PaymentEntity> paymentEntityOptional = paymentService.findById(requestPaymentEntity.getId());
+                Optional<CommonEnumEntity> paymentEntityOptional = paymentService.findById(requestPaymentEntity.getId());
                 if (paymentEntityOptional != null) {
                     paymentEntity = paymentEntityOptional.get();
                 } else {
@@ -124,10 +120,10 @@ public class PaymentController {
         AccountInfoEntity user = null;
         user = tokenVerify.getUserInfoByToken(token);
         if (user != null) {
-            PaymentEntity paymentEntity = null;
+            CommonEnumEntity paymentEntity = null;
             String roleName = tokenVerify.getRoleNameByUser(user);
             if (ADMIN_ROL.equals(roleName)) {
-                Optional<PaymentEntity> paymentEntityOptional = paymentService.findById(id);
+                Optional<CommonEnumEntity> paymentEntityOptional = paymentService.findById(id);
                 paymentEntity = paymentEntityOptional == null ? null : paymentEntityOptional.get();
                 try {
                     paymentService.delete(paymentEntity);
@@ -144,7 +140,7 @@ public class PaymentController {
     }
 
 
-    private PaymentEntity updateClothesCategory(PaymentEntity paymentEntity, PaymentEntity requestPaymentEntity) {
+    private CommonEnumEntity updateClothesCategory(CommonEnumEntity paymentEntity, CommonEnumEntity requestPaymentEntity) {
         if (!StringUtils.isBlank(requestPaymentEntity.getName())) {
             paymentEntity.setName(requestPaymentEntity.getName());
         }

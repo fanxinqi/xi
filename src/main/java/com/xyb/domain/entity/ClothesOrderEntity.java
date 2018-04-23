@@ -24,7 +24,7 @@ public class ClothesOrderEntity {
     @Column(name = "storage_num")
     @ApiModelProperty(required = true)
     @NotNull(message = "请输入货架号")
-    private String storageNum;
+    private int storageNum;
     @ManyToMany(cascade = {CascadeType.REFRESH}, fetch = FetchType.EAGER)
     @JoinTable(name = "order_clothes_category", joinColumns = {@JoinColumn(name = "order_id")}, inverseJoinColumns = {@JoinColumn(name = "clothes_category_id")})
     private Set<ClothesCategoryEntity> categoryEntitySet;
@@ -33,8 +33,7 @@ public class ClothesOrderEntity {
     private DictionaryEntity stateEntity;
     @ManyToOne(cascade = {CascadeType.REFRESH}, fetch = FetchType.EAGER)
     @JoinTable(name = "order_pay_type", joinColumns = {@JoinColumn(name = "order_id")}, inverseJoinColumns = {@JoinColumn(name = "pay_type_id")})
-    private PaymentEntity paymentEntity;
-
+    private CommonEnumEntity paymentEntity;
     @Column(name = "store_id")
     @ApiModelProperty(required = true)
     @NotNull(message = "请选择门店")
@@ -87,11 +86,11 @@ public class ClothesOrderEntity {
         return categoryEntitySet;
     }
 
-    public PaymentEntity getPaymentEntity() {
+    public CommonEnumEntity getPaymentEntity() {
         return paymentEntity;
     }
 
-    public void setPaymentEntity(PaymentEntity paymentEntity) {
+    public void setPaymentEntity(CommonEnumEntity paymentEntity) {
         this.paymentEntity = paymentEntity;
     }
 
@@ -119,11 +118,11 @@ public class ClothesOrderEntity {
         this.phone = phone;
     }
 
-    public String getStorageNum() {
+    public int getStorageNum() {
         return storageNum;
     }
 
-    public void setStorageNum(String storageNum) {
+    public void setStorageNum(int storageNum) {
         this.storageNum = storageNum;
     }
 }

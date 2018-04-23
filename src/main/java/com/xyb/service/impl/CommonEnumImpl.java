@@ -1,30 +1,35 @@
 package com.xyb.service.impl;
 
-import com.xyb.domain.entity.PaymentEntity;
-import com.xyb.domain.repository.PaymentRepository;
-import com.xyb.service.PaymentService;
+import com.xyb.domain.entity.CommonEnumEntity;
+import com.xyb.domain.repository.CommonEnumRepository;
+import com.xyb.service.CommonEnumService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 @Service
-public class PaymentImpl implements PaymentService {
+class CommonEnumImpl implements CommonEnumService{
     @Autowired
-    private PaymentRepository paymentRepository;
+    private CommonEnumRepository paymentRepository;
 
     @Override
-    public List<PaymentEntity> findAll() {
+    public List<CommonEnumEntity> findAll() {
         return paymentRepository.findAll();
     }
 
     @Override
-    public PaymentEntity save(PaymentEntity entity) {
+    public List<CommonEnumEntity> findByType(int type) {
+        return paymentRepository.findByType(type);
+    }
+
+    @Override
+    public CommonEnumEntity save(CommonEnumEntity entity) {
         return paymentRepository.save(entity);
     }
 
     @Override
-    public void delete(PaymentEntity entity) {
+    public void delete(CommonEnumEntity entity) {
 paymentRepository.delete(entity);
     }
 
@@ -34,12 +39,12 @@ paymentRepository.delete(entity);
     }
 
     @Override
-    public Optional<PaymentEntity> findById(Long id) {
+    public Optional<CommonEnumEntity> findById(Long id) {
         return  paymentRepository.findById(id);
     }
 
     @Override
-    public PaymentEntity findByName(String name) {
+    public CommonEnumEntity findByName(String name) {
         return paymentRepository.findByName(name);
     }
 }

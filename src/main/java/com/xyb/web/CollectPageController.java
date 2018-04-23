@@ -7,7 +7,7 @@ import com.xyb.common.TokenVerify;
 import com.xyb.domain.entity.ClothesCategoryEntity;
 import com.xyb.exception.RestInfo;
 import com.xyb.service.ChothesCategoryService;
-import com.xyb.service.PaymentService;
+import com.xyb.service.CommonEnumService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestHeader;
@@ -18,6 +18,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static com.xyb.constants.Constants.HEADER_TOKEN;
+import static com.xyb.constants.Constants.PAYMENT_TYPE;
 
 @RestController
 @RequestMapping("/collectClothes")
@@ -25,7 +26,7 @@ public class CollectPageController {
     @Autowired
     private ChothesCategoryService chothesCategoryService;
     @Autowired
-    private PaymentService paymentService;
+    private CommonEnumService paymentService;
     @Autowired
     private TokenVerify tokenVerify;
 
@@ -48,7 +49,7 @@ public class CollectPageController {
         JSONObject jObject = new JSONObject();
         try {
             jObject.put("categoryList", sortList);
-            jObject.put("paymentList", paymentService.findAll());
+            jObject.put("paymentList", paymentService.findByType(PAYMENT_TYPE));
         } catch (JSONException e) {
             e.printStackTrace();
         }
