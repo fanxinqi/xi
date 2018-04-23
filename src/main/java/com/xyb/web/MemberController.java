@@ -106,6 +106,7 @@ public class MemberController {
                     if (memberService.findByStoreIdAndPhone(member.getStoreId(), member.getPhone()) != null) {
                         throw new MyException("您已有会员，是否需要充值");
                     } else {
+                        member.setCreateTime(System.currentTimeMillis());
                         return new RestInfo(memberService.save(member));
                     }
                 }
@@ -115,6 +116,7 @@ public class MemberController {
                         if (memberService.findByStoreIdAndPhone(entity.getStoreId(), member.getPhone()) != null) {
                             throw new MyException("您已有会员，是否需要充值");
                         } else {
+                            member.setCreateTime(System.currentTimeMillis());
                             member.setStoreId(entity.getStoreId());
                             return new RestInfo(memberService.save(member));
                         }

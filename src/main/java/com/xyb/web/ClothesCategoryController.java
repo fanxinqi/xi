@@ -99,6 +99,7 @@ public class ClothesCategoryController {
         if (user != null) {
             String roleName = tokenVerify.getRoleNameByUser(user);
             if (ADMIN_ROL.equals(roleName)) {
+                clothesCategory.setCreateTime(System.currentTimeMillis());
                 return new RestInfo(chothesCategoryService.save(clothesCategory));
             } else {
                 throw new AuthorityException("还没有相应的权限");

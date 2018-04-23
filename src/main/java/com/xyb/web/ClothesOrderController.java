@@ -95,6 +95,7 @@ public class ClothesOrderController {
             } else {
                 orderEntity.setStorageNum(1);
                 orderEntity.setOrderId(OrderIdGenerateUtils.generateOrderNum());
+                orderEntity.setCreateTime(System.currentTimeMillis());
                 return new RestInfo(clothesOrderService.save(orderEntity));
             }
         } else if (STORE_ROL.equals(roleName)) {
@@ -102,6 +103,7 @@ public class ClothesOrderController {
                 orderEntity.setStoreId(user.getStoreId());
                 orderEntity.setStorageNum(1);
                 orderEntity.setOrderId(OrderIdGenerateUtils.generateOrderNum());
+                orderEntity.setCreateTime(System.currentTimeMillis());
                 return new RestInfo(clothesOrderService.save(orderEntity));
             }
         }

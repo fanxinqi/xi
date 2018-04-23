@@ -118,6 +118,7 @@ public class LaundryExpertController {
                 {
                     throw new MyException("您填写的名字或者手机号已经存在");
                 }
+                laundryExpertEntity.setCreateTime(System.currentTimeMillis());
                 return new RestInfo(laundryExpectService.save(laundryExpertEntity));
             } else {
                 throw new AuthorityException("还没有相应的权限");
