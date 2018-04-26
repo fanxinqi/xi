@@ -83,7 +83,7 @@ public class ClothesOrderController {
     @LoginRequired
     @PostMapping(value = "/save")
     public RestInfo saveOrUpdateClothesCategory(@RequestHeader(value = HEADER_TOKEN) String token, @RequestBody ClothesOrderEntity orderEntity) {
-        if (orderEntity == null) {
+        if (orderEntity == null || orderEntity.getCategoryEntitySet() == null || orderEntity.getCategoryEntitySet().size() <= 0) {
             throw new MyException("请传入相应的实体");
         }
         AccountInfoEntity user = null;
@@ -96,6 +96,12 @@ public class ClothesOrderController {
                 orderEntity.setStorageNum(1);
                 orderEntity.setOrderId(OrderIdGenerateUtils.generateOrderNum());
                 orderEntity.setCreateTime(System.currentTimeMillis());
+                orderEntity.setTotalNum(orderEntity.getCategoryEntitySet().size());
+                float sumPrice = 0;
+                for (ClothesCategoryEntity entity : orderEntity.getCategoryEntitySet()) {
+                    sumPrice += entity.getPrice();
+                }
+                orderEntity.setTotalPrice(sumPrice);
                 return new RestInfo(clothesOrderService.save(orderEntity));
             }
         } else if (STORE_ROL.equals(roleName)) {
@@ -104,6 +110,12 @@ public class ClothesOrderController {
                 orderEntity.setStorageNum(1);
                 orderEntity.setOrderId(OrderIdGenerateUtils.generateOrderNum());
                 orderEntity.setCreateTime(System.currentTimeMillis());
+                orderEntity.setTotalNum(orderEntity.getCategoryEntitySet().size());
+                float sumPrice = 0;
+                for (ClothesCategoryEntity entity : orderEntity.getCategoryEntitySet()) {
+                    sumPrice += entity.getPrice();
+                }
+                orderEntity.setTotalPrice(sumPrice);
                 return new RestInfo(clothesOrderService.save(orderEntity));
             }
         }
@@ -210,7 +222,7 @@ public class ClothesOrderController {
         if (!StringUtils.isBlank(requestClothesOrder.getPhone())) {
             clothesOrderEntity.setPhone(requestClothesOrder.getPhone());
         }
-        if (requestClothesOrder.getStorageNum()>0) {
+        if (requestClothesOrder.getStorageNum() > 0) {
             clothesOrderEntity.setStorageNum(requestClothesOrder.getStorageNum());
         }
         return clothesOrderEntity;

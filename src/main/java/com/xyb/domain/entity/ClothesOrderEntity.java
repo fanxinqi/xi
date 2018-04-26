@@ -29,10 +29,10 @@ public class ClothesOrderEntity {
     @JoinTable(name = "order_clothes_category", joinColumns = {@JoinColumn(name = "order_id")}, inverseJoinColumns = {@JoinColumn(name = "clothes_category_id")})
     private Set<ClothesCategoryEntity> categoryEntitySet;
     @ManyToOne(cascade = {CascadeType.REFRESH}, fetch = FetchType.EAGER)
-    @JoinTable(name = "order_clothes_state", joinColumns = {@JoinColumn(name = "order_id")}, inverseJoinColumns = {@JoinColumn(name = "clothes_state_id")})
-    private DictionaryEntity stateEntity;
+    @JoinTable(name = "order_clothes_state", joinColumns = {@JoinColumn(name = "order_id")}, inverseJoinColumns = {@JoinColumn(name = "enum_id")})
+    private CommonEnumEntity stateEntity;
     @ManyToOne(cascade = {CascadeType.REFRESH}, fetch = FetchType.EAGER)
-    @JoinTable(name = "order_pay_type", joinColumns = {@JoinColumn(name = "order_id")}, inverseJoinColumns = {@JoinColumn(name = "pay_type_id")})
+    @JoinTable(name = "order_pay_type", joinColumns = {@JoinColumn(name = "order_id")}, inverseJoinColumns = {@JoinColumn(name = "enum_id")})
     private CommonEnumEntity paymentEntity;
     @Column(name = "store_id")
     @ApiModelProperty(required = true)
@@ -45,17 +45,42 @@ public class ClothesOrderEntity {
     @ApiModelProperty(required = true)
     @NotNull(message = "订单号不能为空")
     private String orderId;
+    @Column(name = "total_num")
+    @ApiModelProperty(required = true)
+    @NotNull(message = "总件数不能为空")
+    private int totalNum;
 
-    public void setCategoryEntitySet(Set<ClothesCategoryEntity> categoryEntitySet) {
-        this.categoryEntitySet = categoryEntitySet;
+    public int getTotalNum() {
+        return totalNum;
     }
 
-    public DictionaryEntity getStateEntity() {
+    public void setTotalNum(int totalNum) {
+        this.totalNum = totalNum;
+    }
+
+    public float getTotalPrice() {
+        return totalPrice;
+    }
+
+    public void setTotalPrice(float totalPrice) {
+        this.totalPrice = totalPrice;
+    }
+
+    @Column(name = "total_price")
+    @ApiModelProperty(required = true)
+    @NotNull(message = "总价格不能为空")
+    private float totalPrice;
+
+    public CommonEnumEntity getStateEntity() {
         return stateEntity;
     }
 
-    public void setStateEntity(DictionaryEntity stateEntity) {
+    public void setStateEntity(CommonEnumEntity stateEntity) {
         this.stateEntity = stateEntity;
+    }
+
+    public void setCategoryEntitySet(Set<ClothesCategoryEntity> categoryEntitySet) {
+        this.categoryEntitySet = categoryEntitySet;
     }
 
     public Set<FileEntity> getImageSet() {

@@ -47,14 +47,14 @@ public class LaundryExpertEntity {
     @JoinTable(name = "laundry_file_res", joinColumns = {@JoinColumn(name = "laundry_id")}, inverseJoinColumns = {@JoinColumn(name = "file_res_id")})
     private FileEntity imageEntity;
     @ManyToOne(cascade = {CascadeType.REFRESH}, fetch = FetchType.EAGER)
-    @JoinTable(name = "laundry_level_dictionary", joinColumns = {@JoinColumn(name = "laundry_id")}, inverseJoinColumns = {@JoinColumn(name = "dictionary_id")})
-    private DictionaryEntity levelEntity;
+    @JoinTable(name = "laundry_level_enum", joinColumns = {@JoinColumn(name = "laundry_id")}, inverseJoinColumns = {@JoinColumn(name = "enum_id")})
+    private CommonEnumEntity levelEntity;
 
-    public DictionaryEntity getLevelEntity() {
+    public CommonEnumEntity getLevelEntity() {
         return levelEntity;
     }
 
-    public void setLevelEntity(DictionaryEntity levelEntity) {
+    public void setLevelEntity(CommonEnumEntity levelEntity) {
         this.levelEntity = levelEntity;
     }
 
