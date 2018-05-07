@@ -103,7 +103,7 @@ public class StoreController {
             StoreEntity storeEntity = null;
             if (ADMIN_ROL.equals(roleName)) {
                 Optional<StoreEntity> storeEntityOptional = storeService.findById(requestStoreEntity.getId());
-                if (storeEntityOptional != null) {
+                if (storeEntityOptional.isPresent()) {
                     storeEntity = storeEntityOptional.get();
                 } else {
                     throw new MyException("您还没有该店铺，还不能进行编辑");

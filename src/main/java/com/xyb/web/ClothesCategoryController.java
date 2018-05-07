@@ -173,6 +173,9 @@ public class ClothesCategoryController {
         if (requestCategory.getPrice() != 0) {
             clothesCategoryEntity.setPrice(requestCategory.getPrice());
         }
+        if (requestCategory.getImageEntity() != null) {
+            clothesCategoryEntity.setImageEntity(requestCategory.getImageEntity());
+        }
         return clothesCategoryEntity;
     }
 }

@@ -1,5 +1,7 @@
 package com.xyb.web;
 
+import com.alibaba.fastjson.JSONException;
+import com.alibaba.fastjson.JSONObject;
 import com.xyb.annotation.LoginRequired;
 import com.xyb.common.TokenVerify;
 import com.xyb.domain.entity.*;
@@ -8,6 +10,7 @@ import com.xyb.exception.MyException;
 import com.xyb.exception.RestInfo;
 import com.xyb.service.AccountInfoService;
 import com.xyb.service.ClothesOrderService;
+import com.xyb.service.CommonEnumService;
 import com.xyb.service.StoreService;
 import com.xyb.utils.JWTUtil;
 import com.xyb.utils.OrderIdGenerateUtils;
@@ -23,9 +26,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.Optional;
 
-import static com.xyb.constants.Constants.ADMIN_ROL;
-import static com.xyb.constants.Constants.HEADER_TOKEN;
-import static com.xyb.constants.Constants.STORE_ROL;
+import static com.xyb.constants.Constants.*;
 
 @RestController
 @RequestMapping("/clothesOrder")
@@ -35,6 +36,8 @@ public class ClothesOrderController {
     @Autowired
     private TokenVerify tokenVerify;
 
+    @Autowired
+    private CommonEnumService paymentService;
 
     @LoginRequired
     @GetMapping("/list")
@@ -43,14 +46,28 @@ public class ClothesOrderController {
         user = tokenVerify.getUserInfoByToken(token);
         if (user != null) {
             String roleName = tokenVerify.getRoleNameByUser(user);
+            Page<ClothesOrderEntity> page = null;
             if (ADMIN_ROL.equals(roleName)) {
-                return new RestInfo(clothesOrderService.findAll(pageable));
+                page = clothesOrderService.findAll(pageable);
             } else if (STORE_ROL.equals(roleName)) {
                 if (user.getStoreId() <= 0) {
                     throw new MyException("您还没有对应的店铺信息");
                 }
-                return new RestInfo(clothesOrderService.findByStoreId(user.getStoreId(), pageable));
+                page = clothesOrderService.findByStoreId(user.getStoreId(), pageable);
             }
+            if (page != null) {
+                //定义JSON
+                JSONObject jObject = new JSONObject();
+                try {
+                    jObject.put("orderList", page);
+                    jObject.put("paymentList", paymentService.findByType(PAYMENT_TYPE));
+                    jObject.put("stateList", paymentService.findByType(ORDER_STATE_TYPE));
+                    return new RestInfo(jObject);
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+            }
+
         }
         throw new AuthorityException("您还没有相应的权限");
     }
@@ -149,7 +166,7 @@ public class ClothesOrderController {
                 }
             }
             if (clothesOrderEntity != null) {
-                updateOrder(clothesOrderEntity, orderEntity);
+                return new RestInfo(clothesOrderService.save(updateOrder(clothesOrderEntity, orderEntity)));
             } else {
                 throw new MyException("您还没有该订单权限，还不能进行编辑");
             }
@@ -225,6 +242,25 @@ public class ClothesOrderController {
         if (requestClothesOrder.getStorageNum() > 0) {
             clothesOrderEntity.setStorageNum(requestClothesOrder.getStorageNum());
         }
+        if (requestClothesOrder.getCategoryEntitySet().size() > 0) {
+            clothesOrderEntity.setCategoryEntitySet(requestClothesOrder.getCategoryEntitySet());
+        }
+        if (requestClothesOrder.getStoreId() > 0) {
+            clothesOrderEntity.setStoreId(requestClothesOrder.getStoreId());
+        }
+        if (requestClothesOrder.getImageSet().size() > 0) {
+            clothesOrderEntity.setImageSet(requestClothesOrder.getImageSet());
+        }
+        if (requestClothesOrder.getPaymentEntity() != null) {
+            clothesOrderEntity.setPaymentEntity(requestClothesOrder.getPaymentEntity());
+        }
+        if (requestClothesOrder.getStateEntity() != null) {
+            clothesOrderEntity.setStateEntity(requestClothesOrder.getStateEntity());
+        }
+        if (requestClothesOrder.getTotalNum() > 0) {
+            clothesOrderEntity.setTotalNum(requestClothesOrder.getTotalNum());
+        }
+        clothesOrderEntity.setTotalPrice(requestClothesOrder.getTotalPrice());
         return clothesOrderEntity;
     }
 
