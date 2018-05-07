@@ -5,6 +5,7 @@ import com.xyb.exception.MyException;
 import com.xyb.exception.RestInfo;
 import com.xyb.service.FileSrcService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.multipart.MultipartHttpServletRequest;
@@ -19,7 +20,9 @@ import java.util.List;
 public class UploadController {
     @Autowired
     private FileSrcService fileSrcService;
-    String uploadPath="/Users/rrd/Documents/xyb_server/target/classes/static/";
+
+    @Value("${upload.uri}")
+    private String uploadPath="/Users/rrd/Documents/xyb_server/target/classes/static/";
     String preSuffix="/api/sh/static/";
     /**
      * 单文件上传
