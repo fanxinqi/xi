@@ -1,56 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="68022376-e0f6-425b-ad99-3e4f2eabe2b7" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/deploy.sh" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xyb/web/ClothesCategoryController.java" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/web/ClothesCategoryController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xyb/web/ClothesOrderController.java" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/web/ClothesOrderController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xyb/web/StoreController.java" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/web/StoreController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" afterPath="$PROJECT_DIR$/target/classes/application.properties" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/AppApplication.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/AppApplication.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/conf/SwaggerConf.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/conf/SwaggerConf.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/domain/entity/AccountInfoEntity.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/domain/entity/AccountInfoEntity.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/domain/entity/ClothesCategoryEntity.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/domain/entity/ClothesCategoryEntity.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/domain/entity/ClothesOrderEntity.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/domain/entity/ClothesOrderEntity.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/domain/entity/MemberCategoryEntity.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/domain/entity/MemberCategoryEntity.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/domain/entity/MemberEntity.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/domain/entity/MemberEntity.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/domain/entity/SpecificationsEntity.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/domain/entity/SpecificationsEntity.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/domain/entity/StoreEntity.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/domain/entity/StoreEntity.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/domain/entity/UserEntity.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/domain/entity/UserEntity.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/domain/repository/AccountInfoRepository.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/domain/repository/AccountInfoRepository.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/domain/repository/ClothesCategoryRepository.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/domain/repository/ClothesCategoryRepository.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/domain/repository/ClothesOrderRepository.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/domain/repository/ClothesOrderRepository.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/domain/repository/MemberRepository.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/domain/repository/MemberRepository.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/domain/repository/StoreRepository.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/domain/repository/StoreRepository.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/domain/repository/UserRepository.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/domain/repository/UserRepository.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/exception/GlobalExceptionHandler.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/exception/GlobalExceptionHandler.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/exception/MyException.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/exception/MyException.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/exception/RestInfo.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/exception/RestInfo.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/interceptor/AuthenticationInterceptor.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/interceptor/AuthenticationInterceptor.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/interceptor/CurrentUserMethodArgumentResolver.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/interceptor/CurrentUserMethodArgumentResolver.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/service/AccountInfoService.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/service/AccountInfoService.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/service/ChothesCategoryService.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/service/ChothesCategoryService.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/service/ClothesOrderService.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/service/ClothesOrderService.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/service/MemberService.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/service/MemberService.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/service/StoreService.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/service/StoreService.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/service/UserService.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/service/UserService.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/service/impl/AccountInfoImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/service/impl/AccountInfoImpl.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/service/impl/ChothesCategoryImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/service/impl/ChothesCategoryImpl.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/service/impl/ClothesOrderImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/service/impl/ClothesOrderImpl.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/service/impl/MemberImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/service/impl/MemberImpl.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/service/impl/StoreImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/service/impl/StoreImpl.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/service/impl/UserServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/service/impl/UserServiceImpl.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/utils/StringUtils.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/utils/StringUtils.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/web/AccountInfoController.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/web/AccountInfoController.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/web/ClothesCategoryController.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/web/ClothesCategoryController.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/web/ClothesOrderController.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/web/ClothesOrderController.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/web/DemoController.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/web/DemoController.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/web/MemberController.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/web/MemberController.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/web/StoreController.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/web/StoreController.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/web/UserController.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/web/UserController.class" />
-    </list>
+    <list default="true" id="68022376-e0f6-425b-ad99-3e4f2eabe2b7" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -72,7 +23,7 @@
       <file leaf-file-name="ClothesOrderController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/web/ClothesOrderController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
+            <state relative-caret-position="3105">
               <caret line="233" column="31" lean-forward="false" selection-start-line="233" selection-start-column="31" selection-end-line="233" selection-end-column="31" />
               <folding />
             </state>
@@ -82,7 +33,7 @@
       <file leaf-file-name="ClothesCategoryEntity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/ClothesCategoryEntity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-90">
+            <state relative-caret-position="90">
               <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
               <folding />
             </state>
@@ -93,7 +44,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/web/ClothesCategoryController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="459">
-              <caret line="174" column="9" lean-forward="true" selection-start-line="174" selection-start-column="9" selection-end-line="174" selection-end-column="9" />
+              <caret line="174" column="9" lean-forward="false" selection-start-line="174" selection-start-column="9" selection-end-line="174" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -359,7 +310,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="AndroidView" />
       <pane id="PackagesPane">
         <subPane>
           <expand>
@@ -429,6 +380,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -436,106 +388,11 @@
               <item name="xyb_server" type="b2602c69:ProjectViewProjectNode" />
               <item name="xyb_server" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="xyb_server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xyb_server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xyb_server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xyb_server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xyb_server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xyb_server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xyb_server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xyb_server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="xyb" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xyb_server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xyb_server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="xyb" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xyb_server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xyb_server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="xyb" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xyb_server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xyb_server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="xyb" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-              <item name="ClothesCategoryEntity" type="1a9f42e2:ClassTreeNode" />
-            </path>
-            <path>
-              <item name="xyb_server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xyb_server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="xyb" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xyb_server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xyb_server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="xyb" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="ClothesOrderController" type="1a9f42e2:ClassTreeNode" />
-            </path>
-            <path>
-              <item name="xyb_server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xyb_server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xyb_server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xyb_server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xyb_server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xyb_server" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -655,7 +512,8 @@
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.xyb.AppApplication" />
-      <module name="xyb-master" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <module name="xyb" />
       <envs />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -905,11 +763,12 @@
       <workItem from="1524729532425" duration="198000" />
       <workItem from="1524741205332" duration="6449000" />
       <workItem from="1525665100636" duration="277000" />
+      <workItem from="1525665644495" duration="32000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="281058000" />
+    <option name="totallyTimeSpent" value="281090000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -922,10 +781,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.71147543" sideWeight="0.36429724" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.71022725" sideWeight="0.36429724" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.49676898" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -940,12 +798,12 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32786885" sideWeight="0.49353796" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4108911" sideWeight="0.49353796" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32386363" sideWeight="0.6357027" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4108911" sideWeight="0.49353796" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32786885" sideWeight="0.49353796" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21732955" sideWeight="0.4555735" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3263328" sideWeight="0.87004757" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.07431341" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33117932" sideWeight="0.87004757" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.07431341" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42245558" sideWeight="0.20537898" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26464325" sideWeight="0.12995246" order="2" side_tool="true" content_ui="tabs" />
@@ -1545,7 +1403,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/web/ClothesOrderController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
+        <state relative-caret-position="3105">
           <caret line="233" column="31" lean-forward="false" selection-start-line="233" selection-start-column="31" selection-end-line="233" selection-end-column="31" />
           <folding />
         </state>
@@ -1553,7 +1411,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/ClothesCategoryEntity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-90">
+        <state relative-caret-position="90">
           <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
           <folding />
         </state>
@@ -1562,7 +1420,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/web/ClothesCategoryController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
-          <caret line="174" column="9" lean-forward="true" selection-start-line="174" selection-start-column="9" selection-end-line="174" selection-end-column="9" />
+          <caret line="174" column="9" lean-forward="false" selection-start-line="174" selection-start-column="9" selection-end-line="174" selection-end-column="9" />
           <folding />
         </state>
       </provider>

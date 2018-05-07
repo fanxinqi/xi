@@ -7,10 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="xi" />
+        <module name="xyb" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="xi" target="1.8" />
+      <module name="xyb" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
