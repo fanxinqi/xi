@@ -296,7 +296,7 @@ public class MemberController {
         if (requestMember.getMemberCategoryId() > 0) {
             memberEntity.setMemberCategoryId(requestMember.getMemberCategoryId());
         }
-        if (requestMember.getGender() > 0) {
+        if (StringUtils.isBlank(requestMember.getGender())) {
             memberEntity.setGender(requestMember.getGender());
         }
         return memberEntity;

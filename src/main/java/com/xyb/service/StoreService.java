@@ -11,7 +11,7 @@ import java.util.Optional;
 public interface StoreService {
     Page<StoreEntity> findAll(Pageable pageable);
     Page<StoreEntity> findAllByName(String name,Pageable pageable);
-
+    List<StoreEntity> findAll();
     StoreEntity save(StoreEntity entity);
 
     void delete(StoreEntity entity);

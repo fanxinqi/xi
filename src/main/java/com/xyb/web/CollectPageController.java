@@ -5,6 +5,7 @@ import com.alibaba.fastjson.JSONObject;
 import com.xyb.annotation.LoginRequired;
 import com.xyb.common.TokenVerify;
 import com.xyb.domain.entity.ClothesCategoryEntity;
+import com.xyb.domain.repository.MemberCategoryRepository;
 import com.xyb.exception.RestInfo;
 import com.xyb.service.ChothesCategoryService;
 import com.xyb.service.CommonEnumService;
@@ -29,6 +30,8 @@ public class CollectPageController {
     private CommonEnumService paymentService;
     @Autowired
     private TokenVerify tokenVerify;
+    @Autowired
+    private MemberCategoryRepository memberCategoryRepository;
 
     @LoginRequired
     @GetMapping("/init")
@@ -50,6 +53,7 @@ public class CollectPageController {
         try {
             jObject.put("categoryList", sortList);
             jObject.put("paymentList", paymentService.findByType(PAYMENT_TYPE));
+            jObject.put("memberCategory",memberCategoryRepository.findAll());
         } catch (JSONException e) {
             e.printStackTrace();
         }

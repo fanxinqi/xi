@@ -4,6 +4,8 @@ import com.xyb.domain.entity.AccountInfoEntity;
 import com.xyb.domain.repository.AccountInfoRepository;
 import com.xyb.service.AccountInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -20,12 +22,18 @@ public class AccountInfoImpl implements AccountInfoService {
     }
 
     @Override
+    public Page<AccountInfoEntity> findAll(Pageable pageable) {
+        return accountInfoRepository.findAll(pageable);
+    }
+
+    @Override
     public AccountInfoEntity save(AccountInfoEntity entity) {
         return accountInfoRepository.save(entity);
     }
 
     @Override
     public void delete(AccountInfoEntity entity) {
+
         accountInfoRepository.delete(entity);
 
     }
@@ -43,6 +51,11 @@ public class AccountInfoImpl implements AccountInfoService {
     @Override
     public AccountInfoEntity findByName(String name) {
         return accountInfoRepository.findByName(name);
+    }
+
+    @Override
+    public Page<AccountInfoEntity> findByName(String name, Pageable pageable) {
+        return null;
     }
 
 }

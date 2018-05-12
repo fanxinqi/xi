@@ -30,6 +30,11 @@ public class StoreImpl implements StoreService {
     }
 
     @Override
+    public List<StoreEntity> findAll() {
+        return storeRepository.findAll();
+    }
+
+    @Override
     public StoreEntity save(StoreEntity entity) {
         return storeRepository.save(entity);
     }

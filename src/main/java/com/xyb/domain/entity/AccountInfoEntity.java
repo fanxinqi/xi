@@ -20,20 +20,26 @@ public class AccountInfoEntity {
     @ApiModelProperty(required = true)
     @NotNull(message = "用户名号不能为空")
     private String name;
+
     @Column(name = "pass_word")
     @ApiModelProperty(required = true)
     @NotNull(message = "密码不能为空")
     private String passWord;
+
     @Column(name = "token")
     private String token;
     @Column(name = "nick_name")
     private String nickName;
+
     @Column(name = "head_url")
     private String headUrl;
+
     @Column(name = "age")
     private int age;
+
     @Column(name = "birthday")
     private long birthday;
+
     @Column(name = "store_id")
     @ApiModelProperty(required = true)
     @NotNull(message = "所属分店不能为空")
