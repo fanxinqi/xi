@@ -8,14 +8,9 @@ import com.xyb.domain.entity.*;
 import com.xyb.exception.AuthorityException;
 import com.xyb.exception.MyException;
 import com.xyb.exception.RestInfo;
-import com.xyb.service.AccountInfoService;
-import com.xyb.service.ClothesOrderService;
-import com.xyb.service.CommonEnumService;
-import com.xyb.service.StoreService;
-import com.xyb.utils.JWTUtil;
+import com.xyb.service.*;
 import com.xyb.utils.OrderIdGenerateUtils;
 import com.xyb.utils.StringUtils;
-import org.apache.shiro.authc.AuthenticationException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -38,6 +33,8 @@ public class ClothesOrderController {
 
     @Autowired
     private CommonEnumService paymentService;
+    @Autowired
+    private StorageService storageService;
 
     @LoginRequired
     @GetMapping("/list")
@@ -67,7 +64,6 @@ public class ClothesOrderController {
                     e.printStackTrace();
                 }
             }
-
         }
         throw new AuthorityException("您还没有相应的权限");
     }
@@ -100,7 +96,7 @@ public class ClothesOrderController {
     @LoginRequired
     @PostMapping(value = "/save")
     public RestInfo saveOrUpdateClothesCategory(@RequestHeader(value = HEADER_TOKEN) String token, @RequestBody ClothesOrderEntity orderEntity) {
-        if (orderEntity == null || orderEntity.getCategoryEntitySet() == null || orderEntity.getCategoryEntitySet().size() <= 0) {
+        if (orderEntity == null || orderEntity.getGoodsEntitySet() == null || orderEntity.getGoodsEntitySet().size() <= 0) {
             throw new MyException("请传入相应的实体");
         }
         AccountInfoEntity user = null;
@@ -110,30 +106,11 @@ public class ClothesOrderController {
             if (orderEntity.getStoreId() <= 0) {
                 throw new MyException("请选择您所加订单的门店");
             } else {
-                orderEntity.setStorageNum(1);
-                orderEntity.setOrderId(OrderIdGenerateUtils.generateOrderNum());
-                orderEntity.setCreateTime(System.currentTimeMillis());
-                orderEntity.setTotalNum(orderEntity.getCategoryEntitySet().size());
-                float sumPrice = 0;
-                for (ClothesCategoryEntity entity : orderEntity.getCategoryEntitySet()) {
-                    sumPrice += entity.getPrice();
-                }
-                orderEntity.setTotalPrice(sumPrice);
-                return new RestInfo(clothesOrderService.save(orderEntity));
+                return new RestInfo(makeOrder(orderEntity,orderEntity.getStoreId()));
             }
         } else if (STORE_ROL.equals(roleName)) {
             if (user.getStoreId() > 0) {
-                orderEntity.setStoreId(user.getStoreId());
-                orderEntity.setStorageNum(1);
-                orderEntity.setOrderId(OrderIdGenerateUtils.generateOrderNum());
-                orderEntity.setCreateTime(System.currentTimeMillis());
-                orderEntity.setTotalNum(orderEntity.getCategoryEntitySet().size());
-                float sumPrice = 0;
-                for (ClothesCategoryEntity entity : orderEntity.getCategoryEntitySet()) {
-                    sumPrice += entity.getPrice();
-                }
-                orderEntity.setTotalPrice(sumPrice);
-                return new RestInfo(clothesOrderService.save(orderEntity));
+                return new RestInfo(makeOrder(orderEntity, user.getStoreId()));
             }
         }
         throw new MyException("操作失败");
@@ -171,7 +148,6 @@ public class ClothesOrderController {
                 throw new MyException("您还没有该订单权限，还不能进行编辑");
             }
         }
-
         throw new MyException("操作失败");
     }
 
@@ -242,8 +218,8 @@ public class ClothesOrderController {
         if (requestClothesOrder.getStorageNum() > 0) {
             clothesOrderEntity.setStorageNum(requestClothesOrder.getStorageNum());
         }
-        if (requestClothesOrder.getCategoryEntitySet().size() > 0) {
-            clothesOrderEntity.setCategoryEntitySet(requestClothesOrder.getCategoryEntitySet());
+        if (requestClothesOrder.getGoodsEntitySet() != null && requestClothesOrder.getGoodsEntitySet().size() > 0) {
+            clothesOrderEntity.setGoodsEntitySet(requestClothesOrder.getGoodsEntitySet());
         }
         if (requestClothesOrder.getStoreId() > 0) {
             clothesOrderEntity.setStoreId(requestClothesOrder.getStoreId());
@@ -264,4 +240,26 @@ public class ClothesOrderController {
         return clothesOrderEntity;
     }
 
+    private ClothesOrderEntity makeOrder(ClothesOrderEntity orderEntity, long storeId) {
+        orderEntity.setStoreId(storeId);
+        orderEntity.setStorageNum(1);
+        orderEntity.setOrderId(OrderIdGenerateUtils.generateOrderNum());
+        orderEntity.setCreateTime(System.currentTimeMillis());
+        orderEntity.setTotalNum(orderEntity.getGoodsEntitySet().size());
+        float sumPrice = 0;
+        List<StorageEntity> list = storageService.findByStoreIdAndUsableState(storeId, UNUSED_STATE);
+        if (list == null || list.size() < orderEntity.getGoodsEntitySet().size()) {
+            throw new MyException("只剩下" + String.valueOf(list == null ? 0 : list.size()) + "个货架号了");
+        } else {
+            for (ClothesGoodsEntity entity : orderEntity.getGoodsEntitySet()) {
+                sumPrice += entity.getPrice();
+                for (StorageEntity storageEntity : list) {
+                    storageEntity.setUsableState(USED_STATE);
+                    entity.setStorageEntity(storageEntity);
+                }
+            }
+        }
+        orderEntity.setTotalPrice(sumPrice);
+        return orderEntity;
+    }
 }

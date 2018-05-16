@@ -1,5 +1,6 @@
 package com.xyb.domain.repository;
 
+import com.xyb.domain.entity.StorageEntity;
 import com.xyb.domain.entity.StoreEntity;
 import com.xyb.domain.entity.UserEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -13,9 +14,9 @@ import java.util.List;
  * @Date 2018/3/20
  */
 
-public interface StorageEntityRepository extends JpaRepository<StoreEntity, Long> {
-    StoreEntity findByName(String name);
+public interface StorageRepository extends JpaRepository<StorageEntity, Long> {
+    StorageEntity findByName(String name);
 
-    List<StoreEntity> findFirst10ByStoreIdAndUsableState(long storeId,int usableState);
+    List<StorageEntity> findByStoreIdAndUsableState(long storeId,int usableState);
 
 }

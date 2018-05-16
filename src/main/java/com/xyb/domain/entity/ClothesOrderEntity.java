@@ -26,8 +26,8 @@ public class ClothesOrderEntity {
     @NotNull(message = "请输入货架号")
     private int storageNum;
     @ManyToMany(cascade = {CascadeType.REFRESH}, fetch = FetchType.EAGER)
-    @JoinTable(name = "order_clothes_category", joinColumns = {@JoinColumn(name = "order_id")}, inverseJoinColumns = {@JoinColumn(name = "clothes_category_id")})
-    private Set<ClothesCategoryEntity> categoryEntitySet;
+    @JoinTable(name = "order_clothes_goods", joinColumns = {@JoinColumn(name = "order_id")}, inverseJoinColumns = {@JoinColumn(name = "clothes_good_id")})
+    private Set<ClothesGoodsEntity> goodsEntitySet;
     @ManyToOne(cascade = {CascadeType.REFRESH}, fetch = FetchType.EAGER)
     @JoinTable(name = "order_clothes_state", joinColumns = {@JoinColumn(name = "order_id")}, inverseJoinColumns = {@JoinColumn(name = "enum_id")})
     private CommonEnumEntity stateEntity;
@@ -79,9 +79,6 @@ public class ClothesOrderEntity {
         this.stateEntity = stateEntity;
     }
 
-    public void setCategoryEntitySet(Set<ClothesCategoryEntity> categoryEntitySet) {
-        this.categoryEntitySet = categoryEntitySet;
-    }
 
     public Set<FileEntity> getImageSet() {
         return ImageSet;
@@ -105,10 +102,6 @@ public class ClothesOrderEntity {
 
     public void setStoreId(long storeId) {
         this.storeId = storeId;
-    }
-
-    public Set<ClothesCategoryEntity> getCategoryEntitySet() {
-        return categoryEntitySet;
     }
 
     public CommonEnumEntity getPaymentEntity() {
@@ -149,5 +142,13 @@ public class ClothesOrderEntity {
 
     public void setStorageNum(int storageNum) {
         this.storageNum = storageNum;
+    }
+
+    public Set<ClothesGoodsEntity> getGoodsEntitySet() {
+        return goodsEntitySet;
+    }
+
+    public void setGoodsEntitySet(Set<ClothesGoodsEntity> goodsEntitySet) {
+        this.goodsEntitySet = goodsEntitySet;
     }
 }

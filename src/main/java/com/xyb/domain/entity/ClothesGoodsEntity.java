@@ -7,8 +7,8 @@ import javax.validation.constraints.NotNull;
 import java.util.Set;
 
 @Entity
-@Table(name = "clothes_category")
-public class ClothesGoodEntity {
+@Table(name = "clothes_goods")
+public class ClothesGoodsEntity {
     @Id
     @GeneratedValue
     @Column(name = "id")
@@ -31,19 +31,19 @@ public class ClothesGoodEntity {
         ImageEntity = imageEntity;
     }
     @ManyToOne(cascade = {CascadeType.REFRESH}, fetch = FetchType.EAGER)
-    @JoinTable(name = "clothes_category_file_res", joinColumns = {@JoinColumn(name = "clothes_category_id")}, inverseJoinColumns = {@JoinColumn(name = "file_res_id")})
+    @JoinTable(name = "clothes_goods_file_res", joinColumns = {@JoinColumn(name = "clothes_goods_id")}, inverseJoinColumns = {@JoinColumn(name = "file_res_id")})
     private FileEntity ImageEntity;
 
     @ManyToOne(cascade = {CascadeType.REFRESH}, fetch = FetchType.EAGER)
-    @JoinTable(name = "order_clothes_state", joinColumns = {@JoinColumn(name = "order_id")}, inverseJoinColumns = {@JoinColumn(name = "enum_id")})
+    @JoinTable(name = "goods_clothes_state", joinColumns = {@JoinColumn(name = "clothes_goods_id")}, inverseJoinColumns = {@JoinColumn(name = "enum_id")})
     private CommonEnumEntity stateEntity;
     @ManyToOne(cascade = {CascadeType.REFRESH}, fetch = FetchType.EAGER)
-    @JoinTable(name = "order_pay_type", joinColumns = {@JoinColumn(name = "order_id")}, inverseJoinColumns = {@JoinColumn(name = "enum_id")})
+    @JoinTable(name = "goods_clothes_pay_type", joinColumns = {@JoinColumn(name = "clothes_goods_id")}, inverseJoinColumns = {@JoinColumn(name = "enum_id")})
     private CommonEnumEntity paymentEntity;
-    
-    @ApiModelProperty(required = true)
-    @NotNull(message = "请输入货架号")
-    private int storageNum;
+
+    @ManyToOne(cascade = {CascadeType.REFRESH}, fetch = FetchType.EAGER)
+    @JoinTable(name = "goods_clothes_storage_state", joinColumns = {@JoinColumn(name = "clothes_goods_id")}, inverseJoinColumns = {@JoinColumn(name = "enum_id")})
+    private StorageEntity storageEntity;
 
     public Long getId() {
         return id;
@@ -75,6 +75,30 @@ public class ClothesGoodEntity {
 
     public void setDes(String des) {
         this.des = des;
+    }
+
+    public CommonEnumEntity getStateEntity() {
+        return stateEntity;
+    }
+
+    public void setStateEntity(CommonEnumEntity stateEntity) {
+        this.stateEntity = stateEntity;
+    }
+
+    public CommonEnumEntity getPaymentEntity() {
+        return paymentEntity;
+    }
+
+    public void setPaymentEntity(CommonEnumEntity paymentEntity) {
+        this.paymentEntity = paymentEntity;
+    }
+
+    public StorageEntity getStorageEntity() {
+        return storageEntity;
+    }
+
+    public void setStorageEntity(StorageEntity storageEntity) {
+        this.storageEntity = storageEntity;
     }
 
     public long getCreateTime() {

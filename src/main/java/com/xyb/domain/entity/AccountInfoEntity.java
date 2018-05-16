@@ -20,7 +20,6 @@ public class AccountInfoEntity {
     @ApiModelProperty(required = true)
     @NotNull(message = "用户名号不能为空")
     private String name;
-
     @Column(name = "pass_word")
     @ApiModelProperty(required = true)
     @NotNull(message = "密码不能为空")

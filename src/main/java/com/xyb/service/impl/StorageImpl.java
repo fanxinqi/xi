@@ -1,8 +1,9 @@
 package com.xyb.service.impl;
 
+import com.xyb.domain.entity.StorageEntity;
 import com.xyb.domain.entity.UserEntity;
-import com.xyb.domain.repository.UserRepository;
-import com.xyb.service.UserService;
+import com.xyb.domain.repository.StorageRepository;
+import com.xyb.service.StorageService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -14,32 +15,41 @@ import java.util.Optional;
  * @Date 2018/3/20
  */
 @Service
-public class UserServiceImpl implements UserService {
+public class StorageImpl implements StorageService {
     @Autowired
-    private UserRepository userRepository;
+    private StorageRepository storageRepository;
 
     @Override
-    public List<UserEntity> findAll() {
-        return userRepository.findAll();
+    public List<StorageEntity> findAll() {
+        return storageRepository.findAll();
     }
 
     @Override
-    public UserEntity save(UserEntity entity) {
-        return userRepository.save(entity);
+    public StorageEntity save(StorageEntity entity) {
+        return storageRepository.save(entity);
     }
 
     @Override
-    public void delete(UserEntity entity) {
-        userRepository.delete(entity);
+    public void delete(StorageEntity entity) {
+        storageRepository.delete(entity);
     }
-
     @Override
     public void deleteById(Long id) {
-        userRepository.deleteById(id);
+        storageRepository.deleteById(id);
     }
 
     @Override
-    public Optional<UserEntity> findById(Long id) {
-        return userRepository.findById(id);
+    public Optional<StorageEntity> findById(Long id) {
+        return storageRepository.findById(id);
+    }
+
+    @Override
+    public StorageEntity findByName(String name) {
+        return storageRepository.findByName(name);
+    }
+
+    @Override
+    public List<StorageEntity> findByStoreIdAndUsableState(long storeId, int usableState) {
+        return storageRepository.findByStoreIdAndUsableState(storeId,usableState);
     }
 }
