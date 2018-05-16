@@ -19,6 +19,8 @@ public interface LaundryExpertRepository extends JpaRepository<LaundryExpertEnti
     Page<LaundryExpertEntity> findByStoreIdAndPhone(long storeId, String phone, Pageable pageable);
 
     Page<LaundryExpertEntity> findByStoreIdAndName(long storeId, String name, Pageable pageable);
+    Page<LaundryExpertEntity> findByPhoneAndName(String phone, String name, Pageable pageable);
 
     LaundryExpertEntity findByStoreIdAndId(long storeId, long id);
+    Page<LaundryExpertEntity> findByStoreIdAndPhoneAndName(long storeId, String phone, String name, Pageable pageable);
 }

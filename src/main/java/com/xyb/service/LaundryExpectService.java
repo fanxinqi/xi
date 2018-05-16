@@ -21,6 +21,7 @@ public interface LaundryExpectService {
     Page<LaundryExpertEntity> findByPhone(String phone, Pageable pageable);
 
     Page<LaundryExpertEntity> findByName(String name, Pageable pageable);
+    Page<LaundryExpertEntity> findByPhoneAndName(String phone,String name, Pageable pageable);
 
     LaundryExpertEntity findByName(String name);
     LaundryExpertEntity findByPhone(String phone);
@@ -30,6 +31,8 @@ public interface LaundryExpectService {
     Page<LaundryExpertEntity> findByStoreIdAndPhone(long storeId, String phone, Pageable pageable);
 
     Page<LaundryExpertEntity> findByStoreIdAndName(long storeId, String name, Pageable pageable);
+    Page<LaundryExpertEntity> findByStoreIdAndPhoneAndName(long storeId, String phone,String name, Pageable pageable);
 
     LaundryExpertEntity findByStoreIdAndId(long storeId, long id);
+
 }

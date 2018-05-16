@@ -50,13 +50,18 @@ public class LaundryExpertImpl implements LaundryExpectService {
     }
 
     @Override
+    public Page<LaundryExpertEntity> findByPhoneAndName(String phone, String name, Pageable pageable) {
+        return laundryExpertRepository.findByPhoneAndName(phone,name,pageable);
+    }
+
+    @Override
     public LaundryExpertEntity findByName(String name) {
-        return null;
+        return laundryExpertRepository.findByName(name);
     }
 
     @Override
     public LaundryExpertEntity findByPhone(String phone) {
-        return null;
+        return laundryExpertRepository.findByPhone(phone);
     }
 
     @Override
@@ -72,6 +77,11 @@ public class LaundryExpertImpl implements LaundryExpectService {
     @Override
     public Page<LaundryExpertEntity> findByStoreIdAndName(long storeId, String name, Pageable pageable) {
         return laundryExpertRepository.findByStoreIdAndPhone(storeId,name,pageable);
+    }
+
+    @Override
+    public Page<LaundryExpertEntity> findByStoreIdAndPhoneAndName(long storeId, String phone, String name, Pageable pageable) {
+        return laundryExpertRepository.findByStoreIdAndPhoneAndName(storeId,phone,name,pageable);
     }
 
     @Override

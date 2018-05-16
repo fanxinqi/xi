@@ -54,25 +54,30 @@ public class LaundryExpertController {
             Page<LaundryExpertEntity> laundryExpertEntityPage = null;
             if (ADMIN_ROL.equals(roleName)) {
                 if (storeId > 0) {
-                    laundryExpertEntityPage=searchLaundryExpert(storeId,name,phone,pageable);
+                    laundryExpertEntityPage = searchLaundryExpert(storeId, name, phone, pageable);
                 } else {
-                    if (!StringUtils.isBlank(name)) {
-                        laundryExpertEntityPage = laundryExpectService.findByName(name, pageable);
-                    }
-                    if (!StringUtils.isBlank(phone)) {
-                        laundryExpertEntityPage = laundryExpectService.findByPhone(phone, pageable);
-                    }
                     if (StringUtils.isBlank(name) && StringUtils.isBlank(phone)) {
                         laundryExpertEntityPage = laundryExpectService.findAll(pageable);
+                    } else {
+                        if (!StringUtils.isBlank(name) && !StringUtils.isBlank(phone)) {
+                            laundryExpertEntityPage = laundryExpectService.findByPhoneAndName(phone, name, pageable);
+                        } else {
+                            if (!StringUtils.isBlank(name)) {
+                                laundryExpertEntityPage = laundryExpectService.findByName(name, pageable);
+                            }
+                            if (!StringUtils.isBlank(phone)) {
+                                laundryExpertEntityPage = laundryExpectService.findByPhone(phone, pageable);
+                            }
+                        }
                     }
                 }
                 return new RestInfo(laundryExpertEntityPage);
 
             } else if (STORE_ROL.equals(roleName)) {
                 if (user.getStoreId() > 0) {
-                    laundryExpertEntityPage=searchLaundryExpert(user.getStoreId(),name,phone,pageable);
+                    laundryExpertEntityPage = searchLaundryExpert(user.getStoreId(), name, phone, pageable);
                     return new RestInfo(laundryExpertEntityPage);
-                }else {
+                } else {
                     throw new AuthorityException("您还没有相应的店铺");
                 }
             }
@@ -99,7 +104,7 @@ public class LaundryExpertController {
         if (StringUtils.isBlank(name)) {
             throw new MyException("请输入要搜索的名字");
         }
-        Page<LaundryExpertEntity> laundryExpertEntityPage = laundryExpectService.findByName(name,pageable);
+        Page<LaundryExpertEntity> laundryExpertEntityPage = laundryExpectService.findByName(name, pageable);
         return new RestInfo(laundryExpertEntityPage);
     }
 
@@ -114,8 +119,7 @@ public class LaundryExpertController {
         if (user != null) {
             String roleName = tokenVerify.getRoleNameByUser(user);
             if (ADMIN_ROL.equals(roleName)) {
-                if(laundryExpectService.findByName(laundryExpertEntity.getName())!=null || laundryExpectService.findByPhone(laundryExpertEntity.getPhone())!=null )
-                {
+                if (laundryExpectService.findByName(laundryExpertEntity.getName()) != null || laundryExpectService.findByPhone(laundryExpertEntity.getPhone()) != null) {
                     throw new MyException("您填写的名字或者手机号已经存在");
                 }
                 laundryExpertEntity.setCreateTime(System.currentTimeMillis());
@@ -194,41 +198,48 @@ public class LaundryExpertController {
         }
         if (!StringUtils.isBlank(requestLaundryExpertEntity.getIdNum())) {
             laundryExpertEntity.setIdNum(requestLaundryExpertEntity.getIdNum());
-        }  if (!StringUtils.isBlank(requestLaundryExpertEntity.getPhone())) {
+        }
+        if (!StringUtils.isBlank(requestLaundryExpertEntity.getPhone())) {
             laundryExpertEntity.setPhone(requestLaundryExpertEntity.getPhone());
         }
         if (!StringUtils.isBlank(requestLaundryExpertEntity.getProfessionalDes())) {
             laundryExpertEntity.setProfessionalDes(requestLaundryExpertEntity.getProfessionalDes());
         }
-        if (requestLaundryExpertEntity.getBirthday()>0) {
+        if (requestLaundryExpertEntity.getBirthday() > 0) {
             laundryExpertEntity.setBirthday(requestLaundryExpertEntity.getBirthday());
         }
-        if (requestLaundryExpertEntity.getStoreId()>0) {
+        if (requestLaundryExpertEntity.getStoreId() > 0) {
             laundryExpertEntity.setStoreId(requestLaundryExpertEntity.getStoreId());
         }
-        if (requestLaundryExpertEntity.getLevelEntity()!=null) {
+        if (requestLaundryExpertEntity.getLevelEntity() != null) {
             laundryExpertEntity.setLevelEntity(requestLaundryExpertEntity.getLevelEntity());
         }
-        if (requestLaundryExpertEntity.getImageEntity()!=null) {
+        if (requestLaundryExpertEntity.getImageEntity() != null) {
             laundryExpertEntity.setImageEntity(requestLaundryExpertEntity.getImageEntity());
         }
-        if (requestLaundryExpertEntity.getWorkingYears()>0) {
+        if (requestLaundryExpertEntity.getWorkingYears() > 0) {
             laundryExpertEntity.setWorkingYears(requestLaundryExpertEntity.getWorkingYears());
         }
         return laundryExpertEntity;
     }
 
-    private Page<LaundryExpertEntity> searchLaundryExpert(long storeId, String name, String phone,Pageable pageable) {
+    private Page<LaundryExpertEntity> searchLaundryExpert(long storeId, String name, String phone, Pageable pageable) {
         Page<LaundryExpertEntity> laundryExpertEntityPage = null;
-        if (!StringUtils.isBlank(name)) {
-            laundryExpertEntityPage = laundryExpectService.findByStoreIdAndName(storeId, name, pageable);
-        }
-        if (!StringUtils.isBlank(phone)) {
-            laundryExpertEntityPage = laundryExpectService.findByStoreIdAndPhone(storeId, phone, pageable);
-        }
         if (StringUtils.isBlank(name) && StringUtils.isBlank(phone)) {
             laundryExpertEntityPage = laundryExpectService.findByStoreId(storeId, pageable);
+        } else {
+            if (!StringUtils.isBlank(name) && !StringUtils.isBlank(phone)) {
+                laundryExpertEntityPage = laundryExpectService.findByStoreIdAndPhoneAndName(storeId, phone, name, pageable);
+            } else {
+                if (!StringUtils.isBlank(name)) {
+                    laundryExpertEntityPage = laundryExpectService.findByStoreIdAndName(storeId, name, pageable);
+                }
+                if (!StringUtils.isBlank(phone)) {
+                    laundryExpertEntityPage = laundryExpectService.findByStoreIdAndPhone(storeId, phone, pageable);
+                }
+            }
         }
+
         return laundryExpertEntityPage;
     }
 }
