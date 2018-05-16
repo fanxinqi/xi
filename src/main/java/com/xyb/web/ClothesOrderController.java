@@ -106,11 +106,11 @@ public class ClothesOrderController {
             if (orderEntity.getStoreId() <= 0) {
                 throw new MyException("请选择您所加订单的门店");
             } else {
-                return new RestInfo(makeOrder(orderEntity,orderEntity.getStoreId()));
+                return new RestInfo(clothesOrderService.save(makeOrder(orderEntity,orderEntity.getStoreId())));
             }
         } else if (STORE_ROL.equals(roleName)) {
             if (user.getStoreId() > 0) {
-                return new RestInfo(makeOrder(orderEntity, user.getStoreId()));
+                return new RestInfo(clothesOrderService.save(makeOrder(orderEntity, user.getStoreId())));
             }
         }
         throw new MyException("操作失败");
