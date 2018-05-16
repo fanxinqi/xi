@@ -35,6 +35,8 @@ public class ClothesOrderController {
     private CommonEnumService paymentService;
     @Autowired
     private StorageService storageService;
+    @Autowired
+    private ChothesGoodsService clothesGoodsService;
 
     @LoginRequired
     @GetMapping("/list")
@@ -256,6 +258,8 @@ public class ClothesOrderController {
                 for (StorageEntity storageEntity : list) {
                     storageEntity.setUsableState(USED_STATE);
                     entity.setStorageEntity(storageEntity);
+                    clothesGoodsService.save(entity);
+                    break;
                 }
             }
         }
