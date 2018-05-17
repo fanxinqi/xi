@@ -5,6 +5,7 @@ import com.alibaba.fastjson.JSONObject;
 import com.xyb.annotation.LoginRequired;
 import com.xyb.common.TokenVerify;
 import com.xyb.domain.entity.*;
+import com.xyb.domain.repository.MemberCategoryRepository;
 import com.xyb.exception.AuthorityException;
 import com.xyb.exception.MyException;
 import com.xyb.exception.RestInfo;
@@ -18,8 +19,10 @@ import org.springframework.data.domain.Sort;
 import org.springframework.data.web.PageableDefault;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.HashSet;
 import java.util.List;
 import java.util.Optional;
+import java.util.Set;
 
 import static com.xyb.constants.Constants.*;
 
@@ -35,6 +38,11 @@ public class ClothesOrderController {
     private CommonEnumService paymentService;
     @Autowired
     private StorageService storageService;
+    @Autowired
+    private ChothesGoodsService clothesGoodsService;
+
+    @Autowired
+    private MemberCategoryRepository memberCategoryRepository;
 
     @LoginRequired
     @GetMapping("/list")
@@ -96,7 +104,7 @@ public class ClothesOrderController {
     @LoginRequired
     @PostMapping(value = "/save")
     public RestInfo saveOrUpdateClothesCategory(@RequestHeader(value = HEADER_TOKEN) String token, @RequestBody ClothesOrderEntity orderEntity) {
-        if (orderEntity == null || orderEntity.getGoodsEntitySet() == null || orderEntity.getGoodsEntitySet().size() <= 0) {
+        if (orderEntity == null || orderEntity.getGoodList() == null || orderEntity.getGoodList().size() <= 0) {
             throw new MyException("请传入相应的实体");
         }
         AccountInfoEntity user = null;
@@ -245,21 +253,29 @@ public class ClothesOrderController {
         orderEntity.setStorageNum(1);
         orderEntity.setOrderId(OrderIdGenerateUtils.generateOrderNum());
         orderEntity.setCreateTime(System.currentTimeMillis());
-        orderEntity.setTotalNum(orderEntity.getGoodsEntitySet().size());
         float sumPrice = 0;
         List<StorageEntity> list = storageService.findByStoreIdAndUsableState(storeId, UNUSED_STATE);
-        if (list == null || list.size() < orderEntity.getGoodsEntitySet().size()) {
+        if (list == null || list.size() < orderEntity.getGoodList().size()) {
             throw new MyException("只剩下" + String.valueOf(list == null ? 0 : list.size()) + "个货架号了");
         } else {
-            for (ClothesGoodsEntity entity : orderEntity.getGoodsEntitySet()) {
+            int index=0;
+            Set<ClothesGoodsEntity> set=new HashSet<>();
+            for (ClothesGoodsEntity entity : orderEntity.getGoodList()) {
                 sumPrice += entity.getPrice();
-                for (StorageEntity storageEntity : list) {
-                    storageEntity.setUsableState(USED_STATE);
-                    entity.setStorageEntity(storageEntity);
+                StorageEntity storageEntity=list.get(index);
+                storageEntity.setUsableState(USED_STATE);
+                entity.setStorageEntity(storageEntity);
+                if(entity.getStateEntity()==null)
+                {
+                    entity.setStateEntity(paymentService.findByTypeAndIsDefault(ORDER_STATE_TYPE,IS_DEFAULT) );
                 }
+                set.add(clothesGoodsService.save(entity));
+                index++;
             }
+            orderEntity.setGoodsEntitySet(set);
         }
         orderEntity.setTotalPrice(sumPrice);
+        orderEntity.setTotalNum(orderEntity.getGoodsEntitySet().size());
         return orderEntity;
     }
 }

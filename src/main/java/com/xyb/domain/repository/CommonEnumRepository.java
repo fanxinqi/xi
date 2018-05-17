@@ -16,4 +16,5 @@ public interface CommonEnumRepository extends JpaRepository<CommonEnumEntity, Lo
     CommonEnumEntity findByName(String name);
 
     List<CommonEnumEntity> findByType(int type);
+   CommonEnumEntity findByTypeAndIsDefault(int type,int isDefault);
 }

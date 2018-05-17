@@ -24,6 +24,12 @@ class CommonEnumImpl implements CommonEnumService{
     }
 
     @Override
+    public CommonEnumEntity findByTypeAndIsDefault(int type, int defaulted) {
+        return paymentRepository.findByTypeAndIsDefault(type,defaulted);
+    }
+
+
+    @Override
     public CommonEnumEntity save(CommonEnumEntity entity) {
         return paymentRepository.save(entity);
     }

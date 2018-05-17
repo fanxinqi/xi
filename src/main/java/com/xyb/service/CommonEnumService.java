@@ -9,6 +9,7 @@ public interface CommonEnumService {
     List<CommonEnumEntity> findAll();
 
     List<CommonEnumEntity> findByType(int type);
+    CommonEnumEntity findByTypeAndIsDefault(int type,int defaulted);
 
     CommonEnumEntity save(CommonEnumEntity entity);
 

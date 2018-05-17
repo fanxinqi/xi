@@ -19,6 +19,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static com.xyb.constants.Constants.HEADER_TOKEN;
+import static com.xyb.constants.Constants.ORDER_STATE_TYPE;
 import static com.xyb.constants.Constants.PAYMENT_TYPE;
 
 @RestController
@@ -54,6 +55,7 @@ public class CollectPageController {
             jObject.put("categoryList", sortList);
             jObject.put("paymentList", paymentService.findByType(PAYMENT_TYPE));
             jObject.put("memberCategory",memberCategoryRepository.findAll());
+            jObject.put("stateEntity",paymentService.findByType(ORDER_STATE_TYPE));
         } catch (JSONException e) {
             e.printStackTrace();
         }

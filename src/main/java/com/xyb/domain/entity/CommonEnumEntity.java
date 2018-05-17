@@ -22,6 +22,19 @@ public class CommonEnumEntity {
     private int type;
     @Column(name = "create_time")
     private long createTime;
+
+    public int getIsDefault() {
+        return isDefault;
+    }
+
+    public void setIsDefault(int isDefault) {
+        this.isDefault = isDefault;
+    }
+
+    @Column(name = "is_default")
+    private int isDefault;
+
+
     public FileEntity getImageEntity() {
         return imageEntity;
     }
