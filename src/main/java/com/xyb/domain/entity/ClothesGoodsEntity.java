@@ -25,15 +25,18 @@ public class ClothesGoodsEntity {
     private String des;
     @Column(name = "create_time")
     private long createTime;
+
     public FileEntity getImageEntity() {
-        return ImageEntity;
+        return imageEntity;
     }
+
     public void setImageEntity(FileEntity imageEntity) {
-        ImageEntity = imageEntity;
+        this.imageEntity = imageEntity;
     }
+
     @ManyToOne(cascade = {CascadeType.REFRESH}, fetch = FetchType.EAGER)
     @JoinTable(name = "clothes_goods_file_res", joinColumns = {@JoinColumn(name = "clothes_goods_id")}, inverseJoinColumns = {@JoinColumn(name = "file_res_id")})
-    private FileEntity ImageEntity;
+    private FileEntity imageEntity;
 
     @ManyToOne(cascade = {CascadeType.REFRESH}, fetch = FetchType.EAGER)
     @JoinTable(name = "goods_clothes_state", joinColumns = {@JoinColumn(name = "clothes_goods_id")}, inverseJoinColumns = {@JoinColumn(name = "enum_id")})

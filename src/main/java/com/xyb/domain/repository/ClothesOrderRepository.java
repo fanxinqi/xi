@@ -2,6 +2,7 @@ package com.xyb.domain.repository;
 
 import com.xyb.domain.entity.ClothesCategoryEntity;
 import com.xyb.domain.entity.ClothesOrderEntity;
+import com.xyb.domain.entity.LaundryExpertEntity;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -17,6 +18,11 @@ public interface ClothesOrderRepository extends JpaRepository<ClothesOrderEntity
     Page<ClothesOrderEntity> findByStoreId(long storeId, Pageable pageable);
 
     Page<ClothesOrderEntity> findByStoreIdAndPhone(long storeId, String phone, Pageable pageable);
+//
+//    Page<ClothesOrderEntity> findByCommonEnumEntity_IdAndStoreId(long id, long storeId, Pageable pageable);
+//
+//    Page<ClothesOrderEntity> findByCommonEnumEntity_Id(long id, Pageable pageable);
+//    Page<ClothesOrderEntity> findByCommonEnumEntity_IdAndStoreIdAndPhone(long id, long storeId,String phone, Pageable pageable);
 
     ClothesOrderEntity findByStoreIdAndId(long storeId, long id);
 //

@@ -19,5 +19,5 @@ public interface ClothesOrderService {
     Page<ClothesOrderEntity> findByPhone(String name,Pageable pageable);
     Page<ClothesOrderEntity> findByStoreId(long storeId,Pageable pageable);
     Page<ClothesOrderEntity> findByStoreIdAndPhone(long storeId,String phone,Pageable pageable);
-  ClothesOrderEntity findByStoreIdAndId(long storeId,long id);
+    ClothesOrderEntity findByStoreIdAndId(long storeId,long id);
 }

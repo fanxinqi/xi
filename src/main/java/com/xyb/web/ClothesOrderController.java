@@ -251,6 +251,7 @@ public class ClothesOrderController {
     private ClothesOrderEntity makeOrder(ClothesOrderEntity orderEntity, long storeId) {
         orderEntity.setStoreId(storeId);
         orderEntity.setStorageNum(1);
+
         orderEntity.setOrderId(OrderIdGenerateUtils.generateOrderNum());
         orderEntity.setCreateTime(System.currentTimeMillis());
         float sumPrice = 0;
@@ -278,4 +279,23 @@ public class ClothesOrderController {
         orderEntity.setTotalNum(orderEntity.getGoodsEntitySet().size());
         return orderEntity;
     }
+//    private Page<ClothesOrderEntity> searchOrder(long storeId, String paymentEntity, String phone, Pageable pageable) {
+//        Page<ClothesOrderEntity> laundryExpertEntityPage = null;
+//        if (paymentEntity==null && StringUtils.isBlank(phone)) {
+//            laundryExpertEntityPage = clothesOrderService.findByStoreId(storeId, pageable);
+//        } else {
+//            if (paymentEntity!=null && !StringUtils.isBlank(phone)) {
+//                laundryExpertEntityPage = clothesOrderService.findByStoreIdAndPhoneAndName(storeId, phone, name, pageable);
+//            } else {
+//                if (!StringUtils.isBlank(name)) {
+//                    laundryExpertEntityPage = laundryExpectService.findByStoreIdAndName(storeId, name, pageable);
+//                }
+//                if (!StringUtils.isBlank(phone)) {
+//                    laundryExpertEntityPage = laundryExpectService.findByStoreIdAndPhone(storeId, phone, pageable);
+//                }
+//            }
+//        }
+//
+//        return laundryExpertEntityPage;
+//    }
 }
