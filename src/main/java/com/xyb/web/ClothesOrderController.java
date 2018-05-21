@@ -40,12 +40,9 @@ public class ClothesOrderController {
     private StorageService storageService;
     @Autowired
     private ChothesGoodsService clothesGoodsService;
-<<<<<<< HEAD
 
     @Autowired
     private MemberCategoryRepository memberCategoryRepository;
-=======
->>>>>>> b53fd780283c096b5d536a5ffe4301a022ed8f66
 
     @LoginRequired
     @GetMapping("/list")
@@ -266,20 +263,12 @@ public class ClothesOrderController {
             Set<ClothesGoodsEntity> set=new HashSet<>();
             for (ClothesGoodsEntity entity : orderEntity.getGoodList()) {
                 sumPrice += entity.getPrice();
-<<<<<<< HEAD
                 StorageEntity storageEntity=list.get(index);
                 storageEntity.setUsableState(USED_STATE);
                 entity.setStorageEntity(storageEntity);
                 if(entity.getStateEntity()==null)
                 {
                     entity.setStateEntity(paymentService.findByTypeAndIsDefault(ORDER_STATE_TYPE,IS_DEFAULT) );
-=======
-                for (StorageEntity storageEntity : list) {
-                    storageEntity.setUsableState(USED_STATE);
-                    entity.setStorageEntity(storageEntity);
-                    clothesGoodsService.save(entity);
-                    break;
->>>>>>> b53fd780283c096b5d536a5ffe4301a022ed8f66
                 }
                 set.add(clothesGoodsService.save(entity));
                 index++;

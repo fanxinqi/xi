@@ -1,15 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-<<<<<<< HEAD
-    <list default="true" id="68022376-e0f6-425b-ad99-3e4f2eabe2b7" name="Default" comment="" />
-=======
-    <list default="true" id="68022376-e0f6-425b-ad99-3e4f2eabe2b7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xyb/web/ClothesOrderController.java" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/web/ClothesOrderController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" />
+    <list default="true" id="138307db-990f-458f-8fcb-4f90489dc64c" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xyb/web/ClothesOrderController.java" afterPath="$PROJECT_DIR$/src/main/java/com/xyb/web/ClothesOrderController.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/AppApplication.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/AppApplication.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/conf/SwaggerConf.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/conf/SwaggerConf.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/domain/entity/AccountInfoEntity.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/domain/entity/AccountInfoEntity.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/domain/entity/ClothesCategoryEntity.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/domain/entity/ClothesCategoryEntity.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/domain/entity/ClothesOrderEntity.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/domain/entity/ClothesOrderEntity.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/domain/entity/MemberCategoryEntity.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/domain/entity/MemberCategoryEntity.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/domain/entity/MemberEntity.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/domain/entity/MemberEntity.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/domain/entity/SpecificationsEntity.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/domain/entity/SpecificationsEntity.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/domain/entity/StoreEntity.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/domain/entity/StoreEntity.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/domain/entity/UserEntity.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/domain/entity/UserEntity.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/domain/repository/AccountInfoRepository.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/domain/repository/AccountInfoRepository.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/domain/repository/ClothesCategoryRepository.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/domain/repository/ClothesCategoryRepository.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/domain/repository/ClothesOrderRepository.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/domain/repository/ClothesOrderRepository.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/domain/repository/MemberRepository.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/domain/repository/MemberRepository.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/domain/repository/StoreRepository.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/domain/repository/StoreRepository.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/domain/repository/UserRepository.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/domain/repository/UserRepository.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/exception/GlobalExceptionHandler.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/exception/GlobalExceptionHandler.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/exception/MyException.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/exception/MyException.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/exception/RestInfo.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/exception/RestInfo.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/interceptor/AuthenticationInterceptor.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/interceptor/AuthenticationInterceptor.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/interceptor/CurrentUserMethodArgumentResolver.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/interceptor/CurrentUserMethodArgumentResolver.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/service/AccountInfoService.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/service/AccountInfoService.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/service/ChothesCategoryService.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/service/ChothesCategoryService.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/service/ClothesOrderService.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/service/ClothesOrderService.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/service/MemberService.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/service/MemberService.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/service/StoreService.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/service/StoreService.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/service/UserService.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/service/UserService.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/service/impl/AccountInfoImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/service/impl/AccountInfoImpl.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/service/impl/ChothesCategoryImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/service/impl/ChothesCategoryImpl.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/service/impl/ClothesOrderImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/service/impl/ClothesOrderImpl.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/service/impl/MemberImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/service/impl/MemberImpl.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/service/impl/StoreImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/service/impl/StoreImpl.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/service/impl/UserServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/service/impl/UserServiceImpl.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/utils/StringUtils.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/utils/StringUtils.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/web/AccountInfoController.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/web/AccountInfoController.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/web/ClothesCategoryController.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/web/ClothesCategoryController.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/web/ClothesOrderController.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/web/ClothesOrderController.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/web/DemoController.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/web/DemoController.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/web/MemberController.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/web/MemberController.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/web/StoreController.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/web/StoreController.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xyb/web/UserController.class" afterPath="$PROJECT_DIR$/target/classes/com/xyb/web/UserController.class" />
     </list>
->>>>>>> b53fd780283c096b5d536a5ffe4301a022ed8f66
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,266 +55,73 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/xyb_server$AppApplication.coverage" NAME="AppApplication Coverage Results" MODIFIED="1522935870761" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>com.xyb.*</FILTER>
-    </SUITE>
-  </component>
-  <component name="FavoritesManager">
-    <favorites_list name="xyb_server" />
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-<<<<<<< HEAD
+    <leaf>
       <file leaf-file-name="ClothesOrderController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/web/ClothesOrderController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="250" column="24" lean-forward="true" selection-start-line="250" selection-start-column="24" selection-end-line="250" selection-end-column="24" />
-              <folding />
-=======
-      <file leaf-file-name="ClothesOrderEntity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/ClothesOrderEntity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="538">
-              <caret line="146" column="14" lean-forward="false" selection-start-line="146" selection-start-column="11" selection-end-line="146" selection-end-column="14" />
-              <folding>
-                <element signature="e#4151#4152#0" expanded="true" />
-                <element signature="e#4188#4189#0" expanded="true" />
-              </folding>
->>>>>>> b53fd780283c096b5d536a5ffe4301a022ed8f66
-            </state>
-          </provider>
-        </entry>
-      </file>
-<<<<<<< HEAD
-      <file leaf-file-name="ClothesOrderRepository.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/domain/repository/ClothesOrderRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="21" column="21" lean-forward="false" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
-=======
-      <file leaf-file-name="Set.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/util/Set.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="84" column="17" lean-forward="false" selection-start-line="84" selection-start-column="17" selection-end-line="84" selection-end-column="17" />
->>>>>>> b53fd780283c096b5d536a5ffe4301a022ed8f66
+            <state relative-caret-position="-644">
+              <caret line="30" column="13" lean-forward="false" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-<<<<<<< HEAD
-      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="40" lean-forward="false" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="40" />
-=======
       <file leaf-file-name="ClothesCategoryEntity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/ClothesCategoryEntity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="25" column="20" lean-forward="false" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
->>>>>>> b53fd780283c096b5d536a5ffe4301a022ed8f66
+            <state relative-caret-position="-101">
+              <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-<<<<<<< HEAD
-      <file leaf-file-name="ClothesOrderService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/service/ClothesOrderService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="118">
-              <caret line="11" column="18" lean-forward="true" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
-=======
-      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
+      <file leaf-file-name="application.properties" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
-              <caret line="5" column="41" lean-forward="false" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
->>>>>>> b53fd780283c096b5d536a5ffe4301a022ed8f66
+              <caret line="5" column="40" lean-forward="false" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-<<<<<<< HEAD
-      <file leaf-file-name="CommonEnumEntity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/CommonEnumEntity.java">
+      <file leaf-file-name="CollectPageController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/web/CollectPageController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="17" column="23" lean-forward="false" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="23" />
-              <folding>
-                <element signature="e#616#617#0" expanded="true" />
-                <element signature="e#648#649#0" expanded="true" />
-                <element signature="e#695#696#0" expanded="true" />
-                <element signature="e#737#738#0" expanded="true" />
-              </folding>
-=======
-      <file leaf-file-name="ClothesOrderController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/web/ClothesOrderController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="537">
-              <caret line="261" column="26" lean-forward="true" selection-start-line="261" selection-start-column="26" selection-end-line="261" selection-end-column="26" />
-              <folding />
->>>>>>> b53fd780283c096b5d536a5ffe4301a022ed8f66
-            </state>
-          </provider>
-        </entry>
-      </file>
-<<<<<<< HEAD
-      <file leaf-file-name="ClothesOrderEntity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/ClothesOrderEntity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="33" column="18" lean-forward="true" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
-              <folding />
-=======
-      <file leaf-file-name="ChothesGoodsImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/service/impl/ChothesGoodsImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="27">
-              <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-              <folding>
-                <element signature="e#1069#1070#0" expanded="true" />
-              </folding>
->>>>>>> b53fd780283c096b5d536a5ffe4301a022ed8f66
-            </state>
-          </provider>
-        </entry>
-      </file>
-<<<<<<< HEAD
-      <file leaf-file-name="AccountInfoEntity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/AccountInfoEntity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="161" column="0" lean-forward="false" selection-start-line="161" selection-start-column="0" selection-end-line="161" selection-end-column="0" />
-              <folding>
-                <element signature="e#4114#4115#0" expanded="true" />
-              </folding>
-=======
-      <file leaf-file-name="ClothesGoodController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/web/ClothesGoodController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="39" selection-end-column="52" />
-              <folding />
->>>>>>> b53fd780283c096b5d536a5ffe4301a022ed8f66
-            </state>
-          </provider>
-        </entry>
-      </file>
-<<<<<<< HEAD
-      <file leaf-file-name="LaundryExpertController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/web/LaundryExpertController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="225" column="0" lean-forward="false" selection-start-line="225" selection-start-column="0" selection-end-line="243" selection-end-column="5" />
-=======
-      <file leaf-file-name="build.sh" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
->>>>>>> b53fd780283c096b5d536a5ffe4301a022ed8f66
+            <state relative-caret-position="-49">
+              <caret line="26" column="13" lean-forward="false" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-<<<<<<< HEAD
-      <file leaf-file-name="MemberController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/web/MemberController.java">
+      <file leaf-file-name="AppApplication.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/AppApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="62" column="60" lean-forward="true" selection-start-line="62" selection-start-column="60" selection-end-line="62" selection-end-column="60" />
-=======
-      <file leaf-file-name="ClothesGoodsEntity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/ClothesGoodsEntity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="45" column="21" lean-forward="false" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="21" />
->>>>>>> b53fd780283c096b5d536a5ffe4301a022ed8f66
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-<<<<<<< HEAD
-      <file leaf-file-name="UploadController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/web/UploadController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="118">
-              <caret line="126" column="0" lean-forward="false" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
-=======
-      <file leaf-file-name="ClothesOrderImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/service/impl/ClothesOrderImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="51" lean-forward="false" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
->>>>>>> b53fd780283c096b5d536a5ffe4301a022ed8f66
+            <state relative-caret-position="90">
+              <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Kotlin Interface" />
-        <option value="Interface" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>storeMemberSet</find>
-      <find>laundry_expert_list</find>
-      <find>urls</find>
-      <find>time</find>
-      <find>ManyToOne</find>
-      <find>json</find>
-      <find>orderId</find>
-      <find>createTime</find>
-      <find>1524193800967</find>
-      <find>ImageSet</find>
-      <find>memberCategoryRepository</find>
-      <find>statement</find>
-      <find>CommonEnumEntity</find>
-      <find>findAll</find>
-      <find>pageable</find>
-      <find>userName</find>
-      <find>pag</find>
-      <find>roleService</find>
-      <find>pass_word</find>
-      <find>JSONObject</find>
-      <find>RequestBody</find>
-      <find>clothesOrderService</find>
-      <find>goods_clothes_state</find>
-<<<<<<< HEAD
-      <find>searchLaundryExpert</find>
-      <find>good</find>
-      <find>paymentService</find>
-      <find>storageService</find>
-      <find>FileUtils</find>
-      <find>request</find>
-=======
-      <find>makeOrder</find>
-      <find>xyb</find>
->>>>>>> b53fd780283c096b5d536a5ffe4301a022ed8f66
-    </findStrings>
-    <replaceStrings>
-      <replace>clotheCategory</replace>
-    </replaceStrings>
-    <dirStrings>
-      <dir>$PROJECT_DIR$/src/main/resources/static</dir>
-    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -290,78 +134,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-<<<<<<< HEAD
-=======
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/utils/OrderIdGenerateUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/domain/repository/StoreRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/service/PaymentService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/service/impl/PaymentImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/domain/repository/PaymentRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/service/ChothesCategoryService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/domain/model/CustomJsonObject.java" />
->>>>>>> b53fd780283c096b5d536a5ffe4301a022ed8f66
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/web/PaymentController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/LaundryExpert.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/service/LaundryExpectService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/service/impl/LaundryExpertImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/domain/repository/LaundryExpertRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/PaymentEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/service/impl/CommonEnumService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/service/impl/ChothesCategoryImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/web/CommonEnumController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/LaundryExpertEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/web/StoreController.java" />
-        <option value="$PROJECT_DIR$/deploy.sh" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/web/ClothesCategoryController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/web/UserController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/MemberEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/service/AccountInfoService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/service/impl/AccountInfoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/service/StoreService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/service/RoleService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/service/impl/RoleImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/service/impl/StoreImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/web/MemberController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/web/AccountInfoController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/AccountInfoEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/domain/repository/StorageEntityRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/web/StorageController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/ClothesGoodEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/service/StorageService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/domain/repository/StorageRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/service/impl/StorageImpl.java" />
-<<<<<<< HEAD
-=======
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/constants/Constants.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/ClothesGoodsEntity.java" />
->>>>>>> b53fd780283c096b5d536a5ffe4301a022ed8f66
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/StorageEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/web/LaundryExpertController.java" />
-<<<<<<< HEAD
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/service/ChothesGoodService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/domain/repository/ClothesGoodsRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/service/ChothesGoodsService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/service/impl/ChothesGoodsImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/web/ClothesGoodController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/ClothesOrderEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/web/CollectPageController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/service/CommonEnumService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/domain/repository/CommonEnumRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/service/impl/CommonEnumImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/constants/Constants.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/CommonEnumEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/utils/FileUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/web/UploadController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/ClothesGoodsEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/service/ClothesOrderService.java" />
-=======
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/service/impl/ClothesOrderImpl.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
->>>>>>> b53fd780283c096b5d536a5ffe4301a022ed8f66
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/web/ClothesOrderController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyb/domain/repository/ClothesOrderRepository.java" />
       </list>
     </option>
   </component>
@@ -371,53 +144,23 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="app" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
   </component>
-<<<<<<< HEAD
-  <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
-    <option name="width" value="1280" />
-    <option name="height" value="724" />
-=======
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1440" />
-    <option name="height" value="900" />
->>>>>>> b53fd780283c096b5d536a5ffe4301a022ed8f66
+    <option name="x" value="-1920" />
+    <option name="y" value="-143" />
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
   </component>
-  <component name="ProjectInspectionProfilesVisibleTreeState">
-    <entry key="Project Default">
-      <profile-state>
-        <expanded-state>
-          <State>
-            <id />
-          </State>
-          <State>
-            <id>CodeSpring CoreSpring</id>
-          </State>
-          <State>
-            <id>Maven</id>
-          </State>
-          <State>
-            <id>Spring</id>
-          </State>
-          <State>
-            <id>Spring CoreSpring</id>
-          </State>
-        </expanded-state>
-        <selected-state>
-          <State>
-            <id>MavenModelInspection</id>
-          </State>
-        </selected-state>
-      </profile-state>
-    </entry>
-  </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -433,64 +176,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-<<<<<<< HEAD
-      <pane id="PackagesPane">
-=======
-      <pane id="ProjectPane">
->>>>>>> b53fd780283c096b5d536a5ffe4301a022ed8f66
-        <subPane>
-          <expand>
-            <path>
-              <item name="xi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xi" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xi" type="462c0819:PsiDirectoryNode" />
-              <item name=".mvn" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xi" type="462c0819:PsiDirectoryNode" />
-              <item name=".mvn" type="462c0819:PsiDirectoryNode" />
-              <item name="wrapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-<<<<<<< HEAD
-              <item name="xyb_server" type="58d84e3e:PackageViewProjectNode" />
-              <item name="xyb-master" type="616d4139:PackageViewModuleNode" />
-              <item name="com.xyb" type="1f31426a:PackageElementNode" />
-              <item name="service" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="xyb_server" type="58d84e3e:PackageViewProjectNode" />
-              <item name="xyb-master" type="616d4139:PackageViewModuleNode" />
-              <item name="com.xyb" type="1f31426a:PackageElementNode" />
-              <item name="utils" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="xyb_server" type="58d84e3e:PackageViewProjectNode" />
-              <item name="xyb-master" type="616d4139:PackageViewModuleNode" />
-              <item name="com.xyb" type="1f31426a:PackageElementNode" />
-              <item name="web" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="xyb_server" type="58d84e3e:PackageViewProjectNode" />
-              <item name="xyb-master" type="616d4139:PackageViewModuleNode" />
-              <item name="com.xyb" type="1f31426a:PackageElementNode" />
-              <item name="AppApplication" type="1a9f42e2:ClassTreeNode" />
-            </path>
-            <path>
-              <item name="xyb_server" type="58d84e3e:PackageViewProjectNode" />
-              <item name="xyb-master" type="616d4139:PackageViewModuleNode" />
-              <item name="Libraries" type="5c3f07af:PackageViewLibrariesNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -501,53 +186,41 @@
             <path>
               <item name="xyb_server" type="b2602c69:ProjectViewProjectNode" />
               <item name="xyb_server" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xyb_server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xyb_server" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-              <item name="inspectionProfiles" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xyb_server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xyb_server" type="462c0819:PsiDirectoryNode" />
-              <item name=".mvn" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xyb_server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xyb_server" type="462c0819:PsiDirectoryNode" />
-              <item name=".mvn" type="462c0819:PsiDirectoryNode" />
-              <item name="wrapper" type="462c0819:PsiDirectoryNode" />
-=======
-              <item name="xi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xi" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="xi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xi" type="462c0819:PsiDirectoryNode" />
+              <item name="xyb_server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xyb_server" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="xi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xi" type="462c0819:PsiDirectoryNode" />
+              <item name="xyb_server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xyb_server" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="xi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xi" type="462c0819:PsiDirectoryNode" />
+              <item name="xyb_server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xyb_server" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="xyb" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="xi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xi" type="462c0819:PsiDirectoryNode" />
+              <item name="xyb_server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xyb_server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="xyb" type="462c0819:PsiDirectoryNode" />
+              <item name="annotation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xyb_server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xyb_server" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -555,8 +228,18 @@
               <item name="common" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="xi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xi" type="462c0819:PsiDirectoryNode" />
+              <item name="xyb_server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xyb_server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="xyb" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="TokenVerify" type="1a9f42e2:ClassTreeNode" />
+            </path>
+            <path>
+              <item name="xyb_server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xyb_server" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -564,52 +247,31 @@
               <item name="conf" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="xi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xi" type="462c0819:PsiDirectoryNode" />
+              <item name="xyb_server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xyb_server" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="xyb" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
->>>>>>> b53fd780283c096b5d536a5ffe4301a022ed8f66
             </path>
             <path>
-              <item name="xi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xi" type="462c0819:PsiDirectoryNode" />
+              <item name="xyb_server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xyb_server" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-<<<<<<< HEAD
-=======
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="xyb" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xyb_server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xyb_server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="xyb" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
->>>>>>> b53fd780283c096b5d536a5ffe4301a022ed8f66
-            </path>
-            <path>
-              <item name="xi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xi" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-<<<<<<< HEAD
-=======
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
->>>>>>> b53fd780283c096b5d536a5ffe4301a022ed8f66
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-<<<<<<< HEAD
-              <item name="xyb_server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xyb_server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="xyb_server" type="b2602c69:ProjectViewProjectNode" />
@@ -618,126 +280,47 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="xyb" type="462c0819:PsiDirectoryNode" />
+              <item name="AppApplication" type="1a9f42e2:ClassTreeNode" />
+            </path>
+            <path>
+              <item name="xyb_server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xyb_server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xyb_server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xyb_server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="xyb_server" type="b2602c69:ProjectViewProjectNode" />
               <item name="xyb_server" type="462c0819:PsiDirectoryNode" />
               <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="xyb_server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-=======
-              <item name="xyb_server" type="58d84e3e:PackageViewProjectNode" />
-              <item name="xyb-master" type="616d4139:PackageViewModuleNode" />
-            </path>
-            <path>
-              <item name="xyb_server" type="58d84e3e:PackageViewProjectNode" />
-              <item name="xyb-master" type="616d4139:PackageViewModuleNode" />
-              <item name="com.xyb" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="xyb_server" type="58d84e3e:PackageViewProjectNode" />
-              <item name="xyb-master" type="616d4139:PackageViewModuleNode" />
-              <item name="com.xyb" type="1f31426a:PackageElementNode" />
-              <item name="annotation" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="xyb_server" type="58d84e3e:PackageViewProjectNode" />
-              <item name="xyb-master" type="616d4139:PackageViewModuleNode" />
-              <item name="com.xyb" type="1f31426a:PackageElementNode" />
-              <item name="domain" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="xyb_server" type="58d84e3e:PackageViewProjectNode" />
-              <item name="xyb-master" type="616d4139:PackageViewModuleNode" />
-              <item name="com.xyb" type="1f31426a:PackageElementNode" />
-              <item name="exception" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="xyb_server" type="58d84e3e:PackageViewProjectNode" />
-              <item name="xyb-master" type="616d4139:PackageViewModuleNode" />
-              <item name="com.xyb" type="1f31426a:PackageElementNode" />
-              <item name="interceptor" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="xyb_server" type="58d84e3e:PackageViewProjectNode" />
-              <item name="xyb-master" type="616d4139:PackageViewModuleNode" />
-              <item name="com.xyb" type="1f31426a:PackageElementNode" />
-              <item name="service" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="xyb_server" type="58d84e3e:PackageViewProjectNode" />
-              <item name="xyb-master" type="616d4139:PackageViewModuleNode" />
-              <item name="com.xyb" type="1f31426a:PackageElementNode" />
-              <item name="utils" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="xyb_server" type="58d84e3e:PackageViewProjectNode" />
-              <item name="xyb-master" type="616d4139:PackageViewModuleNode" />
-              <item name="com.xyb" type="1f31426a:PackageElementNode" />
-              <item name="web" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="xyb_server" type="58d84e3e:PackageViewProjectNode" />
-              <item name="xyb-master" type="616d4139:PackageViewModuleNode" />
-              <item name="com.xyb" type="1f31426a:PackageElementNode" />
-              <item name="AppApplication" type="1a9f42e2:ClassTreeNode" />
-            </path>
-            <path>
-              <item name="xyb_server" type="58d84e3e:PackageViewProjectNode" />
-              <item name="xyb-master" type="616d4139:PackageViewModuleNode" />
-              <item name="Libraries" type="5c3f07af:PackageViewLibrariesNode" />
->>>>>>> b53fd780283c096b5d536a5ffe4301a022ed8f66
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-<<<<<<< HEAD
-=======
       <pane id="AndroidView" />
->>>>>>> b53fd780283c096b5d536a5ffe4301a022ed8f66
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="RequestMappingsPanelOrder2" value="2" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="restartRequiresConfirmation" value="false" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="SearchEverywhereHistoryKey" value="WebMvcConfigurer&#9;FILE&#9;file:///Users/rrd/Documents/xyb_server/src/main/java/com/xyb/conf/WebMvcConfigurer.java&#10;Missing request &#9;null&#9;null&#10;method parameter &#9;PSI&#9;JAVA://org.springframework.core.MethodParameter&#10;Bad Request&#9;PSI&#9;JAVA://javassist.tools.web.BadHttpRequest&#10;Missing request header&#9;null&#9;null&#10;web.xml&#9;FILE&#9;file:///Users/rrd/Documents/xyb_server/.idea/libraries/Maven__io_springfox_springfox_spring_web_2_8_0.xml&#10;ClothesOrderController&#9;null&#9;null&#10;swagger&#9;FILE&#9;file:///Users/rrd/Documents/xyb_server/src/main/java/com/xyb/conf/SwaggerConf.java&#10;swagger-ui&#9;FILE&#9;jar:///Users/rrd/.m2/repository/io/springfox/springfox-swagger-ui/2.8.0/springfox-swagger-ui-2.8.0.jar!/META-INF/resources/webjars/springfox-swagger-ui/swagger-ui-bundle.js&#10;AccountInfoService&#9;FILE&#9;file:///Users/rrd/Documents/xyb_server/src/main/java/com/xyb/service/AccountInfoService.java" />
-    <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.xyb.domain.entity" />
-      <recent name="com.xyb.web" />
-      <recent name="com.xyb.service.impl" />
-      <recent name="com.xyb.service" />
-      <recent name="com.xyb.domain.repository" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main" />
-      <recent name="$PROJECT_DIR$/src/main/resources/static" />
-      <recent name="$PROJECT_DIR$/src/main/java/com/xyb" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/src/main/java/com/xyb/interceptor" />
-    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -751,100 +334,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.AppApplication">
-    <configuration name="AppApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.xyb.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.xyb.AppApplication" />
-      <option name="SHOW_IN_DASHBOARD" value="true" />
-      <module name="xi" />
-      <envs />
-    </configuration>
-    <configuration name="AppApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.xyb.conf.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.xyb.AppApplication" />
-      <option name="SHOW_IN_DASHBOARD" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home" />
-      <module name="xyb" />
-      <envs />
-    </configuration>
-    <configuration name="Unnamed" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="true" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="8091" />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="8091" />
-        <option name="LOCAL" value="false" />
-      </RunnerSettings>
-    </configuration>
-    <configuration name="Unnamed" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Remote" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="LOCAL" value="false" />
-      <deployment />
-      <server-settings>
-        <data>
-          <option name="targets">
-            <list>
-              <WatchedTargetModelImpl>
-                <option name="name" value="CONTEXT_XML" />
-                <option name="transportStagingTarget">
-                  <TransportTarget>
-                    <option name="id" value="0b757408-e6b6-4d79-87e6-1f64356f9fd8" />
-                    <id>0b757408-e6b6-4d79-87e6-1f64356f9fd8</id>
-                  </TransportTarget>
-                </option>
-                <option name="watchedLocalPath" value="" />
-                <watched-path />
-                <name>CONTEXT_XML</name>
-                <transport-target>
-                  <TransportTarget>
-                    <option name="id" value="0b757408-e6b6-4d79-87e6-1f64356f9fd8" />
-                    <id>0b757408-e6b6-4d79-87e6-1f64356f9fd8</id>
-                  </TransportTarget>
-                </transport-target>
-              </WatchedTargetModelImpl>
-              <StagingTargetModelImpl>
-                <option name="name" value="STAGING" />
-                <option name="stagingRemotePath" value="" />
-                <option name="transportStagingTarget">
-                  <TransportTarget>
-                    <option name="id" value="7e1e9dc1-27fb-481e-9dc1-87d9e8161517" />
-                    <id>7e1e9dc1-27fb-481e-9dc1-87d9e8161517</id>
-                  </TransportTarget>
-                </option>
-                <staging-path />
-                <name>STAGING</name>
-                <transport-target>
-                  <TransportTarget>
-                    <option name="id" value="7e1e9dc1-27fb-481e-9dc1-87d9e8161517" />
-                    <id>7e1e9dc1-27fb-481e-9dc1-87d9e8161517</id>
-                  </TransportTarget>
-                </transport-target>
-              </StagingTargetModelImpl>
-            </list>
-          </option>
-          <option name="transportHostId" value="" />
-          <host-id />
-        </data>
-      </server-settings>
-      <predefined_log_file id="Tomcat" enabled="true" />
-      <predefined_log_file id="TOMCAT_LOCALHOST_LOG_ID" enabled="true" />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="53119" />
-        <option name="LOCAL" value="false" />
-      </RunnerSettings>
-    </configuration>
+  <component name="RunManager">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -854,16 +344,16 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="MAIN_CLASS_NAME" value="com.xyb.AppApplication" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
+      <module name="xyb" />
       <envs />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -886,72 +376,6 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
-      <deployment />
-      <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="_xyb_server" />
-      </server-settings>
-      <predefined_log_file id="Tomcat" enabled="true" />
-      <predefined_log_file id="Tomcat Catalina" enabled="true" />
-      <predefined_log_file id="Tomcat Manager" enabled="false" />
-      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
-      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="53118" />
-      </RunnerSettings>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-    </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
-      <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
-      <option name="PROGRAM_PARAMETERS" />
-      <predefined_log_file id="idea.log" enabled="true" />
-    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -959,10 +383,10 @@
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
     </configuration>
-    <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <configuration name="AppApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="SHOW_IN_DASHBOARD" value="true" />
-      <module name="" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.xyb.AppApplication" />
+      <module name="xyb" />
       <envs />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -992,67 +416,12 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Remote" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="LOCAL" value="false" />
-      <deployment />
-      <server-settings>
-        <data>
-          <option name="targets">
-            <list>
-              <WatchedTargetModelImpl>
-                <option name="name" value="CONTEXT_XML" />
-                <option name="transportStagingTarget">
-                  <TransportTarget>
-                    <option name="id" value="0b757408-e6b6-4d79-87e6-1f64356f9fd8" />
-                    <id>0b757408-e6b6-4d79-87e6-1f64356f9fd8</id>
-                  </TransportTarget>
-                </option>
-                <option name="watchedLocalPath" value="" />
-                <watched-path />
-                <name>CONTEXT_XML</name>
-                <transport-target>
-                  <TransportTarget>
-                    <option name="id" value="0b757408-e6b6-4d79-87e6-1f64356f9fd8" />
-                    <id>0b757408-e6b6-4d79-87e6-1f64356f9fd8</id>
-                  </TransportTarget>
-                </transport-target>
-              </WatchedTargetModelImpl>
-              <StagingTargetModelImpl>
-                <option name="name" value="STAGING" />
-                <option name="stagingRemotePath" value="" />
-                <option name="transportStagingTarget">
-                  <TransportTarget>
-                    <option name="id" value="7e1e9dc1-27fb-481e-9dc1-87d9e8161517" />
-                    <id>7e1e9dc1-27fb-481e-9dc1-87d9e8161517</id>
-                  </TransportTarget>
-                </option>
-                <staging-path />
-                <name>STAGING</name>
-                <transport-target>
-                  <TransportTarget>
-                    <option name="id" value="7e1e9dc1-27fb-481e-9dc1-87d9e8161517" />
-                    <id>7e1e9dc1-27fb-481e-9dc1-87d9e8161517</id>
-                  </TransportTarget>
-                </transport-target>
-              </StagingTargetModelImpl>
-            </list>
-          </option>
-          <option name="transportHostId" value="" />
-          <host-id />
-        </data>
-      </server-settings>
-      <predefined_log_file id="Tomcat" enabled="true" />
-      <predefined_log_file id="TOMCAT_LOCALHOST_LOG_ID" enabled="true" />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="53119" />
-        <option name="LOCAL" value="false" />
-      </RunnerSettings>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
-    <list size="3">
-      <item index="0" class="java.lang.String" itemvalue="Remote.Unnamed" />
-      <item index="1" class="java.lang.String" itemvalue="Spring Boot.AppApplication" />
-      <item index="2" class="java.lang.String" itemvalue="Spring Boot.AppApplication (1)" />
-    </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -1062,194 +431,54 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="68022376-e0f6-425b-ad99-3e4f2eabe2b7" name="Default" comment="" />
-      <created>1521851782246</created>
+      <changelist id="138307db-990f-458f-8fcb-4f90489dc64c" name="Default" comment="" />
+      <created>1526872399753</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1521851782246</updated>
-      <workItem from="1521851783717" duration="14682000" />
-      <workItem from="1522073704799" duration="430000" />
-      <workItem from="1522222714868" duration="100000" />
-      <workItem from="1522231017490" duration="42750000" />
-      <workItem from="1522744402046" duration="26435000" />
-      <workItem from="1522931739933" duration="788000" />
-      <workItem from="1522932728192" duration="3235000" />
-      <workItem from="1522987507850" duration="6089000" />
-      <workItem from="1523019684313" duration="675000" />
-      <workItem from="1523020734762" duration="4310000" />
-      <workItem from="1523027185857" duration="23615000" />
-      <workItem from="1523156359884" duration="25203000" />
-      <workItem from="1523352698410" duration="1946000" />
-      <workItem from="1523501496039" duration="1818000" />
-      <workItem from="1523612150371" duration="20571000" />
-      <workItem from="1523782818552" duration="18280000" />
-      <workItem from="1523849132625" duration="11632000" />
-      <workItem from="1523867960448" duration="11055000" />
-      <workItem from="1524208669174" duration="46014000" />
-      <workItem from="1524556816538" duration="4863000" />
-      <workItem from="1524729532425" duration="198000" />
-      <workItem from="1524741205332" duration="6449000" />
-      <workItem from="1525665100636" duration="277000" />
-      <workItem from="1525665644495" duration="32000" />
-      <workItem from="1525666373420" duration="3050000" />
-      <workItem from="1525772929315" duration="17440000" />
-<<<<<<< HEAD
-      <workItem from="1526279066140" duration="28803000" />
-      <workItem from="1526789825935" duration="11417000" />
-=======
-      <workItem from="1526279066140" duration="11449000" />
-      <workItem from="1526472845123" duration="1037000" />
-      <workItem from="1526474351687" duration="556000" />
-      <workItem from="1526474913606" duration="629000" />
-      <workItem from="1526477792872" duration="3183000" />
->>>>>>> b53fd780283c096b5d536a5ffe4301a022ed8f66
+      <updated>1526872399753</updated>
+      <workItem from="1526872400983" duration="924000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-<<<<<<< HEAD
-    <option name="totallyTimeSpent" value="343830000" />
-=======
-    <option name="totallyTimeSpent" value="320087000" />
->>>>>>> b53fd780283c096b5d536a5ffe4301a022ed8f66
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
+    <option name="totallyTimeSpent" value="924000" />
   </component>
   <component name="ToolWindowManager">
-<<<<<<< HEAD
-    <frame x="0" y="23" width="1280" height="724" extended-state="0" />
-=======
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="-1920" y="-143" width="1920" height="1080" extended-state="0" />
     <editor active="true" />
->>>>>>> b53fd780283c096b5d536a5ffe4301a022ed8f66
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32587063" sideWeight="0.4806139" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.48258707" sideWeight="0.45880452" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.710199" sideWeight="0.36429724" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run Dashboard" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.8557214" sideWeight="0.5" order="8" side_tool="false" content_ui="combo" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41044775" sideWeight="0.49353796" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7398374" sideWeight="0.6357027" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32786885" sideWeight="0.49353796" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21517412" sideWeight="0.4555735" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39985693" sideWeight="0.87004757" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.031473532" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32960597" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960597" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-<<<<<<< HEAD
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37623763" sideWeight="0.74717283" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3262195" sideWeight="0.4806139" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4815341" sideWeight="0.45880452" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32670453" sideWeight="0.49030694" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4108911" sideWeight="0.49353796" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31188118" sideWeight="0.6357027" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32786885" sideWeight="0.49353796" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30033004" sideWeight="0.4555735" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41922456" sideWeight="0.87004757" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.031502422" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42245558" sideWeight="0.20537898" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36963695" sideWeight="0.49353796" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-=======
->>>>>>> b53fd780283c096b5d536a5ffe4301a022ed8f66
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26464325" sideWeight="0.12995246" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4943182" sideWeight="0.74717283" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32838285" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40752032" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32838285" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36686993" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973376" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960597" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-<<<<<<< HEAD
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.710199" sideWeight="0.36429724" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.49676898" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37623763" sideWeight="0.74717283" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3262195" sideWeight="0.4806139" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4815341" sideWeight="0.45880452" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-=======
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.49676898" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
->>>>>>> b53fd780283c096b5d536a5ffe4301a022ed8f66
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32670453" sideWeight="0.49030694" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11954766" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-<<<<<<< HEAD
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4108911" sideWeight="0.49353796" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31188118" sideWeight="0.6357027" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32786885" sideWeight="0.49353796" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30033004" sideWeight="0.4555735" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41922456" sideWeight="0.87004757" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.031502422" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42245558" sideWeight="0.20537898" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36963695" sideWeight="0.49353796" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26464325" sideWeight="0.12995246" order="2" side_tool="true" content_ui="tabs" />
-=======
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42245558" sideWeight="0.20537898" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21544716" sideWeight="0.49353796" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
->>>>>>> b53fd780283c096b5d536a5ffe4301a022ed8f66
     </layout>
-    <layout-to-restore>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.71147543" sideWeight="0.36429724" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.49676898" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40422887" sideWeight="0.74717283" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32786885" sideWeight="0.4806139" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31094527" sideWeight="0.45880452" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32786885" sideWeight="0.49353796" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39303482" sideWeight="0.6357027" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41147542" sideWeight="0.49353796" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11954766" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32786885" sideWeight="0.49353796" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35820895" sideWeight="0.4555735" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2639485" sideWeight="0.87004757" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42245558" sideWeight="0.20537898" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3678862" sideWeight="0.49353796" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26464325" sideWeight="0.12995246" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -1258,806 +487,38 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/xyb/web/ClothesOrderController.java</url>
-<<<<<<< HEAD
-          <line>100</line>
-=======
-          <line>94</line>
->>>>>>> b53fd780283c096b5d536a5ffe4301a022ed8f66
-          <properties />
-          <option name="timeStamp" value="30" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/xyb/domain/repository/ClothesOrderRepository.java</url>
-          <line>28</line>
-          <properties />
-          <option name="timeStamp" value="32" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/xyb/web/StoreController.java</url>
-          <line>176</line>
-          <properties />
-          <option name="timeStamp" value="61" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/xyb/exception/RestInfo.java</url>
-          <line>25</line>
-          <properties />
-          <option name="timeStamp" value="63" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/xyb/exception/GlobalExceptionHandler.java</url>
-          <line>22</line>
-          <properties />
-          <option name="timeStamp" value="66" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/xyb/web/ClothesCategoryController.java</url>
-          <line>39</line>
-          <properties />
-          <option name="timeStamp" value="96" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.0.3.RELEASE/spring-security-core-5.0.3.RELEASE.jar!/org/springframework/security/access/expression/SecurityExpressionRoot.class</url>
-          <line>50</line>
-          <properties />
-          <option name="timeStamp" value="99" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/xyb/web/ClothesOrderController.java</url>
-<<<<<<< HEAD
-          <line>50</line>
-=======
-          <line>44</line>
->>>>>>> b53fd780283c096b5d536a5ffe4301a022ed8f66
-          <properties />
-          <option name="timeStamp" value="102" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/xyb/shiro/MyRealm.java</url>
-          <line>46</line>
-          <properties />
-          <option name="timeStamp" value="103" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/xyb/web/ClothesOrderController.java</url>
-<<<<<<< HEAD
-          <line>52</line>
-=======
-          <line>46</line>
->>>>>>> b53fd780283c096b5d536a5ffe4301a022ed8f66
-          <properties />
-          <option name="timeStamp" value="104" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/xyb/web/ClothesOrderController.java</url>
-<<<<<<< HEAD
-          <line>203</line>
-=======
-          <line>197</line>
->>>>>>> b53fd780283c096b5d536a5ffe4301a022ed8f66
-          <properties />
-          <option name="timeStamp" value="106" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/xyb/web/MemberController.java</url>
-          <line>98</line>
-          <properties />
-          <option name="timeStamp" value="107" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/xyb/web/MemberController.java</url>
-          <line>133</line>
-          <properties />
-          <option name="timeStamp" value="110" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/xyb/web/MemberController.java</url>
-          <line>132</line>
-          <properties />
-          <option name="timeStamp" value="111" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/xyb/web/MemberController.java</url>
-          <line>113</line>
-          <properties />
-          <option name="timeStamp" value="114" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/xyb/web/MemberController.java</url>
-          <line>55</line>
-          <properties />
-          <option name="timeStamp" value="115" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/xyb/web/MemberController.java</url>
-          <line>57</line>
-          <properties />
-          <option name="timeStamp" value="116" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/xyb/web/ClothesCategoryController.java</url>
-          <line>93</line>
-          <properties />
-          <option name="timeStamp" value="127" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/xyb/web/ClothesOrderController.java</url>
-<<<<<<< HEAD
-          <line>219</line>
-=======
-          <line>123</line>
-          <properties />
-          <option name="timeStamp" value="128" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/xyb/web/ClothesOrderController.java</url>
-          <line>213</line>
->>>>>>> b53fd780283c096b5d536a5ffe4301a022ed8f66
-          <properties />
-          <option name="timeStamp" value="129" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/StorageEntity.java</url>
-          <line>12</line>
-          <properties />
-          <option name="timeStamp" value="130" />
-        </line-breakpoint>
-        <line-breakpoint type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/com/xyb/domain/repository/ClothesOrderRepository.java</url>
-          <line>29</line>
-          <properties class="com.xyb.domain.repository.ClothesOrderRepository" />
-          <option name="timeStamp" value="31" />
-        </line-breakpoint>
-      </breakpoints>
-      <breakpoints-dialog>
-        <breakpoints-dialog />
-      </breakpoints-dialog>
-      <option name="time" value="135" />
-    </breakpoint-manager>
-    <watches-manager>
-      <configuration name="SpringBootApplicationConfigurationType">
-        <watch expression="PathSelectors" language="JAVA" />
-        <watch expression="getAuthorities()" language="JAVA" />
-        <watch expression="clothesOrderService.findAll()" language="JAVA" />
-        <watch expression="clothesOrderEntity" language="JAVA" />
-        <watch expression="file.getPath()" language="JAVA" />
-      </configuration>
-    </watches-manager>
-  </component>
-  <component name="debuggerHistoryManager">
-    <expressions id="watch">
-      <expression>
-        <expression-string>file.getPath()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>clothesOrderEntity</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>clothesOrderService.findAll()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>getAuthorities()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>PathSelectors</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-    </expressions>
+    <breakpoint-manager />
+    <watches-manager />
   </component>
   <component name="editorHistoryManager">
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/service/impl/ChothesGoodsImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/static/xiyibang.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/src.zip!/java/util/Set.java">
-=======
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/RoleInfoEntity.java">
->>>>>>> b53fd780283c096b5d536a5ffe4301a022ed8f66
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4361">
-          <caret line="84" column="17" lean-forward="false" selection-start-line="84" selection-start-column="17" selection-end-line="84" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/service/StorageService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="14" column="17" lean-forward="false" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/domain/repository/CommonEnumRepository.java">
-=======
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/service/ChothesCategoryService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="16" column="17" lean-forward="false" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/fastjson/1.2.33/fastjson-1.2.33.jar!/com/alibaba/fastjson/JSONObject.class">
->>>>>>> b53fd780283c096b5d536a5ffe4301a022ed8f66
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="18" column="65" lean-forward="false" selection-start-line="18" selection-start-column="65" selection-end-line="18" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/service/impl/CommonEnumImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="16" column="19" lean-forward="false" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
-          <folding>
-            <element signature="e#644#645#0" expanded="false" />
-            <element signature="e#701#702#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/web/StoreController.java">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="-810">
-          <caret line="69" column="73" lean-forward="false" selection-start-line="69" selection-start-column="69" selection-end-line="69" selection-end-column="73" />
-          <folding />
-=======
-        <state relative-caret-position="37">
-          <caret line="170" column="19" lean-forward="false" selection-start-line="170" selection-start-column="19" selection-end-line="170" selection-end-column="19" />
->>>>>>> b53fd780283c096b5d536a5ffe4301a022ed8f66
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/src.zip!/java/io/FileOutputStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="160" column="11" lean-forward="false" selection-start-line="160" selection-start-column="11" selection-end-line="160" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/src.zip!/java/io/File.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="1338" column="19" lean-forward="false" selection-start-line="1338" selection-start-column="19" selection-end-line="1338" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/utils/FileUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="120">
-          <caret line="8" column="24" lean-forward="false" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-          <folding />
-=======
-        <state relative-caret-position="330">
-          <caret line="35" column="20" lean-forward="false" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
->>>>>>> b53fd780283c096b5d536a5ffe4301a022ed8f66
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/classes/static/1524840039977.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/conf/WebMvcConfigurer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/target/classes/static/149be976-53d1-41fa-9d66-69980739b76f.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/classes/static/1524838853132.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/classes/static/1524837497702.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-=======
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/web/CollectPageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/CommonEnumEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/AccountInfoEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="21" column="24" lean-forward="false" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/2.0.5.RELEASE/spring-data-commons-2.0.5.RELEASE.jar!/org/springframework/data/repository/PagingAndSortingRepository.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-        </state>
->>>>>>> b53fd780283c096b5d536a5ffe4301a022ed8f66
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/FileEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-<<<<<<< HEAD
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding>
-            <element signature="e#645#646#0" expanded="false" />
-            <element signature="e#675#676#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/classes/static/fd24a106-8ea0-4fd8-8915-05f863f45d2f.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/classes/static/e2716381-9aae-4552-a6b5-55f89d47a318.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/classes/static/9da88a31-d811-4352-8b8d-9b0635ed95d0.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-=======
-          <caret line="15" column="89" lean-forward="false" selection-start-line="15" selection-start-column="89" selection-end-line="15" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/2.0.5.RELEASE/spring-data-commons-2.0.5.RELEASE.jar!/org/springframework/data/repository/query/QueryByExampleExecutor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="13" column="17" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/service/StoreService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="13" column="20" lean-forward="false" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="20" />
-        </state>
->>>>>>> b53fd780283c096b5d536a5ffe4301a022ed8f66
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/ClothesCategoryEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="-330">
-          <caret line="25" column="20" lean-forward="true" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
-=======
-        <state relative-caret-position="300">
-          <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
->>>>>>> b53fd780283c096b5d536a5ffe4301a022ed8f66
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/service/AccountInfoService.java">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="60">
-          <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-=======
-        <state relative-caret-position="135">
-          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
->>>>>>> b53fd780283c096b5d536a5ffe4301a022ed8f66
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/service/ChothesCategoryService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="16" column="17" lean-forward="false" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
-<<<<<<< HEAD
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/service/ChothesGoodsService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="15" column="36" lean-forward="false" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="36" />
-=======
->>>>>>> b53fd780283c096b5d536a5ffe4301a022ed8f66
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/service/CommonEnumService.java">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="240">
-          <caret line="19" column="22" lean-forward="false" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
-=======
-        <state relative-caret-position="180">
-          <caret line="19" column="28" lean-forward="true" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
->>>>>>> b53fd780283c096b5d536a5ffe4301a022ed8f66
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/MemberEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="303">
-          <caret line="67" column="25" lean-forward="false" selection-start-line="67" selection-start-column="19" selection-end-line="67" selection-end-column="25" />
-=======
-        <state relative-caret-position="404">
-          <caret line="52" column="61" lean-forward="false" selection-start-line="52" selection-start-column="61" selection-end-line="52" selection-end-column="61" />
->>>>>>> b53fd780283c096b5d536a5ffe4301a022ed8f66
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/web/AccountInfoController.java">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="7">
-          <caret line="80" column="36" lean-forward="true" selection-start-line="80" selection-start-column="36" selection-end-line="80" selection-end-column="78" />
-=======
-        <state relative-caret-position="330">
-          <caret line="27" column="4" lean-forward="false" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="23" />
->>>>>>> b53fd780283c096b5d536a5ffe4301a022ed8f66
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/web/ClothesCategoryController.java">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="253">
-          <caret line="174" column="9" lean-forward="false" selection-start-line="174" selection-start-column="9" selection-end-line="174" selection-end-column="9" />
-          <folding />
-=======
-        <state relative-caret-position="135">
-          <caret line="9" column="40" lean-forward="false" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/web/MemberCategoryController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="6" column="32" lean-forward="false" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
->>>>>>> b53fd780283c096b5d536a5ffe4301a022ed8f66
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/web/CollectPageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="-172">
-          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="30" selection-end-column="45" />
-          <folding>
-            <marker date="1526546432944" expanded="true" signature="2328:2539" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/web/CommonEnumController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="27" column="13" lean-forward="false" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-=======
-        <state relative-caret-position="255">
-          <caret line="38" column="16" lean-forward="false" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/web/StorageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="23" column="43" lean-forward="false" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/web/ClothesCategoryController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2190">
-          <caret line="174" column="9" lean-forward="false" selection-start-line="174" selection-start-column="9" selection-end-line="174" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/web/StoreController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1545">
-          <caret line="125" column="51" lean-forward="false" selection-start-line="125" selection-start-column="51" selection-end-line="125" selection-end-column="51" />
-          <folding />
->>>>>>> b53fd780283c096b5d536a5ffe4301a022ed8f66
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/web/DAOController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/web/DemoController.java">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="156">
-          <caret line="24" column="13" lean-forward="false" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/service/LaundryExpectService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="33" column="30" lean-forward="false" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/annotation/CurrentUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="12" column="18" lean-forward="false" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/annotation/LoginRequired.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="9" column="18" lean-forward="false" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/common/TokenVerify.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="29" column="18" lean-forward="false" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/domain/repository/LaundryExpertRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="24" selection-end-column="119" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/domain/repository/MemberRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="20" column="17" lean-forward="false" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
-=======
-        <state relative-caret-position="375">
-          <caret line="28" column="25" lean-forward="false" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1002#1003#0" expanded="true" />
-            <element signature="e#1036#1037#0" expanded="true" />
-            <element signature="e#1087#1088#0" expanded="true" />
-            <element signature="e#1133#1134#0" expanded="true" />
-            <element signature="e#1160#1161#0" expanded="true" />
-            <element signature="e#1185#1186#0" expanded="true" />
-            <element signature="e#1219#1220#0" expanded="true" />
-            <element signature="e#1247#1248#0" expanded="true" />
-            <element signature="e#1278#1279#0" expanded="true" />
-            <element signature="e#1305#1306#0" expanded="true" />
-            <element signature="e#1345#1346#0" expanded="true" />
-            <element signature="e#1377#1378#0" expanded="true" />
-            <element signature="e#1425#1426#0" expanded="true" />
-            <element signature="e#1459#1460#0" expanded="true" />
-            <element signature="e#1523#1524#0" expanded="true" />
-            <element signature="e#1569#1570#0" expanded="true" />
-            <element signature="e#1601#1602#0" expanded="true" />
-            <element signature="e#1631#1632#0" expanded="true" />
-            <element signature="e#1675#1676#0" expanded="true" />
-            <element signature="e#1713#1714#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/web/MemberController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="118" column="77" lean-forward="false" selection-start-line="118" selection-start-column="77" selection-end-line="118" selection-end-column="77" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/web/LaundryExpertController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1755">
-          <caret line="140" column="8" lean-forward="false" selection-start-line="140" selection-start-column="8" selection-end-line="140" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xyb.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mvnw.cmd">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/AppApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
->>>>>>> b53fd780283c096b5d536a5ffe4301a022ed8f66
-          <folding />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/constants/Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="6" column="30" lean-forward="false" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/service/impl/ClothesOrderImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="59" column="52" lean-forward="false" selection-start-line="59" selection-start-column="52" selection-end-line="59" selection-end-column="52" />
-          <folding>
-            <element signature="e#851#852#0" expanded="false" />
-            <element signature="e#909#910#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/ClothesGoodsEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="45" column="42" lean-forward="false" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/web/ClothesGoodController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="56" column="22" lean-forward="true" selection-start-line="56" selection-start-column="22" selection-end-line="56" selection-end-column="22" />
-=======
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1320">
-          <caret line="88" column="0" lean-forward="false" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
-          <folding>
-            <marker date="1526479063000" expanded="true" signature="3591:3844" ph="..." />
-            <marker date="1526479063000" expanded="true" signature="3756:3822" ph="..." />
-            <marker date="1526479063000" expanded="true" signature="3895:4083" ph="..." />
-            <marker date="1526479063000" expanded="true" signature="3916:4064" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mvnw">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/deploy.sh">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/web/CollectPageController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
->>>>>>> b53fd780283c096b5d536a5ffe4301a022ed8f66
+        <state relative-caret-position="-49">
+          <caret line="26" column="13" lean-forward="false" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/web/MemberController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="62" column="60" lean-forward="true" selection-start-line="62" selection-start-column="60" selection-end-line="62" selection-end-column="60" />
-=======
-    <entry file="file://$PROJECT_DIR$/build.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
->>>>>>> b53fd780283c096b5d536a5ffe4301a022ed8f66
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/service/impl/ClothesOrderImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="78">
-          <caret line="225" column="0" lean-forward="false" selection-start-line="225" selection-start-column="0" selection-end-line="243" selection-end-column="5" />
-=======
-        <state relative-caret-position="75">
-          <caret line="5" column="51" lean-forward="false" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
->>>>>>> b53fd780283c096b5d536a5ffe4301a022ed8f66
-          <folding />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/web/UploadController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="126" column="0" lean-forward="false" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
-=======
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/ClothesGoodsEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="45" column="21" lean-forward="false" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="21" />
->>>>>>> b53fd780283c096b5d536a5ffe4301a022ed8f66
-          <folding />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/AccountInfoEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="161" column="0" lean-forward="false" selection-start-line="161" selection-start-column="0" selection-end-line="161" selection-end-column="0" />
-          <folding>
-            <element signature="e#4114#4115#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/web/ClothesOrderController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="250" column="24" lean-forward="true" selection-start-line="250" selection-start-column="24" selection-end-line="250" selection-end-column="24" />
-=======
+        <state relative-caret-position="-644">
+          <caret line="30" column="13" lean-forward="false" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/ClothesCategoryEntity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="25" column="20" lean-forward="false" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+        <state relative-caret-position="-101">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -2065,184 +526,10 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="5" column="41" lean-forward="false" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
->>>>>>> b53fd780283c096b5d536a5ffe4301a022ed8f66
+          <caret line="5" column="40" lean-forward="false" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
           <folding />
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/ClothesOrderEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="33" column="18" lean-forward="true" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
-=======
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/web/ClothesGoodController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="39" selection-end-column="52" />
->>>>>>> b53fd780283c096b5d536a5ffe4301a022ed8f66
-          <folding />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/CommonEnumEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="17" column="23" lean-forward="false" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="23" />
-          <folding>
-            <element signature="e#616#617#0" expanded="true" />
-            <element signature="e#648#649#0" expanded="true" />
-            <element signature="e#695#696#0" expanded="true" />
-            <element signature="e#737#738#0" expanded="true" />
-=======
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/service/impl/ChothesGoodsImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding>
-            <element signature="e#1069#1070#0" expanded="true" />
->>>>>>> b53fd780283c096b5d536a5ffe4301a022ed8f66
-          </folding>
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/service/ClothesOrderService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="11" column="18" lean-forward="true" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
-=======
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/util/Set.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="84" column="17" lean-forward="false" selection-start-line="84" selection-start-column="17" selection-end-line="84" selection-end-column="17" />
->>>>>>> b53fd780283c096b5d536a5ffe4301a022ed8f66
-          <folding />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="40" lean-forward="false" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/domain/repository/ClothesOrderRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="21" column="21" lean-forward="false" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
-=======
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/domain/entity/ClothesOrderEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="538">
-          <caret line="146" column="14" lean-forward="false" selection-start-line="146" selection-start-column="11" selection-end-line="146" selection-end-column="14" />
-          <folding>
-            <element signature="e#4151#4152#0" expanded="true" />
-            <element signature="e#4188#4189#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyb/web/ClothesOrderController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="537">
-          <caret line="261" column="26" lean-forward="true" selection-start-line="261" selection-start-column="26" selection-end-line="261" selection-end-column="26" />
->>>>>>> b53fd780283c096b5d536a5ffe4301a022ed8f66
-          <folding />
-        </state>
-      </provider>
-    </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>Spring</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>xyb</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>Maven: com.alibaba:fastjson:1.2.33</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>
