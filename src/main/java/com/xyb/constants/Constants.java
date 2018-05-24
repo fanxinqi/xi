@@ -9,4 +9,6 @@ public class Constants {
     public   final static int IS_DEFAULT=1;
     public   final static int UNUSED_STATE=0;
     public   final static int USED_STATE=1;
+    public   final static int STORAGE_NUM=300;
+    public   final static String STORAGE_NAME_PRE="货架号";
 }

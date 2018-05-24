@@ -2,13 +2,12 @@ package com.xyb.web;
 
 import com.xyb.annotation.LoginRequired;
 import com.xyb.common.TokenVerify;
-import com.xyb.domain.entity.AccountInfoEntity;
-import com.xyb.domain.entity.ClothesOrderEntity;
-import com.xyb.domain.entity.MemberEntity;
-import com.xyb.domain.entity.StoreEntity;
+import com.xyb.constants.Constants;
+import com.xyb.domain.entity.*;
 import com.xyb.exception.AuthorityException;
 import com.xyb.exception.MyException;
 import com.xyb.exception.RestInfo;
+import com.xyb.service.StorageService;
 import com.xyb.service.StoreService;
 import com.xyb.utils.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,9 +19,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.Optional;
 
-import static com.xyb.constants.Constants.ADMIN_ROL;
-import static com.xyb.constants.Constants.HEADER_TOKEN;
-import static com.xyb.constants.Constants.STORE_ROL;
+import static com.xyb.constants.Constants.*;
 
 @RestController
 @RequestMapping("/store")
@@ -31,6 +28,8 @@ public class StoreController {
     private StoreService storeService;
     @Autowired
     private TokenVerify tokenVerify;
+    @Autowired
+    private StorageService storageService;
 
     @LoginRequired
     @GetMapping("/getStoreById")
@@ -75,12 +74,11 @@ public class StoreController {
             StoreEntity storeEntity = null;
             String roleName = tokenVerify.getRoleNameByUser(user);
             if (ADMIN_ROL.equals(roleName)) {
-                Page<StoreEntity> storeEntityList=null;
-                if(StringUtils.isBlank(name))
-                {
+                Page<StoreEntity> storeEntityList = null;
+                if (StringUtils.isBlank(name)) {
                     storeEntityList = storeService.findAll(pageable);
-                }else {
-                    storeEntityList=storeService.findAllByName(name,pageable);
+                } else {
+                    storeEntityList = storeService.findAllByName(name, pageable);
                 }
                 return new RestInfo(storeEntityList);
             } else if (STORE_ROL.equals(roleName)) {
@@ -137,17 +135,30 @@ public class StoreController {
         if (requestStoreEntity == null) {
             throw new MyException("请传入更新的内容");
         }
+        if (requestStoreEntity.getStorageNum() <= 0) {
+            requestStoreEntity.setStorageNum(STORAGE_NUM);
+        }
         AccountInfoEntity user = null;
         user = tokenVerify.getUserInfoByToken(token);
         if (user != null) {
             String roleName = tokenVerify.getRoleNameByUser(user);
-
             if (ADMIN_ROL.equals(roleName)) {
-                if(storeService.findByName(requestStoreEntity.getName())!=null)
-                {
+                if (storeService.findByName(requestStoreEntity.getName()) != null) {
                     throw new MyException("您已存在该店铺名称");
-                }else{
-                    return  new RestInfo(storeService.save(requestStoreEntity));
+                } else {
+                    StoreEntity storeEntity = storeService.save(requestStoreEntity);
+                    if (storeEntity != null) {
+                        for (int i = 0; i < requestStoreEntity.getStorageNum(); i++) {
+                            StorageEntity storageEntity = new StorageEntity();
+                            storageEntity.setName(Constants.STORAGE_NAME_PRE + i);
+                            storageEntity.setStoreId(storeEntity.getId());
+                            storageEntity.setUsableState(0);
+                            storageService.save(storageEntity);
+                        }
+                        return new RestInfo(storeEntity);
+                    } else {
+                        throw new MyException("创建店铺失败");
+                    }
                 }
 
             } else {
@@ -205,6 +216,16 @@ public class StoreController {
 
 
     private StoreEntity updateStore(StoreEntity storeEntity, StoreEntity requestStoreEntity) {
+        if (requestStoreEntity.getStorageNum() > storageService.getCount(Constants.STORAGE_NAME_PRE)) {
+            for (int i = storageService.getCount(Constants.STORAGE_NAME_PRE); i < requestStoreEntity.getStorageNum(); i++) {
+                StorageEntity storageEntity = new StorageEntity();
+                storageEntity.setName(Constants.STORAGE_NAME_PRE + i);
+                storageEntity.setStoreId(storeEntity.getId());
+                storageEntity.setUsableState(0);
+                storageService.save(storageEntity);
+            }
+        }
+        storeEntity.setStorageNum(requestStoreEntity.getStorageNum());
         if (!StringUtils.isBlank(requestStoreEntity.getAddress())) {
             storeEntity.setAddress(requestStoreEntity.getAddress());
         }
@@ -214,10 +235,8 @@ public class StoreController {
         if (!StringUtils.isBlank(requestStoreEntity.getDes())) {
             storeEntity.setDes(requestStoreEntity.getDes());
         }
-        if(requestStoreEntity.getImageEntity()!=null)
-        {
-            if(requestStoreEntity.getImageEntity().getId()>0)
-            {
+        if (requestStoreEntity.getImageEntity() != null) {
+            if (requestStoreEntity.getImageEntity().getId() > 0) {
                 storeEntity.setImageEntity(requestStoreEntity.getImageEntity());
             }
         }

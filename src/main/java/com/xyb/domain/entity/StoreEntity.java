@@ -10,7 +10,6 @@ import java.util.Set;
 @Entity
 @Table(name = "store")
 public class StoreEntity {
-
     @Id
     @GeneratedValue
     @Column(name = "id")
@@ -29,9 +28,22 @@ public class StoreEntity {
     @ManyToMany(cascade = {CascadeType.REFRESH}, fetch = FetchType.EAGER)
     @JoinTable(name = "store_laundry_expert", joinColumns = {@JoinColumn(name = "store_id")}, inverseJoinColumns = {@JoinColumn(name = "laundry_expert_id")})
     private Set<ClothesOrderEntity> storeLaundryExpertSet;
-
     @Column(name = "des")
     private String des;
+    @Column(name = "storage_num")
+    private int storageNum;
+    @ManyToOne(cascade = {CascadeType.REFRESH}, fetch = FetchType.EAGER)
+    @JoinTable(name = "store_file_res", joinColumns = {@JoinColumn(name = "store_id")}, inverseJoinColumns = {@JoinColumn(name = "file_res_id")})
+    private FileEntity imageEntity;
+    public Set<ClothesOrderEntity> getStoreLaundryExpertSet() {
+        return storeLaundryExpertSet;
+    }
+    public int getStorageNum() {
+        return storageNum;
+    }
+    public void setStorageNum(int storageNum) {
+        this.storageNum = storageNum;
+    }
 
     public String getDes() {
         return des;
@@ -49,16 +61,7 @@ public class StoreEntity {
         this.imageEntity = imageEntity;
     }
 
-    @ManyToOne(cascade = {CascadeType.REFRESH}, fetch = FetchType.EAGER)
-    @JoinTable(name = "store_file_res", joinColumns = {@JoinColumn(name = "store_id")}, inverseJoinColumns = {@JoinColumn(name = "file_res_id")})
-    private FileEntity imageEntity;
 
-
-
-
-    public Set<ClothesOrderEntity> getStoreLaundryExpertSet() {
-        return storeLaundryExpertSet;
-    }
 
     public void setStoreLaundryExpertSet(Set<ClothesOrderEntity> storeLaundryExpertSet) {
         this.storeLaundryExpertSet = storeLaundryExpertSet;

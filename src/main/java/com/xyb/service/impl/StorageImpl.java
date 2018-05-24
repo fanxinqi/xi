@@ -52,4 +52,9 @@ public class StorageImpl implements StorageService {
     public List<StorageEntity> findByStoreIdAndUsableState(long storeId, int usableState) {
         return storageRepository.findByStoreIdAndUsableState(storeId,usableState);
     }
+
+    @Override
+    public int getCount(String name) {
+        return storageRepository.countAllByNameContains(name);
+    }
 }

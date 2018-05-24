@@ -25,30 +25,34 @@ public class ClothesGoodsEntity {
     private String des;
     @Column(name = "create_time")
     private long createTime;
-
     public FileEntity getImageEntity() {
         return imageEntity;
     }
-
     public void setImageEntity(FileEntity imageEntity) {
         this.imageEntity = imageEntity;
     }
-
     @ManyToOne(cascade = {CascadeType.REFRESH}, fetch = FetchType.EAGER)
     @JoinTable(name = "clothes_goods_file_res", joinColumns = {@JoinColumn(name = "clothes_goods_id")}, inverseJoinColumns = {@JoinColumn(name = "file_res_id")})
     private FileEntity imageEntity;
-
     @ManyToOne(cascade = {CascadeType.REFRESH}, fetch = FetchType.EAGER)
     @JoinTable(name = "goods_clothes_state", joinColumns = {@JoinColumn(name = "clothes_goods_id")}, inverseJoinColumns = {@JoinColumn(name = "enum_id")})
     private CommonEnumEntity stateEntity;
     @ManyToOne(cascade = {CascadeType.REFRESH}, fetch = FetchType.EAGER)
     @JoinTable(name = "goods_clothes_pay_type", joinColumns = {@JoinColumn(name = "clothes_goods_id")}, inverseJoinColumns = {@JoinColumn(name = "enum_id")})
     private CommonEnumEntity paymentEntity;
-
     @ManyToOne(cascade = {CascadeType.REFRESH}, fetch = FetchType.EAGER)
-    @JoinTable(name = "goods_clothes_storage_state", joinColumns = {@JoinColumn(name = "clothes_goods_id")}, inverseJoinColumns = {@JoinColumn(name = "enum_id")})
+    @JoinTable(name = "goods_clothes_storage", joinColumns = {@JoinColumn(name = "clothes_goods_id")}, inverseJoinColumns = {@JoinColumn(name = "enum_id")})
     private StorageEntity storageEntity;
+    @ManyToMany(cascade = {CascadeType.REFRESH}, fetch = FetchType.EAGER)
+    @JoinTable(name = "goods_appendix", joinColumns = {@JoinColumn(name = "goods_id")}, inverseJoinColumns = {@JoinColumn(name = "appendix_id")})
+    private Set<AppendixEntity> appendixEntitySet;
+    public Set<AppendixEntity> getAppendixEntitySet() {
+        return appendixEntitySet;
+    }
 
+    public void setAppendixEntitySet(Set<AppendixEntity> appendixEntitySet) {
+        this.appendixEntitySet = appendixEntitySet;
+    }
     public Long getId() {
         return id;
     }

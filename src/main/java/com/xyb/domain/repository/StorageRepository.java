@@ -19,4 +19,6 @@ public interface StorageRepository extends JpaRepository<StorageEntity, Long> {
 
     List<StorageEntity> findByStoreIdAndUsableState(long storeId,int usableState);
 
+    int  countAllByNameContains(String name);
+
 }

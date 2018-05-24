@@ -26,4 +26,5 @@ public interface StorageService {
     StorageEntity findByName(String name);
 
     List<StorageEntity> findByStoreIdAndUsableState(long storeId, int usableState);
+    int getCount(String preName);
 }
