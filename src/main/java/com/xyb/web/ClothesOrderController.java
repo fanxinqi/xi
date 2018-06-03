@@ -40,6 +40,8 @@ public class ClothesOrderController {
     private StorageService storageService;
     @Autowired
     private ChothesGoodsService clothesGoodsService;
+    @Autowired
+    private AppendixService appendixService;
 
     @Autowired
     private MemberCategoryRepository memberCategoryRepository;
@@ -226,23 +228,35 @@ public class ClothesOrderController {
         if (requestClothesOrder.getStorageNum() > 0) {
             clothesOrderEntity.setStorageNum(requestClothesOrder.getStorageNum());
         }
-        if (requestClothesOrder.getGoodsEntitySet() != null && requestClothesOrder.getGoodsEntitySet().size() > 0) {
-            clothesOrderEntity.setGoodsEntitySet(requestClothesOrder.getGoodsEntitySet());
-        }
         if (requestClothesOrder.getStoreId() > 0) {
             clothesOrderEntity.setStoreId(requestClothesOrder.getStoreId());
         }
         if (requestClothesOrder.getImageSet().size() > 0) {
             clothesOrderEntity.setImageSet(requestClothesOrder.getImageSet());
         }
-        if (requestClothesOrder.getPaymentEntity() != null) {
+        if (requestClothesOrder.getPaymentEntity() != null && requestClothesOrder.getPaymentEntity().getId()>0) {
             clothesOrderEntity.setPaymentEntity(requestClothesOrder.getPaymentEntity());
         }
-        if (requestClothesOrder.getStateEntity() != null) {
+        if (requestClothesOrder.getStateEntity() != null && requestClothesOrder.getStateEntity().getId()>0) {
             clothesOrderEntity.setStateEntity(requestClothesOrder.getStateEntity());
         }
         if (requestClothesOrder.getTotalNum() > 0) {
             clothesOrderEntity.setTotalNum(requestClothesOrder.getTotalNum());
+        }
+        if(requestClothesOrder.getGoodsEntitySet()!=null&& requestClothesOrder.getGoodsEntitySet().size()>0)
+        {
+            for(ClothesGoodsEntity goodsEntity:requestClothesOrder.getGoodsEntitySet())
+            {
+                if(goodsEntity.getAppendixEntitySet()!=null && goodsEntity.getAppendixEntitySet().size()>0)
+                {
+                    for( AppendixEntity appendixEntity:goodsEntity.getAppendixEntitySet())
+                    {
+                        appendixEntity = appendixService.save(appendixEntity);
+                    }
+                }
+                goodsEntity=clothesGoodsService.save(goodsEntity);
+            }
+            clothesOrderEntity.setGoodsEntitySet(requestClothesOrder.getGoodsEntitySet());
         }
         clothesOrderEntity.setTotalPrice(requestClothesOrder.getTotalPrice());
         return clothesOrderEntity;
@@ -251,7 +265,6 @@ public class ClothesOrderController {
     private ClothesOrderEntity makeOrder(ClothesOrderEntity orderEntity, long storeId) {
         orderEntity.setStoreId(storeId);
         orderEntity.setStorageNum(1);
-
         orderEntity.setOrderId(OrderIdGenerateUtils.generateOrderNum());
         orderEntity.setCreateTime(System.currentTimeMillis());
         float sumPrice = 0;
@@ -279,23 +292,4 @@ public class ClothesOrderController {
         orderEntity.setTotalNum(orderEntity.getGoodsEntitySet().size());
         return orderEntity;
     }
-//    private Page<ClothesOrderEntity> searchOrder(long storeId, String paymentEntity, String phone, Pageable pageable) {
-//        Page<ClothesOrderEntity> laundryExpertEntityPage = null;
-//        if (paymentEntity==null && StringUtils.isBlank(phone)) {
-//            laundryExpertEntityPage = clothesOrderService.findByStoreId(storeId, pageable);
-//        } else {
-//            if (paymentEntity!=null && !StringUtils.isBlank(phone)) {
-//                laundryExpertEntityPage = clothesOrderService.findByStoreIdAndPhoneAndName(storeId, phone, name, pageable);
-//            } else {
-//                if (!StringUtils.isBlank(name)) {
-//                    laundryExpertEntityPage = laundryExpectService.findByStoreIdAndName(storeId, name, pageable);
-//                }
-//                if (!StringUtils.isBlank(phone)) {
-//                    laundryExpertEntityPage = laundryExpectService.findByStoreIdAndPhone(storeId, phone, pageable);
-//                }
-//            }
-//        }
-//
-//        return laundryExpertEntityPage;
-//    }
 }
